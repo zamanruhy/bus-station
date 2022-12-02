@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bus Station title</title>
+    <meta name="description" content="Bus Station description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Site title" />
+    <meta property="og:description" content="Site description" />
+    <meta property="og:image" content="http://via.placeholder.com/1200x630.jpg" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="assets/js/app.js"></script>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div class="relative">
+        <header class="header">
+          <div class="container">
+            <div class="header__inner">
+              <a class="logo header__logo" href="."
+                ><img
+                  src="assets/img/logo.jpg"
+                  width="332"
+                  height="96"
+                  class="logo__img"
+                  alt="Logo"
+              /></a>
+              <p class="header__slogan">Официальный сайт Автовокзала Улан-Удэ «Байкал»</p>
+              <span class="grow"></span>
+              <div class="header__side">
+                <a href="tel:+79503835555" class="header__item"
+                  ><svg viewBox="0 0 20 22">
+                    <path
+                      d="m18.1 6.7-1 1c1.8 1.8 1.8 4.6 0 6.5l1 1c2.5-2.3 2.5-6.1 0-8.5ZM16 8.8l-1 1c.5.7.5 1.6 0 2.3l1 1c1.2-1.2 1.2-3 0-4.3ZM12 0H2a2 2 0 0 0-2 2v18c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 19H2V3h10v16Z"
+                    ></path>
+                  </svg>
+                  +7 950 383 55 55</a
+                ><span class="header__item"
+                  ><svg viewBox="0 0 20 20">
+                    <path
+                      d="M9.99 0A10 10 0 1 0 10 19.99 10 10 0 0 0 9.99 0ZM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16ZM9.78 5h-.06c-.4 0-.72.32-.72.72v4.72c0 .35.18.68.49.86l4.15 2.49c.34.2.78.1.98-.24a.71.71 0 0 0-.25-.99l-3.87-2.3V5.72c0-.4-.32-.72-.72-.72Z"
+                    ></path>
+                  </svg>
+                  Eжедневно с 8:00 до 20:00</span
+                ><a href="#" class="header__item header__item_auth"
+                  ><svg viewBox="0 0 20 20">
+                    <path
+                      d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM5.07 16.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78a7.9 7.9 0 0 1-9.86 0Zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33A8.01 8.01 0 1 1 18 10c0 1.82-.62 3.49-1.64 4.83ZM10 4a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 10 11a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 10 4Zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+                    ></path></svg
+                  ><span class="hidden md:block">Личный кабинет</span></a
+                >
+              </div>
+              <button class="hamburger" type="button" aria-label="Toggle menu">
+                <span class="hamburger__bar"></span><span class="hamburger__bar"></span
+                ><span class="hamburger__bar"></span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <nav class="nav">
+          <div class="container">
+            <div class="nav__inner">
+              <form class="search">
+                <input class="search__input" type="text" placeholder="Поиск..." required /><button
+                  class="search__button"
+                >
+                  <svg viewBox="0 0 18 18">
+                    <path
+                      d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                    ></path>
+                  </svg>
+                </button>
+              </form>
+              <ul class="nav__list">
+                <li><a class="nav__link" href="#">Соглашения</a></li>
+                <li><a class="nav__link" href="#board">Информация</a></li>
+                <li><a class="nav__link" href="#payment">Как оплатить</a></li>
+                <li><a class="nav__link" href="#offices">Кассы</a></li>
+                <li><a class="nav__link" href="#questions">Вопрос-ответ</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <main class="app__main">
+        <div class="home">
+          <section class="intro">
+            <img
+              src="assets/img/intro.jpg"
+              width="2160"
+              height="639"
+              alt="Intro"
+              class="intro__img"
+            />
+            <div class="container">
+              <div class="intro__inner">
+                <div class="intro__content">
+                  <h1 class="intro__title">Сервис Автовокзал-Онлайн.РФ</h1>
+                  <p class="intro__text">
+                    Узнайте расписание, заброниронируйте и купите билеты в режиме online на
+                    автобусные рейсы, проходящие по территории Республики Бурятия и Иркутской
+                    области
+                  </p>
+                </div>
+                <ul class="social intro__social">
+                  <li>
+                    <a href="#" class="social__link" aria-label="Telegram"
+                      ><svg
+                        viewBox="0 0 13 12"
+                        class="social__icon right-px top-px"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="m12.5.88-1.88 9.8s-.26.68-.98.36L5.3 7.6l-.02-.01 5.33-4.97c.3-.3.11-.47-.24-.25l-6.7 4.41-2.6-.9s-.4-.15-.44-.47c-.04-.33.46-.5.46-.5L11.63.6s.87-.39.87.27Z"
+                        ></path></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="social__link" aria-label="Whatsapp"
+                      ><svg viewBox="0 0 14 14" class="social__icon left-px" aria-hidden="true">
+                        <path
+                          d="M11.45 2.54a6.53 6.53 0 0 0-10.29 7.84l-.91 3.37 3.48-.91a6.53 6.53 0 0 0 9.65-5.74 6.64 6.64 0 0 0-1.93-4.56ZM10 9.47c-.14.36-.78.73-1.1.77-.27.05-.64.05-1-.04-.23-.1-.55-.19-.92-.37a6.88 6.88 0 0 1-2.79-2.46c-.09-.1-.68-.87-.68-1.69s.4-1.18.55-1.36c.13-.19.32-.19.45-.19h.32c.1 0 .23-.04.37.28.14.32.46 1.14.5 1.18.05.1.05.18 0 .28a.85.85 0 0 1-.18.27c-.1.09-.18.23-.23.27-.1.1-.18.19-.1.32.1.18.42.69.92 1.14.64.55 1.15.73 1.33.82.18.1.27.05.37-.04.09-.1.4-.46.5-.64.09-.18.23-.14.36-.1.14.05.96.46 1.1.55.19.1.28.14.32.19.05.13.05.45-.09.82Z"
+                        ></path></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="finder">
+            <div class="container">
+              <div class="finder__inner">
+                <div class="finder__head">
+                  <a class="finder__tab finder__tab_active" href="#"
+                    ><span>Республика Бурятия</span></a
+                  ><a class="finder__tab" href="#"><span>Иркутская область</span></a>
+                </div>
+                <form class="finder__content">
+                  <div class="finder__grid">
+                    <div class="input input_primary input_has-icon">
+                      <input
+                        class="input__input"
+                        type="text"
+                        name="from"
+                        placeholder="Пункт отправки"
+                      /><span class="input__addon"
+                        ><svg viewBox="0 0 18 18" class="w-[18px]">
+                          <path
+                            d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                          ></path></svg
+                      ></span>
+                    </div>
+                    <div class="input input_primary input_has-icon">
+                      <input
+                        class="input__input"
+                        type="text"
+                        name="to"
+                        placeholder="Пункт прибытия"
+                      /><span class="input__addon"
+                        ><svg viewBox="0 0 18 18" class="w-[18px]">
+                          <path
+                            d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                          ></path></svg
+                      ></span>
+                    </div>
+                    <div class="input input_primary input_has-icon">
+                      <input class="input__input" type="text" name="date" placeholder="Дата" /><span
+                        class="input__addon"
+                        ><svg viewBox="0 0 20 22" class="w-[20px]">
+                          <path
+                            d="M18 2h-1V0h-2v2H5V0H3v2H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Zm0 18H2V9h16v11Zm0-13H2V4h16v3Z"
+                          ></path></svg
+                      ></span>
+                    </div>
+                    <button
+                      data-hk="0-0-0-0-2-1-0-0-1-3-0-0"
+                      class="button button_primary button_md"
+                      type="submit"
+                    >
+                      Найти рейсы
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+          <div class="container">
+            <section class="parts">
+              <a href="#" class="parts__item"
+                ><div class="parts__item-head">
+                  <svg viewBox="0 0 30 30" class="parts__item-icon">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.68.06c-.12.05-.3.16-.39.26-.1.1-1.03 2-2.22 4.53-1.13 2.4-2.08 4.37-2.12 4.4-.04.02-2.12.35-4.62.72-3.59.54-4.6.71-4.8.82-.34.17-.53.5-.53.93 0 .2.04.37.13.52.07.12 1.63 1.75 3.46 3.61 2.74 2.8 3.32 3.42 3.3 3.53-.1.38-1.56 9.47-1.56 9.62 0 .62.65 1.13 1.24.97.13-.04 2.07-1.08 4.3-2.3 2.23-1.24 4.1-2.24 4.13-2.24.04 0 1.9 1 4.13 2.23s4.17 2.27 4.3 2.3c.35.1.68 0 .96-.3a.89.89 0 0 0 .25-.5c.03-.21-.15-1.45-.73-5-.43-2.59-.78-4.76-.8-4.81-.02-.07 1.01-1.16 3.3-3.5 1.83-1.86 3.39-3.49 3.46-3.6.09-.16.13-.32.13-.53 0-.43-.19-.76-.53-.93-.2-.1-1.21-.28-4.8-.82-2.5-.37-4.58-.7-4.62-.72-.04-.03-1-2-2.12-4.4C16.8 2.45 15.8.43 15.74.35a.97.97 0 0 0-1.06-.3Zm2.08 7.12a63.31 63.31 0 0 0 1.87 3.8c.08.07.2.17.28.2.07.04 1.85.34 3.95.66l3.9.6c.04 0-1.17 1.28-2.7 2.83a73.54 73.54 0 0 0-2.9 3.06.9.9 0 0 0-.14.56c0 .17.3 2.06.65 4.2.36 2.15.64 3.9.63 3.9 0 .01-1.56-.84-3.46-1.9l-3.46-1.9h-.76l-3.46 1.9C9.26 26.16 7.7 27 7.7 27c-.01 0 .27-1.75.63-3.9.35-2.14.64-4.03.65-4.2a.9.9 0 0 0-.14-.56 73.65 73.65 0 0 0-2.9-3.06 61.85 61.85 0 0 1-2.7-2.83l3.9-.6c2.1-.32 3.88-.62 3.95-.65.07-.04.2-.14.28-.22.09-.08.89-1.7 1.87-3.8.95-2 1.74-3.64 1.76-3.64.02 0 .81 1.64 1.76 3.65Z"
+                    ></path>
+                  </svg>
+                  <h2 class="parts__item-title">Мои заказы</h2>
+                </div>
+                <p>Поиск заказанных (забронированных) мест на автобусные рейсы</p></a
+              ><a href="#" class="parts__item"
+                ><div class="parts__item-head">
+                  <svg viewBox="0 0 30 30" class="parts__item-icon">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.12.11c-.1.06-.25.2-.32.3-.12.18-.14.31-.16 1.07l-.02.86-2 .02C.7 2.37.6 2.38.44 2.5c-.1.07-.24.21-.31.32-.13.2-.13.3-.13 13.4 0 12.7 0 13.2.12 13.37.06.1.2.23.28.3.17.1.27.11 14.6.11h14.44l.25-.24c.2-.2.25-.3.28-.56.03-.17.04-6.13.03-13.25-.02-12.8-.02-12.93-.15-13.13-.07-.1-.21-.25-.3-.32-.18-.12-.27-.13-2.2-.14l-2-.02-.02-.86C25.31.7 25.3.59 25.17.4c-.19-.28-.45-.41-.83-.41a.98.98 0 0 0-.85.42c-.11.17-.13.3-.13 1.06v.87H20.7l-.02-.87c-.02-.74-.04-.9-.15-1.06a.94.94 0 0 0-.84-.42.98.98 0 0 0-.86.42c-.1.17-.12.3-.12 1.06v.87H11.3v-.87c0-.76-.02-.89-.14-1.06A.98.98 0 0 0 10.3 0c-.37 0-.64.13-.83.41-.12.18-.14.3-.16 1.07l-.02.87H6.62v-.87C6.62.72 6.6.6 6.49.42a1.1 1.1 0 0 0-.34-.3 1.22 1.22 0 0 0-1.03 0Zm22.9 5.32v1.26H1.96V4.16h26.08v1.27Zm0 12.96v9.88H1.96V8.5h26.08v9.89ZM5.25 11.02c-.22.09-.48.36-.54.6-.05.14-.06 2.48-.05 6.84.02 6.3.02 6.62.13 6.79.07.1.2.23.3.3.16.1.27.11 9.83.13 10.78.01 9.96.04 10.26-.4l.14-.2.02-6.62c0-4.27 0-6.7-.05-6.84a1.1 1.1 0 0 0-.3-.42l-.22-.2-9.7-.01c-5.33-.01-9.75 0-9.82.03Zm4.06 3v1.23H6.62v-2.46H9.3v1.23Zm4.67 0v1.23h-2.7v-2.46h2.69v1.23Zm4.66 0v1.23h-2.68v-2.46h2.68v1.23Zm4.73 0v1.23h-2.75v-2.46h2.75v1.23ZM9.3 18.32v1.27H6.62v-2.52H9.3v1.26Zm4.67 0v1.27h-2.69v-2.52h2.69v1.26Zm4.66 0v1.27h-2.68v-2.52h2.68v1.26Zm4.73 0v1.27h-2.75v-2.52h2.75v1.26ZM9.3 22.68v1.26H6.62v-2.52H9.3v1.26Zm4.67 0v1.26h-2.69v-2.52h2.69v1.26Zm4.66 0v1.26h-2.68v-2.52h2.68v1.26Zm4.73 0v1.26h-2.75v-2.52h2.75v1.26Z"
+                    ></path>
+                  </svg>
+                  <h2 class="parts__item-title">Раписание рейсов</h2>
+                </div>
+                <p>Расписание и карта междугородних автобусов Республики Бурятия</p></a
+              ><a href="#" class="parts__item"
+                ><div class="parts__item-head">
+                  <svg viewBox="0 0 30 30" class="parts__item-icon">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.76.14a3 3 0 0 0-.7.39c-.42.32-.8.88-.94 1.39-.12.4-.12.57-.12 9.34s0 8.94.12 9.34c.23.81.92 1.55 1.69 1.8.36.12.55.12 5.58.12h5.2l.08.36c.16.8.63 1.98 1.07 2.74a9.61 9.61 0 0 0 2.98 3.11c.86.54 1.8.92 2.82 1.16.38.09.75.11 1.7.11.93 0 1.3-.02 1.7-.11a9.5 9.5 0 0 0 2.95-1.25 9.84 9.84 0 0 0 2.83-3.02c.51-.87.96-2.07 1.17-3.16.09-.41.11-.81.11-1.81a7.8 7.8 0 0 0-.41-3 9.9 9.9 0 0 0-1.1-2.35c-.4-.62-1.23-1.58-1.69-1.95l-.29-.24V7.72c0-5.25 0-5.4-.12-5.8a3 3 0 0 0-1-1.44 2.83 2.83 0 0 0-.69-.36C24.33 0 24.12 0 13.23 0H2.14l-.38.14Zm22.52 1.9c.32.2.42.45.46 1.12l.03.6H1.74l.03-.59c.03-.57.12-.87.3-1.04.3-.26.06-.25 11.27-.24 10.68.02 10.74.02 10.94.14Zm.47 4.53v.94H1.76V5.63h23v.94Zm0 4.12V12l-.57-.22a6.62 6.62 0 0 0-2.92-.49c-.99 0-1.34.03-1.76.12a9.3 9.3 0 0 0-2.93 1.25 9.84 9.84 0 0 0-2.83 3.01 9.5 9.5 0 0 0-1.29 4.28l-.03.7-5-.02c-4.9-.01-4.99-.02-5.19-.14a1.12 1.12 0 0 1-.32-.35c-.12-.2-.12-.31-.14-5.48l-.01-5.28h23v1.31ZM4.02 13.2c-.07.04-.2.15-.3.26-.16.18-.17.23-.17.63 0 .42 0 .44.22.67l.22.23h6.21l.22-.23c.22-.23.23-.25.23-.67 0-.42-.01-.45-.23-.68l-.22-.23-3.03-.01c-1.67-.01-3.09 0-3.15.04Zm18.3.08a6.66 6.66 0 0 1 3.82 2.09 7.31 7.31 0 0 1 2.07 4.7 7.77 7.77 0 0 1-2.16 5.99 6.84 6.84 0 0 1-3.3 1.89c-.91.22-2.25.21-3.15-.03a7.2 7.2 0 0 1-2.68-1.39A8.23 8.23 0 0 1 14.97 24a8.81 8.81 0 0 1-.63-2.02 9.8 9.8 0 0 1 0-2.65 7.44 7.44 0 0 1 1.96-3.94 6.57 6.57 0 0 1 6.02-2.11Zm-18.3 3.68c-.07.03-.2.14-.3.25-.16.18-.17.24-.17.63 0 .42 0 .45.22.67l.22.24h6.21l.22-.24c.22-.23.23-.25.23-.67 0-.42-.01-.44-.23-.67l-.22-.24H7.17c-1.67-.02-3.09 0-3.15.03Zm20.34.94c-.06.03-.45.4-.85.83l-1.94 2.05-1.22 1.27-1.07-1.13c-1.16-1.22-1.22-1.26-1.76-1.18-.17.02-.3.1-.44.25-.17.18-.21.27-.23.55-.02.19 0 .4.02.48.03.08.73.86 1.55 1.73 1.59 1.7 1.6 1.72 2.11 1.64.13-.02.32-.11.45-.22.12-.1 1.2-1.24 2.4-2.52 1.91-2.05 2.19-2.37 2.22-2.58.08-.41 0-.73-.23-.97-.18-.2-.24-.22-.54-.24-.19-.01-.4 0-.47.04Z"
+                    ></path>
+                  </svg>
+                  <h2 class="parts__item-title">Оплата</h2>
+                </div>
+                <p>Инструкция и способы оплаты, с помощью карт, терминалов и отделений банков</p></a
+              >
+            </section>
+            <section class="populars">
+              <h2 class="populars__title">Популярные направления</h2>
+              <div class="populars__grid">
+                <div class="populars__main">
+                  <a class="route" href="#"
+                    ><img
+                      class="route__img"
+                      src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                      alt="#"
+                      loading="lazy"
+                      decoding="async" />
+                    <div class="route__content">
+                      <h3 class="route__title">Улан-Удэ — Кяхта</h3>
+                      <p class="route__desc">Отправление с автовокзала</p>
+                      <div class="route__footer">
+                        <span class="route__price">от 1 500 ₽</span
+                        ><span class="route__more"
+                          >Найти рейсы<svg viewBox="0 0 16 8">
+                            <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z"></path></svg
+                        ></span>
+                      </div></div></a
+                  ><a class="route" href="#"
+                    ><img
+                      class="route__img"
+                      src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                      alt="#"
+                      loading="lazy"
+                      decoding="async" />
+                    <div class="route__content">
+                      <h3 class="route__title">Улан-Удэ — Кяхта</h3>
+                      <p class="route__desc">Отправление с автовокзала</p>
+                      <div class="route__footer">
+                        <span class="route__price">от 1 500 ₽</span
+                        ><span class="route__more"
+                          >Найти рейсы<svg viewBox="0 0 16 8">
+                            <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z"></path></svg
+                        ></span>
+                      </div></div></a
+                  ><a class="route" href="#"
+                    ><img
+                      class="route__img"
+                      src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                      alt="#"
+                      loading="lazy"
+                      decoding="async" />
+                    <div class="route__content">
+                      <h3 class="route__title">Улан-Удэ — Кяхта</h3>
+                      <p class="route__desc">Отправление с автовокзала</p>
+                      <div class="route__footer">
+                        <span class="route__price">от 1 500 ₽</span
+                        ><span class="route__more"
+                          >Найти рейсы<svg viewBox="0 0 16 8">
+                            <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z"></path></svg
+                        ></span>
+                      </div></div></a
+                  ><a class="route" href="#"
+                    ><img
+                      class="route__img"
+                      src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                      alt="#"
+                      loading="lazy"
+                      decoding="async" />
+                    <div class="route__content">
+                      <h3 class="route__title">Улан-Удэ — Кяхта</h3>
+                      <p class="route__desc">Отправление с автовокзала</p>
+                      <div class="route__footer">
+                        <span class="route__price">от 1 500 ₽</span
+                        ><span class="route__more"
+                          >Найти рейсы<svg viewBox="0 0 16 8">
+                            <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z"></path></svg
+                        ></span>
+                      </div></div
+                  ></a>
+                </div>
+                <div>
+                  <ul class="populars__list">
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Кяхта
+                      <span class="populars__muted">(автовокзал)</span>
+                    </li>
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Петропавловка
+                    </li>
+                    <li class="populars__list-item">
+                      Кяхта <span class="populars__muted">(автовокзал)</span> — Улан-Удэ
+                      <span class="populars__muted">(автовокзал)</span>
+                    </li>
+                    <li class="populars__list-item populars__list-item_active">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Хоринск
+                      <span class="populars__muted">(автовокзал)</span>
+                    </li>
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span>— Усть-Баргузин
+                    </li>
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Бичура
+                      <span class="populars__muted">(автовокзал)</span>
+                    </li>
+                  </ul>
+                  <hr class="populars__divider" />
+                  <ul class="populars__list">
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Баргузин
+                    </li>
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Курумкан
+                      <span class="populars__muted">(автовокзал)</span>
+                    </li>
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Мухоршибирь
+                    </li>
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Горячинск
+                    </li>
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Закаменск
+                      <span class="populars__muted">(автокасса)</span>
+                    </li>
+                    <li class="populars__list-item">
+                      Усть-Баргузин — Улан-Удэ <span class="populars__muted">(автовокзал)</span>
+                    </li>
+                  </ul>
+                  <hr class="populars__divider" />
+                  <ul class="populars__list">
+                    <li class="populars__list-item">
+                      Аршан <span class="populars__muted">(автостанция)</span> — Иркутск
+                      <span class="populars__muted">(автовокзал)</span>
+                    </li>
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Баянгол
+                    </li>
+                    <li class="populars__list-item">
+                      Улан-Удэ <span class="populars__muted">(автовокзал)</span> — Саган-Нур
+                      <span class="populars__muted">(маг. «Фламинго»)</span>
+                    </li>
+                    <li class="populars__list-item">
+                      Нилова Пустынь <span class="populars__muted">(п/т «Энергетик»)</span> —
+                      Иркутск
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <div class="home__layout">
+              <div class="home__layout-main">
+                <section id="board" class="board">
+                  <h2 class="board__title">Информационное табло</h2>
+                  <div class="scrollbar board__inner">
+                    <div class="board__content">
+                      <div class="board__head">
+                        <span class="board__head-cell">Время</span
+                        ><span class="board__head-cell">Маршрут</span
+                        ><span class="board__head-cell">Гос.номер</span>
+                      </div>
+                      <ul class="scrollbar board__list">
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                        <li class="board__item">
+                          <span class="board__item-cell">08:00</span
+                          ><span class="board__item-cell"
+                            >Улан-Удэ <span class="board__muted">(автовокзал)</span> — Курумкан
+                            <span class="board__muted">(автовокзал)</span></span
+                          ><span class="board__item-cell">а123бв</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                <section id="questions" class="questions">
+                  <h2 class="questions__title">полезная информация</h2>
+                  <div class="questions__content">
+                    <details class="questions__item">
+                      <summary class="questions__head">
+                        Как предъявить контроллеру (водителю) электронный билет?<svg
+                          viewBox="0 0 13 8"
+                          class="questions__icon"
+                        >
+                          <path
+                            d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                          ></path>
+                        </svg>
+                      </summary>
+                      <div class="questions__body">
+                        <p class="">
+                          В автобусах малой вместимости отсеки для размещения ручной клади либо
+                          небольшие либо отсутствуют, что не позволяет провозить крупногабаритные
+                          вещи, в том числе велосипеды. В автобусах, имеющих багажные отсеки, можно
+                          провозить вещи, сумма габаритных размеров (длина + ширина + высота)
+                          которых не превышает 180 см. Таким образом, для провоза велосипеда в
+                          автобусе он должен быть в разобранном виде и не загрязнять транспортное
+                          средство или вещи других пассажиров.
+                        </p>
+                      </div>
+                    </details>
+                    <details class="questions__item">
+                      <summary class="questions__head">
+                        Как предъявить контроллеру (водителю) электронный билет?<svg
+                          viewBox="0 0 13 8"
+                          class="questions__icon"
+                        >
+                          <path
+                            d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                          ></path>
+                        </svg>
+                      </summary>
+                      <div class="questions__body">
+                        <p class="">
+                          В автобусах малой вместимости отсеки для размещения ручной клади либо
+                          небольшие либо отсутствуют, что не позволяет провозить крупногабаритные
+                          вещи, в том числе велосипеды. В автобусах, имеющих багажные отсеки, можно
+                          провозить вещи, сумма габаритных размеров (длина + ширина + высота)
+                          которых не превышает 180 см. Таким образом, для провоза велосипеда в
+                          автобусе он должен быть в разобранном виде и не загрязнять транспортное
+                          средство или вещи других пассажиров.
+                        </p>
+                      </div>
+                    </details>
+                    <details class="questions__item">
+                      <summary class="questions__head">
+                        Как предъявить контроллеру (водителю) электронный билет?<svg
+                          viewBox="0 0 13 8"
+                          class="questions__icon"
+                        >
+                          <path
+                            d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                          ></path>
+                        </svg>
+                      </summary>
+                      <div class="questions__body">
+                        <p class="">
+                          В автобусах малой вместимости отсеки для размещения ручной клади либо
+                          небольшие либо отсутствуют, что не позволяет провозить крупногабаритные
+                          вещи, в том числе велосипеды. В автобусах, имеющих багажные отсеки, можно
+                          провозить вещи, сумма габаритных размеров (длина + ширина + высота)
+                          которых не превышает 180 см. Таким образом, для провоза велосипеда в
+                          автобусе он должен быть в разобранном виде и не загрязнять транспортное
+                          средство или вещи других пассажиров.
+                        </p>
+                      </div>
+                    </details>
+                    <details class="questions__item">
+                      <summary class="questions__head">
+                        Как предъявить контроллеру (водителю) электронный билет?<svg
+                          viewBox="0 0 13 8"
+                          class="questions__icon"
+                        >
+                          <path
+                            d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                          ></path>
+                        </svg>
+                      </summary>
+                      <div class="questions__body">
+                        <p class="">
+                          В автобусах малой вместимости отсеки для размещения ручной клади либо
+                          небольшие либо отсутствуют, что не позволяет провозить крупногабаритные
+                          вещи, в том числе велосипеды. В автобусах, имеющих багажные отсеки, можно
+                          провозить вещи, сумма габаритных размеров (длина + ширина + высота)
+                          которых не превышает 180 см. Таким образом, для провоза велосипеда в
+                          автобусе он должен быть в разобранном виде и не загрязнять транспортное
+                          средство или вещи других пассажиров.
+                        </p>
+                      </div>
+                    </details>
+                    <details class="questions__item">
+                      <summary class="questions__head">
+                        Как предъявить контроллеру (водителю) электронный билет?<svg
+                          viewBox="0 0 13 8"
+                          class="questions__icon"
+                        >
+                          <path
+                            d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                          ></path>
+                        </svg>
+                      </summary>
+                      <div class="questions__body">
+                        <p class="">
+                          В автобусах малой вместимости отсеки для размещения ручной клади либо
+                          небольшие либо отсутствуют, что не позволяет провозить крупногабаритные
+                          вещи, в том числе велосипеды. В автобусах, имеющих багажные отсеки, можно
+                          провозить вещи, сумма габаритных размеров (длина + ширина + высота)
+                          которых не превышает 180 см. Таким образом, для провоза велосипеда в
+                          автобусе он должен быть в разобранном виде и не загрязнять транспортное
+                          средство или вещи других пассажиров.
+                        </p>
+                      </div>
+                    </details>
+                    <details class="questions__item">
+                      <summary class="questions__head">
+                        Как предъявить контроллеру (водителю) электронный билет?<svg
+                          viewBox="0 0 13 8"
+                          class="questions__icon"
+                        >
+                          <path
+                            d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                          ></path>
+                        </svg>
+                      </summary>
+                      <div class="questions__body">
+                        <p class="">
+                          В автобусах малой вместимости отсеки для размещения ручной клади либо
+                          небольшие либо отсутствуют, что не позволяет провозить крупногабаритные
+                          вещи, в том числе велосипеды. В автобусах, имеющих багажные отсеки, можно
+                          провозить вещи, сумма габаритных размеров (длина + ширина + высота)
+                          которых не превышает 180 см. Таким образом, для провоза велосипеда в
+                          автобусе он должен быть в разобранном виде и не загрязнять транспортное
+                          средство или вещи других пассажиров.
+                        </p>
+                      </div>
+                    </details>
+                    <details class="questions__item">
+                      <summary class="questions__head">
+                        Как предъявить контроллеру (водителю) электронный билет?<svg
+                          viewBox="0 0 13 8"
+                          class="questions__icon"
+                        >
+                          <path
+                            d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                          ></path>
+                        </svg>
+                      </summary>
+                      <div class="questions__body">
+                        <p class="">
+                          В автобусах малой вместимости отсеки для размещения ручной клади либо
+                          небольшие либо отсутствуют, что не позволяет провозить крупногабаритные
+                          вещи, в том числе велосипеды. В автобусах, имеющих багажные отсеки, можно
+                          провозить вещи, сумма габаритных размеров (длина + ширина + высота)
+                          которых не превышает 180 см. Таким образом, для провоза велосипеда в
+                          автобусе он должен быть в разобранном виде и не загрязнять транспортное
+                          средство или вещи других пассажиров.
+                        </p>
+                      </div>
+                    </details>
+                  </div>
+                </section>
+              </div>
+              <section class="news-feed">
+                <h2 class="news-feed__title">Новости</h2>
+                <div class="news-feed__items">
+                  <a href="#" class="news news_main"
+                    ><img
+                      class="news__img"
+                      src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                      alt="#"
+                      loading="lazy"
+                      decoding="async" /><time class="news__date">25.06.2021</time>
+                    <h3 class="news__title">
+                      О мерах по борьбе с коронави-русной инфекцией в Республике Бурятия
+                    </h3>
+                    <p class="news__text">
+                      В соответствии с дополнениями в Указ главы Бурятии о мерах по борьбе с
+                      коронавирусной инфекцией, в период нерабочих недель с 27 июня по 11 июля,
+                      лицам, находящимся на территории Бурятии...
+                    </p>
+                    <div class="news__footer">
+                      <span class="news__more"
+                        >Читать все<svg viewBox="0 0 16 8">
+                          <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z"></path></svg
+                      ></span></div></a
+                  ><a href="#" class="news"
+                    ><time class="news__date">25.06.2021</time>
+                    <h3 class="news__title">
+                      О мерах по борьбе с коронави-русной инфекцией в Республике Бурятия
+                    </h3>
+                    <p class="news__text">
+                      В соответствии с дополнениями в Указ главы Бурятии о мерах по борьбе с
+                      коронавирусной инфекцией, в период нерабочих недель с 27 июня по 11 июля,
+                      лицам, находящимся на территории Бурятии...
+                    </p>
+                    <div class="news__footer">
+                      <span class="news__more"
+                        >Читать все<svg viewBox="0 0 16 8">
+                          <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z"></path></svg
+                      ></span></div></a
+                  ><a href="#" class="news"
+                    ><img
+                      class="news__img"
+                      src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                      alt="#"
+                      loading="lazy"
+                      decoding="async" /><time class="news__date">25.06.2021</time>
+                    <h3 class="news__title">
+                      О мерах по борьбе с коронави-русной инфекцией в Республике Бурятия
+                    </h3>
+                    <p class="news__text">
+                      В соответствии с дополнениями в Указ главы Бурятии о мерах по борьбе с
+                      коронавирусной инфекцией, в период нерабочих недель с 27 июня по 11 июля,
+                      лицам, находящимся на территории Бурятии...
+                    </p>
+                    <div class="news__footer">
+                      <span class="news__more"
+                        >Читать все<svg viewBox="0 0 16 8">
+                          <path d="M12.01 3H0v2h12.01v3L16 4l-3.99-4v3Z"></path></svg
+                      ></span></div
+                  ></a>
+                </div>
+                <div class="news-feed__footer">
+                  <a href="#" class="news-feed__more"
+                    >Все новости<svg viewBox="0 0 6 10">
+                      <path d="m.7 8.39.74.73L5.57 5 1.44.87l-.74.74L4.1 5 .7 8.39Z"></path></svg
+                  ></a>
+                </div>
+              </section>
+            </div>
+            <section class="order-call">
+              <img
+                src="assets/img/order-call.jpg"
+                width="1718"
+                height="323"
+                class="order-call__img"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="order-call__overlay"></div>
+              <div class="order-call__grid">
+                <div class="order-call__content">
+                  <h2 class="order-call__title">Заказать звонок</h2>
+                  <p class="order-call__text">
+                    Заполните форму обратной связи, наш специалист свяжется с вами в ближайшее время
+                    и ответит на все интересующие вопросы
+                  </p>
+                </div>
+                <form class="order-call__form">
+                  <div class="input input_secondary">
+                    <input
+                      class="input__input"
+                      type="text"
+                      required
+                      placeholder="Имя"
+                      name="name"
+                    />
+                  </div>
+                  <div class="input input_secondary">
+                    <input
+                      class="input__input"
+                      type="text"
+                      required
+                      placeholder="Телефон"
+                      name="phone"
+                    />
+                  </div>
+                  <label
+                    class="relative isolate flex w-fit cursor-pointer select-none items-center"
+                    style=""
+                    ><input class="peer sr-only" type="checkbox" /><span
+                      class="relative flex h-[15px] w-[15px] shrink-0 items-center justify-center rounded-[1px] bg-white"
+                      aria-hidden="true"
+                      ><svg
+                        viewBox="0 0 9 7"
+                        fill="none"
+                        class="hidden w-[9px] text-[#323232] [input:checked~*>&]:block"
+                      >
+                        <path
+                          d="M8 1 3.33 6 1 3.5"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path></svg></span
+                    ><span class="ml-[8px] text-[10px]"
+                      >Я согласен на обработку своих персональных данных</span
+                    ></label
+                  ><button
+                    data-hk="0-0-0-0-2-1-0-0-7-4-0-0"
+                    class="button button_secondary button_md"
+                    type="submit"
+                  >
+                    Отправить
+                  </button>
+                </form>
+              </div>
+            </section>
+            <section id="offices" class="offices tabs">
+              <h2 class="offices__title">Адреса и телефоны касс</h2>
+              <div class="offices__grid">
+                <div class="offices__side">
+                  <h3 class="offices__subtitle">Республика Бурятия</h3>
+                  <div class="" role="tablist">
+                    <button
+                      type="button"
+                      role="tab"
+                      class="offices__tab offices__tab_active"
+                      aria-selected=""
+                    >
+                      г.Улан-Удэ</button
+                    ><button type="button" role="tab" class="offices__tab" aria-selected="">
+                      п. Аршан</button
+                    ><button type="button" role="tab" class="offices__tab" aria-selected="">
+                      c. Курумкан</button
+                    ><button type="button" role="tab" class="offices__tab" aria-selected="">
+                      с. Горячинск</button
+                    ><button type="button" role="tab" class="offices__tab" aria-selected="">
+                      с. Хоринск</button
+                    ><button type="button" role="tab" class="offices__tab" aria-selected="">
+                      г. Закаменск</button
+                    ><button type="button" role="tab" class="offices__tab" aria-selected="">
+                      г. Кяхта
+                    </button>
+                  </div>
+                </div>
+                <div role="tabpanel">
+                  <article class="office">
+                    <h3 class="office__title">Автовокзал г.Улан-Удэ «Байкал 1»</h3>
+                    <p class="office__text">
+                      Здесь вы можете приобрести билеты на все рейсы проходящие через Автовокзал г.
+                      Улан-Удэ и оформить возврат
+                    </p>
+                    <dl class="office__spec">
+                      <dt class="office__spec-t">Адрес:</dt>
+                      <dd class="office__spec-d">г. Улан-Удэ, ул. Советская, 1Б</dd>
+                      <dt class="office__spec-t">Режим работы:</dt>
+                      <dd class="office__spec-d">с 07:00 до 19:00</dd>
+                      <dt class="office__spec-t">Бронирование:</dt>
+                      <dd class="office__spec-d">+7 950 383-55-55 (ежедневно с 8:00 до 20:00)</dd>
+                      <dt class="office__spec-t">Справочная служба:</dt>
+                      <dd class="office__spec-d">+7 3012 71-77-17 (ежедневно с 7:00 до 19:00)</dd>
+                    </dl>
+                    <div class="office__imgs">
+                      <img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      /><img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      />
+                    </div>
+                  </article>
+                </div>
+                <div role="tabpanel" hidden>
+                  <article class="office">
+                    <h3 class="office__title">Автовокзал г.Улан-Удэ «Байкал 2»</h3>
+                    <p class="office__text">
+                      Здесь вы можете приобрести билеты на все рейсы проходящие через Автовокзал г.
+                      Улан-Удэ и оформить возврат
+                    </p>
+                    <dl class="office__spec">
+                      <dt class="office__spec-t">Адрес:</dt>
+                      <dd class="office__spec-d">г. Улан-Удэ, ул. Советская, 1Б</dd>
+                      <dt class="office__spec-t">Режим работы:</dt>
+                      <dd class="office__spec-d">с 07:00 до 19:00</dd>
+                      <dt class="office__spec-t">Бронирование:</dt>
+                      <dd class="office__spec-d">+7 950 383-55-55 (ежедневно с 8:00 до 20:00)</dd>
+                      <dt class="office__spec-t">Справочная служба:</dt>
+                      <dd class="office__spec-d">+7 3012 71-77-17 (ежедневно с 7:00 до 19:00)</dd>
+                    </dl>
+                    <div class="office__imgs">
+                      <img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      /><img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      />
+                    </div>
+                  </article>
+                </div>
+                <div role="tabpanel" hidden>
+                  <article class="office">
+                    <h3 class="office__title">Автовокзал г.Улан-Удэ «Байкал 3»</h3>
+                    <p class="office__text">
+                      Здесь вы можете приобрести билеты на все рейсы проходящие через Автовокзал г.
+                      Улан-Удэ и оформить возврат
+                    </p>
+                    <dl class="office__spec">
+                      <dt class="office__spec-t">Адрес:</dt>
+                      <dd class="office__spec-d">г. Улан-Удэ, ул. Советская, 1Б</dd>
+                      <dt class="office__spec-t">Режим работы:</dt>
+                      <dd class="office__spec-d">с 07:00 до 19:00</dd>
+                      <dt class="office__spec-t">Бронирование:</dt>
+                      <dd class="office__spec-d">+7 950 383-55-55 (ежедневно с 8:00 до 20:00)</dd>
+                      <dt class="office__spec-t">Справочная служба:</dt>
+                      <dd class="office__spec-d">+7 3012 71-77-17 (ежедневно с 7:00 до 19:00)</dd>
+                    </dl>
+                    <div class="office__imgs">
+                      <img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      /><img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      />
+                    </div>
+                  </article>
+                </div>
+                <div role="tabpanel" hidden>
+                  <article class="office">
+                    <h3 class="office__title">Автовокзал г.Улан-Удэ «Байкал 4»</h3>
+                    <p class="office__text">
+                      Здесь вы можете приобрести билеты на все рейсы проходящие через Автовокзал г.
+                      Улан-Удэ и оформить возврат
+                    </p>
+                    <dl class="office__spec">
+                      <dt class="office__spec-t">Адрес:</dt>
+                      <dd class="office__spec-d">г. Улан-Удэ, ул. Советская, 1Б</dd>
+                      <dt class="office__spec-t">Режим работы:</dt>
+                      <dd class="office__spec-d">с 07:00 до 19:00</dd>
+                      <dt class="office__spec-t">Бронирование:</dt>
+                      <dd class="office__spec-d">+7 950 383-55-55 (ежедневно с 8:00 до 20:00)</dd>
+                      <dt class="office__spec-t">Справочная служба:</dt>
+                      <dd class="office__spec-d">+7 3012 71-77-17 (ежедневно с 7:00 до 19:00)</dd>
+                    </dl>
+                    <div class="office__imgs">
+                      <img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      /><img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      />
+                    </div>
+                  </article>
+                </div>
+                <div role="tabpanel" hidden>
+                  <article class="office">
+                    <h3 class="office__title">Автовокзал г.Улан-Удэ «Байкал 5»</h3>
+                    <p class="office__text">
+                      Здесь вы можете приобрести билеты на все рейсы проходящие через Автовокзал г.
+                      Улан-Удэ и оформить возврат
+                    </p>
+                    <dl class="office__spec">
+                      <dt class="office__spec-t">Адрес:</dt>
+                      <dd class="office__spec-d">г. Улан-Удэ, ул. Советская, 1Б</dd>
+                      <dt class="office__spec-t">Режим работы:</dt>
+                      <dd class="office__spec-d">с 07:00 до 19:00</dd>
+                      <dt class="office__spec-t">Бронирование:</dt>
+                      <dd class="office__spec-d">+7 950 383-55-55 (ежедневно с 8:00 до 20:00)</dd>
+                      <dt class="office__spec-t">Справочная служба:</dt>
+                      <dd class="office__spec-d">+7 3012 71-77-17 (ежедневно с 7:00 до 19:00)</dd>
+                    </dl>
+                    <div class="office__imgs">
+                      <img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      /><img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      />
+                    </div>
+                  </article>
+                </div>
+                <div role="tabpanel" hidden>
+                  <article class="office">
+                    <h3 class="office__title">Автовокзал г.Улан-Удэ «Байкал 6»</h3>
+                    <p class="office__text">
+                      Здесь вы можете приобрести билеты на все рейсы проходящие через Автовокзал г.
+                      Улан-Удэ и оформить возврат
+                    </p>
+                    <dl class="office__spec">
+                      <dt class="office__spec-t">Адрес:</dt>
+                      <dd class="office__spec-d">г. Улан-Удэ, ул. Советская, 1Б</dd>
+                      <dt class="office__spec-t">Режим работы:</dt>
+                      <dd class="office__spec-d">с 07:00 до 19:00</dd>
+                      <dt class="office__spec-t">Бронирование:</dt>
+                      <dd class="office__spec-d">+7 950 383-55-55 (ежедневно с 8:00 до 20:00)</dd>
+                      <dt class="office__spec-t">Справочная служба:</dt>
+                      <dd class="office__spec-d">+7 3012 71-77-17 (ежедневно с 7:00 до 19:00)</dd>
+                    </dl>
+                    <div class="office__imgs">
+                      <img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      /><img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      />
+                    </div>
+                  </article>
+                </div>
+                <div role="tabpanel" hidden>
+                  <article class="office">
+                    <h3 class="office__title">Автовокзал г.Улан-Удэ «Байкал 7»</h3>
+                    <p class="office__text">
+                      Здесь вы можете приобрести билеты на все рейсы проходящие через Автовокзал г.
+                      Улан-Удэ и оформить возврат
+                    </p>
+                    <dl class="office__spec">
+                      <dt class="office__spec-t">Адрес:</dt>
+                      <dd class="office__spec-d">г. Улан-Удэ, ул. Советская, 1Б</dd>
+                      <dt class="office__spec-t">Режим работы:</dt>
+                      <dd class="office__spec-d">с 07:00 до 19:00</dd>
+                      <dt class="office__spec-t">Бронирование:</dt>
+                      <dd class="office__spec-d">+7 950 383-55-55 (ежедневно с 8:00 до 20:00)</dd>
+                      <dt class="office__spec-t">Справочная служба:</dt>
+                      <dd class="office__spec-d">+7 3012 71-77-17 (ежедневно с 7:00 до 19:00)</dd>
+                    </dl>
+                    <div class="office__imgs">
+                      <img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      /><img
+                        class="office__img"
+                        src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                        alt="#"
+                      />
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <section id="payment" class="pay-ways">
+              <h2 class="pay-ways__title">Способы оплаты</h2>
+              <div class="pay-ways__items">
+                <a href="#" class="pay-ways__item"
+                  ><img
+                    src="assets/img/cards.jpg"
+                    width="270"
+                    height="72"
+                    class="pay-ways__item-img"
+                    alt=""
+                  />
+                  <p class="pay-ways__item-text">
+                    Оплата банковской картой Visa, Mastercard, МИР
+                    <span class="pay-ways__item-muted">(все банки)</span>
+                  </p></a
+                ><a href="#" class="pay-ways__item"
+                  ><img
+                    src="assets/img/sber-online.jpg"
+                    width="226"
+                    height="72"
+                    class="pay-ways__item-img"
+                    alt=""
+                  />
+                  <p class="pay-ways__item-text">Оплата в «СберБанк Онлайн»</p></a
+                ><a href="#" class="pay-ways__item"
+                  ><img
+                    src="assets/img/sber.jpg"
+                    width="226"
+                    height="72"
+                    class="pay-ways__item-img"
+                    alt=""
+                  />
+                  <p class="pay-ways__item-text">
+                    Оплата в отделениях и терминалах ПАО «СберБанк»
+                  </p></a
+                >
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__main">
+              <div class="footer__stuff">
+                <div class="footer__brand">
+                  <a class="logo footer__logo" href="."
+                    ><img
+                      src="assets/img/logo.jpg"
+                      width="332"
+                      height="96"
+                      class="logo__img"
+                      alt="Logo"
+                  /></a>
+                  <p>Официальный сайт Автовокзала Улан-Удэ «Байкал»</p>
+                </div>
+                <div class="footer__contact">
+                  <div class="footer__info">
+                    <a href="tel:+79503835555" class="footer__info-item"
+                      ><svg viewBox="0 0 20 22">
+                        <path
+                          d="m18.1 6.7-1 1c1.8 1.8 1.8 4.6 0 6.5l1 1c2.5-2.3 2.5-6.1 0-8.5ZM16 8.8l-1 1c.5.7.5 1.6 0 2.3l1 1c1.2-1.2 1.2-3 0-4.3ZM12 0H2a2 2 0 0 0-2 2v18c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 19H2V3h10v16Z"
+                        ></path>
+                      </svg>
+                      +7 950 383 55 55</a
+                    ><span class="footer__info-item"
+                      ><svg viewBox="0 0 20 20">
+                        <path
+                          d="M9.99 0A10 10 0 1 0 10 19.99 10 10 0 0 0 9.99 0ZM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16ZM9.78 5h-.06c-.4 0-.72.32-.72.72v4.72c0 .35.18.68.49.86l4.15 2.49c.34.2.78.1.98-.24a.71.71 0 0 0-.25-.99l-3.87-2.3V5.72c0-.4-.32-.72-.72-.72Z"
+                        ></path>
+                      </svg>
+                      Eжедневно с 8:00 до 20:00</span
+                    >
+                  </div>
+                  <ul class="social footer__social">
+                    <li>
+                      <a href="#" class="social__link" aria-label="Telegram"
+                        ><svg
+                          viewBox="0 0 13 12"
+                          class="social__icon right-px top-px"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="m12.5.88-1.88 9.8s-.26.68-.98.36L5.3 7.6l-.02-.01 5.33-4.97c.3-.3.11-.47-.24-.25l-6.7 4.41-2.6-.9s-.4-.15-.44-.47c-.04-.33.46-.5.46-.5L11.63.6s.87-.39.87.27Z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="social__link" aria-label="Whatsapp"
+                        ><svg viewBox="0 0 14 14" class="social__icon left-px" aria-hidden="true">
+                          <path
+                            d="M11.45 2.54a6.53 6.53 0 0 0-10.29 7.84l-.91 3.37 3.48-.91a6.53 6.53 0 0 0 9.65-5.74 6.64 6.64 0 0 0-1.93-4.56ZM10 9.47c-.14.36-.78.73-1.1.77-.27.05-.64.05-1-.04-.23-.1-.55-.19-.92-.37a6.88 6.88 0 0 1-2.79-2.46c-.09-.1-.68-.87-.68-1.69s.4-1.18.55-1.36c.13-.19.32-.19.45-.19h.32c.1 0 .23-.04.37.28.14.32.46 1.14.5 1.18.05.1.05.18 0 .28a.85.85 0 0 1-.18.27c-.1.09-.18.23-.23.27-.1.1-.18.19-.1.32.1.18.42.69.92 1.14.64.55 1.15.73 1.33.82.18.1.27.05.37-.04.09-.1.4-.46.5-.64.09-.18.23-.14.36-.1.14.05.96.46 1.1.55.19.1.28.14.32.19.05.13.05.45-.09.82Z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="footer__text">
+                © 2013-2022 ООО "ОнлайнСервис". Все права защищены<br />Использование материалов
+                сайта с целью распространения информации осуществляется при условии указания ссылки
+                на сайт АВТОВОКЗАЛ-ОНЛАЙН.РФ
+              </p>
+            </div>
+            <div class="footer__side">
+              <ul class="footer__list">
+                <li><a class="footer__list-link" href="#">Соглашения</a></li>
+                <li><a class="footer__list-link" href="#board">Информация</a></li>
+                <li><a class="footer__list-link" href="#payment">Как оплатить</a></li>
+                <li><a class="footer__list-link" href="#offices">Кассы</a></li>
+                <li><a class="footer__list-link" href="#questions">Вопрос-ответ</a></li>
+                <li><a class="footer__list-link" href="#">Расписание рейсов</a></li>
+              </ul>
+              <form class="footer__form">
+                <h3 class="footer__form-title">Заказать звонок</h3>
+                <div class="footer__form-inputs">
+                  <div class="input input_secondary">
+                    <input
+                      class="input__input"
+                      type="text"
+                      required
+                      placeholder="Имя"
+                      name="name"
+                    />
+                  </div>
+                  <div class="input input_secondary">
+                    <input
+                      class="input__input"
+                      type="text"
+                      required
+                      placeholder="Телефон"
+                      name="phone"
+                    />
+                  </div>
+                </div>
+                <button
+                  data-hk="0-0-0-0-3-6-0-0"
+                  class="button button_secondary button_md footer__form-button"
+                  type="submit"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
