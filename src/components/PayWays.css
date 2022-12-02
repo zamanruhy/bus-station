@@ -1,0 +1,22 @@
+.pay-ways {
+  @apply mb-[60px] md:mb-[120px];
+
+  &__title {
+    @apply mb-8 text-[24px] font-black uppercase leading-tight md:mb-12 md:text-[37px];
+  }
+  &__items {
+    @apply flex flex-wrap gap-[30px];
+  }
+  &__item {
+    @apply flex w-[230px] flex-col items-center rounded p-[10px] text-center shadow;
+  }
+  &__item-img {
+    @apply mb-[10px] h-[48px] w-auto;
+  }
+  &__item-text {
+    @apply text-[12px];
+  }
+  &__item-muted {
+    @apply opacity-50;
+  }
+}

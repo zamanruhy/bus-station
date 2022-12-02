@@ -1,0 +1,32 @@
+@tailwind components;
+
+@layer components {
+  .app {
+    @apply flex min-h-full flex-col;
+
+    &__main {
+      @apply grow;
+    }
+  }
+
+  .container {
+    @apply mx-auto box-content max-w-[1146px] px-4;
+  }
+
+  .scrollbar {
+    @media not all and (pointer: coarse) {
+      scrollbar-width: thin;
+      scrollbar-color: #323232 #ebebeb;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: #ebebeb;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #323232;
+        border-radius: 10px;
+      }
+    }
+  }
+}

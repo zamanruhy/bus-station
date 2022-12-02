@@ -1,0 +1,39 @@
+.board {
+  @apply mb-[50px] md:mb-[120px];
+
+  &__title {
+    @apply mb-8 text-[24px] font-black uppercase leading-tight md:mb-12 md:text-[28px];
+  }
+  &__inner {
+    @apply overflow-auto rounded-[10px] shadow;
+  }
+  &__content {
+    @apply min-w-[500px];
+  }
+  &__head {
+    @apply grid grid-cols-[20%_minmax(0,1fr)_20%] border-b border-[#323232]/10 font-semibold;
+  }
+  &__head-cell {
+    @apply px-5 pt-[16px] pb-[10px];
+
+    &:first-child {
+      @apply sm:pl-8;
+    }
+  }
+  &__list {
+    @apply max-h-[500px] overflow-y-auto py-2;
+  }
+  &__item {
+    @apply grid grid-cols-[20%_minmax(0,1fr)_20%];
+  }
+  &__item-cell {
+    @apply px-5 py-[10px];
+
+    &:first-child {
+      @apply sm:pl-8;
+    }
+  }
+  &__muted {
+    @apply opacity-50;
+  }
+}

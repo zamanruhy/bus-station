@@ -1,0 +1,17 @@
+.nav {
+  @apply z-[1000] bg-primary text-white transition-[clip-path] max-lg:absolute max-lg:inset-x-0 max-lg:top-full max-lg:[clip-path:inset(0_0_100%)];
+
+  &_open {
+    @apply max-lg:[clip-path:inset(0)];
+  }
+
+  &__inner {
+    @apply flex min-h-[50px] flex-col gap-x-[30px] gap-y-4 py-4 lg:flex-row lg:items-center lg:py-0;
+  }
+  &__list {
+    @apply flex flex-col gap-x-[50px] gap-y-2 lg:flex-row;
+  }
+  &__link {
+    @apply block py-1 underline-offset-4 hover:underline;
+  }
+}

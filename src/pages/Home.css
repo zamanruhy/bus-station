@@ -1,0 +1,8 @@
+.home {
+  &__layout {
+    @apply grid items-start gap-x-7 lg:grid-cols-[minmax(0,1fr)_33%];
+  }
+  &__layout-main {
+    @apply min-w-0;
+  }
+}

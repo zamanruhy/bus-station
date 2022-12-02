@@ -1,0 +1,16 @@
+.offices {
+  @apply mb-[60px] md:mb-[64px];
+
+  &__title {
+    @apply mb-8 text-[24px] font-black uppercase leading-tight md:mb-12 md:text-[28px];
+  }
+  &__grid {
+    @apply grid gap-y-7 gap-x-10 md:grid-cols-[32%_minmax(0,1fr)] lg:gap-x-[68px];
+  }
+  &__subtitle {
+    @apply mb-[30px] text-[20px] font-semibold;
+  }
+  &__tab {
+    @apply block w-full py-[10px] px-[20px] text-left aria-[selected=true]:bg-primary-lightest/[0.15];
+  }
+}

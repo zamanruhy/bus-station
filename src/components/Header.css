@@ -1,0 +1,35 @@
+.header {
+  @apply relative z-[1000] bg-white py-[10px] max-lg:shadow;
+
+  &__inner {
+    @apply flex items-center;
+  }
+  &__logo {
+    @apply mr-[30px] shrink-0 max-sm:w-[150px];
+  }
+  &__slogan {
+    @apply mr-[40px] hidden md:block;
+  }
+  &__side {
+    @apply flex shrink-0 items-center gap-[32px];
+  }
+  &__item {
+    @apply hidden items-center gap-[7px] lg:flex;
+
+    &:is(a) {
+      @apply transition hover:text-primary;
+    }
+
+    svg {
+      @apply w-[20px] shrink-0 fill-current;
+    }
+
+    &_auth {
+      @apply flex p-1.5 transition hover:text-primary md:p-0;
+
+      svg {
+        @apply w-[22px] md:w-[20px];
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.search {
+  @apply relative lg:order-last lg:ml-auto lg:w-[200px];
+
+  &__input {
+    @apply w-full border-b border-white/50 bg-transparent py-px pl-[30px] transition placeholder:text-white/50 focus:border-white/90 focus:outline-none;
+  }
+  &__button {
+    @apply absolute inset-y-0 flex items-center px-[3px] pb-0.5 text-white/50 transition hover:text-white;
+
+    svg {
+      @apply w-[18px] fill-current;
+    }
+  }
+}

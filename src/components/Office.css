@@ -1,0 +1,25 @@
+.office {
+  @apply rounded p-6 shadow sm:p-[30px];
+
+  &__title {
+    @apply mb-[10px] text-[20px] font-semibold;
+  }
+  &__text {
+    @apply mb-[30px] max-w-prose;
+  }
+  &__spec {
+    @apply mb-[30px] grid sm:grid-cols-[auto_minmax(0,1fr)] sm:gap-x-[30px] sm:gap-y-5;
+  }
+  &__spec-t {
+    @apply max-sm:mb-[8px];
+  }
+  &__spec-d {
+    @apply font-semibold last-of-type:mb-0 max-sm:mb-5;
+  }
+  &__imgs {
+    @apply grid gap-7 sm:grid-cols-2;
+  }
+  &__img {
+    @apply aspect-[1.58] max-h-[300px] w-full rounded object-cover;
+  }
+}

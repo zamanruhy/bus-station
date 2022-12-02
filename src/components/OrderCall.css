@@ -1,0 +1,22 @@
+.order-call {
+  @apply relative isolate mb-[60px] rounded p-7 text-white sm:p-[50px] md:mb-[149px];
+
+  &__img {
+    @apply absolute top-0 left-0 z-[-1] h-full w-full rounded object-cover;
+  }
+  &__overlay {
+    @apply absolute inset-0 z-[-1] rounded bg-gradient-80 from-primary-lightest to-primary opacity-90;
+  }
+  &__grid {
+    @apply grid gap-x-[46px] gap-y-9 md:grid-cols-[36%,minmax(0,1fr)] lg:grid-cols-[42%,minmax(0,1fr)];
+  }
+  &__title {
+    @apply mb-3 text-[26px] font-black uppercase leading-tight sm:text-[28px];
+  }
+  &__text {
+    @apply max-w-prose;
+  }
+  &__form {
+    @apply grid content-start items-center gap-x-[30px] gap-y-[15px] sm:grid-cols-2;
+  }
+}

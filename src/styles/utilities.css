@@ -1,0 +1,7 @@
+@tailwind utilities;
+
+@layer utilities {
+  .break-words {
+    word-break: break-word;
+  }
+}

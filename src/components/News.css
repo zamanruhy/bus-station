@@ -1,0 +1,32 @@
+.news {
+  @apply flex flex-col rounded-[10px] p-5 shadow;
+
+  &__img {
+    @apply mb-5 aspect-[1.61] max-h-[300px] w-full rounded-[16px] object-cover;
+  }
+  &__date {
+    @apply mb-[10px] block;
+  }
+  &__title {
+    @apply mb-[10px] break-words text-[18px] font-semibold;
+  }
+  &_main &__title {
+    @apply text-[20px];
+  }
+  &__text {
+    @apply mb-3;
+  }
+  &__footer {
+    @apply mt-auto flex items-center justify-end;
+  }
+  &__more {
+    @apply flex items-center gap-2 transition;
+
+    svg {
+      @apply h-2 shrink-0 fill-current;
+    }
+  }
+  &:hover &__more {
+    @apply text-primary;
+  }
+}

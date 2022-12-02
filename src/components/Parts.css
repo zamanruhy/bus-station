@@ -1,0 +1,16 @@
+.parts {
+  @apply mb-[50px] grid gap-4 md:mb-[120px] md:grid-cols-3 md:gap-[30px];
+
+  &__item {
+    @apply rounded-[10px] bg-gradient-80 from-primary-lightest to-primary p-7 text-white;
+  }
+  &__item-head {
+    @apply mb-4 flex items-center;
+  }
+  &__item-icon {
+    @apply mr-5 w-[30px] shrink-0 self-start fill-current;
+  }
+  &__item-title {
+    @apply text-[20px] font-medium leading-tight;
+  }
+}

@@ -1,0 +1,63 @@
+.footer {
+  @apply bg-primary py-[30px] text-white;
+
+  &__grid {
+    @apply grid gap-x-[50px] md:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] lg:grid-cols-[minmax(0,1fr)_41%];
+  }
+  &__main {
+    @apply flex flex-col max-md:contents lg:mr-[58px];
+  }
+  &__side {
+    @apply grid gap-x-[50px] gap-y-6 sm:grid-cols-[minmax(0,1.2fr)_minmax(0,2fr)];
+  }
+  &__stuff {
+    @apply mb-10 md:mb-7;
+  }
+  &__brand {
+    @apply mb-6 flex flex-wrap items-center gap-y-4 lg:flex-nowrap;
+  }
+  &__logo {
+    @apply mr-[28px] shrink-0;
+  }
+  &__contact {
+    @apply flex flex-wrap items-center justify-between gap-x-[60px] gap-y-6;
+  }
+  &__info {
+    @apply flex flex-wrap items-center gap-x-[58px] gap-y-4;
+  }
+  &__info-item {
+    @apply flex items-center gap-[7px];
+
+    svg {
+      @apply w-[20px] fill-current;
+    }
+
+    &:is(a) {
+      @apply transition hover:opacity-70;
+    }
+  }
+  &__social {
+    @apply flex-row text-primary;
+  }
+  &__text {
+    @apply order-last mt-10 text-[10px] md:order-none md:mt-auto;
+  }
+  &__list {
+    @apply flex flex-col gap-[10px] md:mt-[10px];
+  }
+  &__list-link {
+    @apply block w-fit py-1 underline-offset-4 hover:underline;
+  }
+  &__form {
+    @apply md:mt-[10px];
+  }
+  &__form-title {
+    @apply mb-[10px] text-[20px] font-black uppercase;
+  }
+  &__form-inputs {
+    @apply mb-[7px] grid gap-[5px];
+  }
+  &__form-button {
+    @apply w-full;
+  }
+}

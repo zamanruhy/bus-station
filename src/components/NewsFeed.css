@@ -1,0 +1,20 @@
+.news-feed {
+  @apply mb-[50px] md:mb-[120px];
+
+  &__title {
+    @apply mb-8 text-[24px] font-black uppercase leading-tight md:mb-12 md:text-[28px];
+  }
+  &__items {
+    @apply grid gap-[30px] md:grid-cols-3 lg:grid-cols-none;
+  }
+  &__footer {
+    @apply mt-[30px] flex items-center justify-end;
+  }
+  &__more {
+    @apply mr-0.5 flex items-center gap-2 transition hover:text-primary;
+
+    svg {
+      @apply mt-0.5 h-2.5 shrink-0 fill-current;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.questions {
+  @apply mb-[50px] md:mb-[120px];
+
+  &__title {
+    @apply mb-8 text-[24px] font-black uppercase leading-tight md:mb-12 md:text-[28px];
+  }
+  &__content {
+    @apply my-[-10px];
+  }
+  &__item {
+    @apply border-[#323232]/10 [&:not(:last-child)]:border-b;
+  }
+  &__head {
+    @apply flex cursor-pointer select-none items-center justify-between py-[10px];
+  }
+  &__item[open] &__head {
+    @apply font-semibold;
+  }
+  &__icon {
+    @apply ml-5 w-3 shrink-0 fill-current;
+  }
+  &__item[open] &__icon {
+    @apply rotate-180;
+  }
+  &__body {
+    @apply pb-[10px] pr-[20px] md:pr-[40px];
+  }
+}
