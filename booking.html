@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bus Station title</title>
+    <meta name="description" content="Bus Station description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Site title" />
+    <meta property="og:description" content="Site description" />
+    <meta property="og:image" content="http://via.placeholder.com/1200x630.jpg" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="assets/js/app.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/js/vendor.js" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div class="relative">
+        <header class="header">
+          <div class="container">
+            <div class="header__inner">
+              <a class="logo header__logo" href="."
+                ><img
+                  src="assets/img/logo.jpg"
+                  width="332"
+                  height="96"
+                  class="logo__img"
+                  alt="Logo"
+              /></a>
+              <p class="header__slogan">Официальный сайт Автовокзала Улан-Удэ «Байкал»</p>
+              <span class="grow"></span>
+              <div class="header__side">
+                <a href="tel:+79503835555" class="header__item"
+                  ><svg viewBox="0 0 20 22">
+                    <path
+                      d="m18.1 6.7-1 1c1.8 1.8 1.8 4.6 0 6.5l1 1c2.5-2.3 2.5-6.1 0-8.5ZM16 8.8l-1 1c.5.7.5 1.6 0 2.3l1 1c1.2-1.2 1.2-3 0-4.3ZM12 0H2a2 2 0 0 0-2 2v18c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 19H2V3h10v16Z"
+                    ></path>
+                  </svg>
+                  +7 950 383 55 55</a
+                ><span class="header__item"
+                  ><svg viewBox="0 0 20 20">
+                    <path
+                      d="M9.99 0A10 10 0 1 0 10 19.99 10 10 0 0 0 9.99 0ZM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16ZM9.78 5h-.06c-.4 0-.72.32-.72.72v4.72c0 .35.18.68.49.86l4.15 2.49c.34.2.78.1.98-.24a.71.71 0 0 0-.25-.99l-3.87-2.3V5.72c0-.4-.32-.72-.72-.72Z"
+                    ></path>
+                  </svg>
+                  Eжедневно с 8:00 до 20:00</span
+                ><a href="#" class="header__item header__item_auth" aria-label="Личный кабинет"
+                  ><svg viewBox="0 0 20 20">
+                    <path
+                      d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM5.07 16.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78a7.9 7.9 0 0 1-9.86 0Zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33A8.01 8.01 0 1 1 18 10c0 1.82-.62 3.49-1.64 4.83ZM10 4a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 10 11a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 10 4Zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+                    ></path></svg
+                  ><span class="hidden md:block">Личный кабинет</span></a
+                >
+              </div>
+              <button class="hamburger" type="button" aria-label="Toggle menu">
+                <span class="hamburger__bar"></span><span class="hamburger__bar"></span
+                ><span class="hamburger__bar"></span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <nav class="nav">
+          <div class="container">
+            <div class="nav__inner">
+              <form class="search">
+                <input class="search__input" type="text" placeholder="Поиск..." required /><button
+                  class="search__button"
+                  aria-label="Искать"
+                >
+                  <svg viewBox="0 0 18 18">
+                    <path
+                      d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                    ></path>
+                  </svg>
+                </button>
+              </form>
+              <ul class="nav__list">
+                <li><a class="nav__link" href="#">Соглашения</a></li>
+                <li><a class="nav__link" href="#board">Информация</a></li>
+                <li><a class="nav__link" href="#payment">Как оплатить</a></li>
+                <li><a class="nav__link" href="#offices">Кассы</a></li>
+                <li><a class="nav__link" href="#questions">Вопрос-ответ</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <main class="app__main">
+        <section class="intro intro_concise">
+          <img
+            src="assets/img/intro.jpg"
+            width="2160"
+            height="639"
+            alt="Intro"
+            class="intro__img"
+            fetchpriority="high"
+          />
+          <div class="container">
+            <div class="intro__inner">
+              <div class="intro__content"><h1 class="intro__title">Бронь</h1></div>
+              <ul class="social intro__social">
+                <li>
+                  <a href="#" class="social__link" aria-label="Telegram"
+                    ><svg
+                      viewBox="0 0 13 12"
+                      class="social__icon right-px top-px"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12.5.88-1.88 9.8s-.26.68-.98.36L5.3 7.6l-.02-.01 5.33-4.97c.3-.3.11-.47-.24-.25l-6.7 4.41-2.6-.9s-.4-.15-.44-.47c-.04-.33.46-.5.46-.5L11.63.6s.87-.39.87.27Z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social__link" aria-label="Whatsapp"
+                    ><svg viewBox="0 0 14 14" class="social__icon left-px" aria-hidden="true">
+                      <path
+                        d="M11.45 2.54a6.53 6.53 0 0 0-10.29 7.84l-.91 3.37 3.48-.91a6.53 6.53 0 0 0 9.65-5.74 6.64 6.64 0 0 0-1.93-4.56ZM10 9.47c-.14.36-.78.73-1.1.77-.27.05-.64.05-1-.04-.23-.1-.55-.19-.92-.37a6.88 6.88 0 0 1-2.79-2.46c-.09-.1-.68-.87-.68-1.69s.4-1.18.55-1.36c.13-.19.32-.19.45-.19h.32c.1 0 .23-.04.37.28.14.32.46 1.14.5 1.18.05.1.05.18 0 .28a.85.85 0 0 1-.18.27c-.1.09-.18.23-.23.27-.1.1-.18.19-.1.32.1.18.42.69.92 1.14.64.55 1.15.73 1.33.82.18.1.27.05.37-.04.09-.1.4-.46.5-.64.09-.18.23-.14.36-.1.14.05.96.46 1.1.55.19.1.28.14.32.19.05.13.05.45-.09.82Z"
+                      ></path></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="finder">
+          <div class="container">
+            <div class="finder__inner">
+              <div class="finder__head scrollbar-thin">
+                <a class="finder__tab active" href="#"><span>Республика Бурятия</span></a
+                ><a class="finder__tab" href="#"><span>Иркутская область</span></a>
+              </div>
+              <form class="finder__form">
+                <div class="finder__grid">
+                  <div class="input input_primary input_has-icon">
+                    <input
+                      class="input__input"
+                      type="text"
+                      name="from"
+                      required
+                      placeholder="Пункт отправки"
+                    /><span class="input__addon"
+                      ><svg viewBox="0 0 18 18" class="w-[18px]">
+                        <path
+                          d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                        ></path></svg
+                    ></span>
+                  </div>
+                  <div class="input input_primary input_has-icon">
+                    <input
+                      class="input__input"
+                      type="text"
+                      name="to"
+                      required
+                      placeholder="Пункт прибытия"
+                    /><span class="input__addon"
+                      ><svg viewBox="0 0 18 18" class="w-[18px]">
+                        <path
+                          d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                        ></path></svg
+                    ></span>
+                  </div>
+                  <div class="input input_primary input_has-icon">
+                    <input
+                      class="input__input"
+                      type="text"
+                      name="date"
+                      required
+                      placeholder="Дата"
+                    /><span class="input__addon"
+                      ><svg viewBox="0 0 20 22" class="w-[20px]">
+                        <path
+                          d="M18 2h-1V0h-2v2H5V0H3v2H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Zm0 18H2V9h16v11Zm0-13H2V4h16v3Z"
+                        ></path></svg
+                    ></span>
+                  </div>
+                  <button
+                    data-hk="0-0-0-0-2-5-0-0-1-3-0-0"
+                    class="button button_primary button_md"
+                    type="submit"
+                  >
+                    Найти рейсы
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="booking">
+          <div class="container">
+            <h2 class="booking__title title">Забронируйте билет online</h2>
+            <div class="booking__layout">
+              <div class="booking__main">
+                <div class="booking__headline">
+                  <h3 class="booking__headline-title">
+                    Маршрут № 260 Кяхта — Улан-Удэ, 01.11.2022, 07:00
+                  </h3>
+                </div>
+                <article class="flight">
+                  <div class="flight__inner">
+                    <div class="flight__main">
+                      <span class="flight__line"></span>
+                      <div class="flight__end">
+                        <div class="flight__end-date">Вт, 01 нояб</div>
+                        <div>
+                          <div class="flight__end-time">
+                            <div class="flight__end-mask"></div>
+                            07:00
+                          </div>
+                          <div class="flight__end-city">Кяхта</div>
+                          <div class="flight__end-type">автовокзал</div>
+                        </div>
+                      </div>
+                      <div class="flight__duration">3&nbsp;ч. 30&nbsp;мин.</div>
+                      <div class="flight__end">
+                        <div class="flight__end-date">Вт, 01 нояб</div>
+                        <div>
+                          <div class="flight__end-time">
+                            <div class="flight__end-mask"></div>
+                            10:30
+                          </div>
+                          <div class="flight__end-city">Улан-Удэ</div>
+                          <div class="flight__end-type">автовокзал</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flight__side">
+                      <div class="flight__group">
+                        <div class="flight__allowed">
+                          <img
+                            class="flight__allowed-img"
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAARABEDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9M9A/4KH/ALdf/BTj4p/Cn9k74YaZ8D/2doPid8Dvhv8AtzXdz4U+PX7Rvg74h3n7P/iH4efs+/FXwv8ACvX/AIofC7wp4S8X+Ete8QJ+0j4S0zxNr/w11bRZ59R+G3i3SYbuTwrrwg1QA7nU/jz/AMFDP+CbH7UHwe/Zk1nWfgh8ZbT9ujXdOPwb0H4u/tMftf8Axj/4Vh4h8HeMfhH8LPGVjZfEz4xaP47+JUum+Lz8YND8bS6LdapfaFoMXgrxA+g6bBfazJb34B+W3/EcJ4M/6MA8T/8Ah8NK/wDmDoA9E/4JUftG/sofAv8AbV/Zf8W/GH45/B/4Taz4K/4JX/DH4AfEnUfiP8SdA8Fjwl4/8C/st/8ABMLw7d/DDxPbeJNZ0+z0DxloPjnwV8XdAvtFvLe010a34N8W6TdLJN4ZurexAPsj/gpL+2t+wd8TP+Ch3/BMr4o+G/2q/wBnTxt4Z+C174l1fXfGPhf40eDNa0HwHe6l+1N+xHdyzeIb7Q/EU+nWb3PgTQfiBqsdvrG9P7H8P69rMMIXRJru0AP83P8A4Yh/bH/6NZ+P/wD4abxv/wDKWgD/AHVaACgAoAD/2Q=="
+                            width="17"
+                            height="17"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                          /><img
+                            class="flight__allowed-img"
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAARABEDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD98f2dPG/w3/bdg074r/tc/tAftReEfE/xY+G/7Knx6+FPw6+Dn7U/7QP7JPwJ+G3wi/bv8R/ErRP2S/hR4buf2YPi58IfGfxW+L+u2Hwve6+KHiT4zDWZz488X2+leAjonhdrLwt4eAPUvjT8Ifhh8FNf8K+HP2TP2n/2xPD/AO1XqnxoT4KeB9N8eftnftTftcfCKz+MT/s5fET9qHwz4E/aS+Ef7VP7QPxG8PRfCzx18NPh9dQavq3gGz0P4nWS+KPD974R8TeH7wHXdHAPxI/4jW/2W/8Ao1j4of8AhT6Z/wDKmgD9SvGnwVv/APgmd40/aEh8MfFvUfBPwF+OP7LPwn+Hv7K/7Qfx/wDBui/Er4H/ALB3xL/Zf8b/ABz8S/C74PfE/V9C8K6bL4Z+CFna/HjTrz4FfEn4xTeIW8JP4E1bwT4l8faxe2nwx8M62Ac98OP+Fl/8FDdH/ZV+Emn/ALVXgr4q/EH4N/Gj4hftFftXft3/ALE2jeFb74SaVo178E/jn8Bfhp8DPhR8bNQ+GP8AwqX4sfHHW/Cvx006y1fxZ4Y8FQ3Pw78FfD7xNrOs+HPAfjHVfhpLrAB9Lf8AEPB/wSB/6M98Hf8Ag48Tf/LegD9raACgAoAA/9k="
+                            width="17"
+                            height="17"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="flight__info">
+                          <div class="flight__info-car">Автобус</div>
+                          <div class="flight__info-seats">
+                            <div class="opacity-50">Мест: 15</div>
+                            <div class=""><span class="opacity-50">Свободных:</span> 7</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flight__extra">
+                        <div class="flight__cost">
+                          573,00&nbsp;₽ <span class="flight__muted">(серв.сбор 23,00&nbsp;₽)</span>
+                        </div>
+                        <div class="flight__slot"></div>
+                        <span class="flight__benefits">Льгот нет</span>
+                      </div>
+                    </div>
+                  </div>
+                  <details class="flight__details">
+                    <summary class="flight__more">
+                      Остановочные пункты
+                      <svg viewBox="0 0 13 8" class="flight__more-icon">
+                        <path
+                          d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                        ></path>
+                      </svg>
+                    </summary>
+                    <section class="stops flight__stops">
+                      <div class="stops__main">
+                        <div class="stops__stack">
+                          <span class="stops__line"></span>
+                          <div class="stops__end">
+                            <div class="stops__end-mask"></div>
+                            <div class="">
+                              <span class="stops__end-city"><b>Кяхта</b></span
+                              ><span class="stops__end-type">автовокзал</span>
+                            </div>
+                          </div>
+                          <div class="stops__item">
+                            <div class="">
+                              <span class="stops__item-city">Гусиноозерск</span
+                              ><span class="stops__item-type">на трассе кафе «Лотос»</span>
+                            </div>
+                            <span>08:29</span>
+                          </div>
+                          <div class="stops__item">
+                            <div class="">
+                              <span class="stops__item-city">Гусиноозерск</span
+                              ><span class="stops__item-type">на трассе кафе «Лотос»</span>
+                            </div>
+                            <span>08:29</span>
+                          </div>
+                          <div class="stops__item">
+                            <div class="">
+                              <span class="stops__item-city">Гусиноозерск</span
+                              ><span class="stops__item-type">на трассе кафе «Лотос»</span>
+                            </div>
+                            <span>08:29</span>
+                          </div>
+                          <div class="stops__end">
+                            <div class="stops__end-mask"></div>
+                            <div class="">
+                              <span class="stops__end-city"><b>Улан-Удэ</b></span
+                              ><span class="stops__end-type">автовокзал</span>
+                            </div>
+                            <b>10:30</b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stops__side">
+                        <iframe
+                          class="stops__map"
+                          src="https://api-maps.yandex.ru/frame/v1/-/CVh7YBYg?lang=en_RU"
+                          frameborder="0"
+                        ></iframe>
+                      </div>
+                    </section>
+                  </details>
+                </article>
+                <hr class="mt-[30px] mb-[50px]" />
+                <form action="#" class="">
+                  <h4 class="booking__subtitle">Данные пассажира:</h4>
+                  <div class="booking__fieldsets">
+                    <fieldset class="booking__fieldset">
+                      <legend class="mb-[10px]">Пассажир № 1</legend>
+                      <div class="booking__inputs">
+                        <div class="input input_primary">
+                          <input
+                            class="input__input"
+                            type="text"
+                            name="name"
+                            required
+                            placeholder="Имя"
+                          />
+                        </div>
+                        <div class="input input_primary">
+                          <input
+                            class="input__input"
+                            type="text"
+                            name="phone"
+                            required
+                            placeholder="Телефон"
+                          />
+                        </div>
+                        <div class="select select_primary">
+                          <select class="select__input" type="text" name="document" required>
+                            <option value="" disabled selected hidden>Документ</option>
+                            <option value="1">Паспорт</option>
+                            <option value="2">ИНН</option>
+                            <option value="3">Снилс</option></select
+                          ><span class="select__addon"
+                            ><svg viewBox="0 0 13 8">
+                              <path
+                                d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                              ></path></svg
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="booking__radios">
+                        <label class="radio" style=""
+                          ><input class="radio__input" type="radio" name="age" value="adult" /><span
+                            class="radio__box"
+                            aria-hidden="true"
+                          ></span
+                          ><span class="radio__label"
+                            >Взрослый
+                            <span class="opacity-50">(для пассажиров 12 лет и старше)</span></span
+                          ></label
+                        ><label class="radio" style=""
+                          ><input class="radio__input" type="radio" name="age" value="child" /><span
+                            class="radio__box"
+                            aria-hidden="true"
+                          ></span
+                          ><span class="radio__label"
+                            >Детский
+                            <span class="opacity-50">(для пассажиров до 12 лет)</span></span
+                          ></label
+                        >
+                      </div>
+                    </fieldset>
+                    <fieldset class="booking__fieldset">
+                      <legend class="mb-[10px]">Пассажир № 2</legend>
+                      <div class="booking__inputs">
+                        <div class="input input_primary">
+                          <input
+                            class="input__input"
+                            type="text"
+                            name="name"
+                            required
+                            placeholder="Имя"
+                          />
+                        </div>
+                        <div class="input input_primary">
+                          <input
+                            class="input__input"
+                            type="text"
+                            name="phone"
+                            required
+                            placeholder="Телефон"
+                          />
+                        </div>
+                        <div class="select select_primary">
+                          <select class="select__input" type="text" name="document" required>
+                            <option value="" disabled selected hidden>Документ</option>
+                            <option value="1">Паспорт</option>
+                            <option value="2">ИНН</option>
+                            <option value="3">Снилс</option></select
+                          ><span class="select__addon"
+                            ><svg viewBox="0 0 13 8">
+                              <path
+                                d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                              ></path></svg
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="booking__radios">
+                        <label class="radio" style=""
+                          ><input class="radio__input" type="radio" name="age" value="adult" /><span
+                            class="radio__box"
+                            aria-hidden="true"
+                          ></span
+                          ><span class="radio__label"
+                            >Взрослый
+                            <span class="opacity-50">(для пассажиров 12 лет и старше)</span></span
+                          ></label
+                        ><label class="radio" style=""
+                          ><input class="radio__input" type="radio" name="age" value="child" /><span
+                            class="radio__box"
+                            aria-hidden="true"
+                          ></span
+                          ><span class="radio__label"
+                            >Детский
+                            <span class="opacity-50">(для пассажиров до 12 лет)</span></span
+                          ></label
+                        >
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="booking__add-wrap">
+                    <a href="#" class="booking__add">Добавить пассажира <span>+</span></a>
+                  </div>
+                  <hr class="my-[50px]" />
+                  <h4 class="booking__subtitle">Выбор места:</h4>
+                  <div class="booking__sel">
+                    <div class="booking__sel-left">
+                      <div class="input input_primary">
+                        <input
+                          class="input__input"
+                          type="text"
+                          name="place"
+                          type="number"
+                          min="1"
+                          required
+                          placeholder="Место"
+                        />
+                      </div>
+                    </div>
+                    <div class="grow basis-0"></div>
+                    <div class="booking__gallery">
+                      <div class="booking__gallery-inner">
+                        <img
+                          class="booking__gallery-img"
+                          src="https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=470&amp;q=80"
+                          alt="#"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <div class="booking__gallery-minis">
+                          <img
+                            class="booking__gallery-mini"
+                            src="https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=80"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                          /><img
+                            class="booking__gallery-mini"
+                            src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=80"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                          /><img
+                            class="booking__gallery-mini"
+                            src="https://images.unsplash.com/photo-1520442922418-8211a6fe605c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=80"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="booking__footer">
+                    <button
+                      data-hk="0-0-0-0-2-5-0-0-14-0-0"
+                      class="button button_primary button_md booking__button"
+                      type="submit"
+                    >
+                      Забронировать
+                    </button>
+                  </div>
+                </form>
+                <dialog id="bookingModal" class="booking-done">
+                  <h5 class="booking-done__title">Завершение бронирования</h5>
+                  <form class="booking-done__form">
+                    <p class="booking-done__lead">
+                      Для завершения бронирования введите реквизиты электронного билета. Они
+                      поступят в виде СМС на указанный номер телефона
+                    </p>
+                    <div class="booking-done__inputs">
+                      <div class="input input_secondary">
+                        <input
+                          class="input__input"
+                          type="text"
+                          required
+                          placeholder="Реквизиты"
+                          name="req"
+                        />
+                      </div>
+                      <div class="">
+                        <p class="booking-done__msg">
+                          Если вы хотите получить копию билета и кассовый чек на электронную почту,
+                          то укажите еe ниже
+                        </p>
+                        <div class="input input_secondary">
+                          <input
+                            class="input__input"
+                            type="text"
+                            required
+                            type="email"
+                            placeholder="Почта"
+                            name="email"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      data-hk="0-0-0-0-2-5-0-0-15-2-0-0"
+                      class="button button_secondary button_md booking-done__button"
+                      type="submit"
+                    >
+                      Отправить
+                    </button>
+                  </form>
+                </dialog>
+              </div>
+              <aside class="booking__side">
+                <arcticle class="attention attention_blue"
+                  ><div class="attention__pic">
+                    <svg viewBox="0 0 35 35" class="attention__icon">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.7.13c-.23.06-.58.2-.79.32-.5.26-1.2.99-1.48 1.5-.46.87-.43.13-.43 11.93v10.67l.17.52c.1.28.28.67.4.86a4.1 4.1 0 0 0 2.47 1.69c.26.04 1.99.07 4.9.07h4.5l1.54 3.07c1.28 2.57 1.59 3.13 1.89 3.45.5.56.85.74 1.46.78.74.05 1.12-.1 1.68-.66.44-.44.5-.54 2-3.55l1.55-3.09h4.5c2.91 0 4.64-.03 4.9-.07 1-.19 2.1-1 2.58-1.9.5-.94.46-.03.46-11.86 0-11.78.03-11.04-.43-11.91A4.43 4.43 0 0 0 33.05.43c-.88-.46.26-.43-15.6-.43C4.1 0 3.09.02 2.7.13ZM31.87 2.2c.38.18.7.5.88.86l.16.32v10.4c0 9.89 0 10.4-.12 10.71a2 2 0 0 1-1.06 1c-.2.06-1.57.08-5.15.08H21.7l-.3.15-.31.16-1.76 3.5c-.97 1.93-1.8 3.5-1.83 3.5-.04 0-.86-1.57-1.83-3.5l-1.76-3.5-.3-.16-.3-.15H8.4c-3.57 0-4.95-.02-5.14-.08a2 2 0 0 1-1.06-1c-.12-.3-.12-.82-.12-10.71V3.38l.16-.32c.17-.35.52-.7.82-.82.1-.04.3-.1.45-.12.15-.03 6.53-.05 14.18-.05 13.1.01 13.93.02 14.17.13ZM16.62 4.48a3.32 3.32 0 0 0-2.33 2.66c-.09.62-.09 5.06 0 5.68.13.9.7 1.8 1.48 2.3 1 .62 2.46.62 3.46 0a3.4 3.4 0 0 0 1.48-2.3c.04-.27.07-1.54.07-2.84 0-1.3-.03-2.57-.07-2.84a3.32 3.32 0 0 0-2.35-2.66 3.9 3.9 0 0 0-1.74 0Zm1.42 2.15c.14.08.32.26.42.4l.17.24v5.41l-.16.26c-.1.14-.28.32-.43.4-.53.27-1.2.1-1.5-.4l-.17-.26V7.27l.17-.25c.35-.5 1-.67 1.5-.39Zm-1.51 11.41a3.28 3.28 0 0 0-1.2 5.5c.44.41 1.06.71 1.67.81a3.3 3.3 0 0 0 3.54-2.07 3.7 3.7 0 0 0 .17-1.62 3.54 3.54 0 0 0-.85-1.75c-.65-.67-1.44-1-2.38-1-.35 0-.71.06-.95.13Zm1.5 2.1c.26.13.48.41.57.75.09.3-.02.7-.25.98a1.2 1.2 0 0 1-1.04.39c-.6-.1-1.07-.8-.91-1.37a1.1 1.1 0 0 1 1.09-.86c.16 0 .4.05.53.11Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="attention__text">
+                    <p>В одном заказе вы можете выбрать до 4-х мест</p>
+                    <p>Перевозка детей производится только в сопровождении взрослых</p>
+                  </div></arcticle
+                ><arcticle class="attention attention_yellow"
+                  ><div class="attention__pic">
+                    <svg viewBox="0 0 30 35" class="attention__icon">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.37.11a5.73 5.73 0 0 0-3.2 2.08A6.47 6.47 0 0 0 .15 4.2C.02 4.65 0 4.9 0 5.76A4.94 4.94 0 0 0 .93 9a6.6 6.6 0 0 0 1.4 1.42c.5.37 1.26.75 1.7.86.31.08.32.1.28.3-.1.5-.24 1.6-.24 1.94 0 .35 0 .36-.2.36A3.58 3.58 0 0 0 .92 15.7a3.65 3.65 0 0 0 0 3.37c.29.53.89 1.13 1.4 1.4.6.32 1.15.43 2.2.43h.9l.19.35c.38.71 1.25 1.96 1.78 2.56a11.6 11.6 0 0 0 2.1 1.84c.5.34 1.55.9 2.1 1.1l.32.12v.66l-.39.07a6.38 6.38 0 0 0-4.5 3.37 5.8 5.8 0 0 0-.69 2.55c-.03.68-.01.78.11.98.08.12.24.28.37.35.21.14.36.14 8.18.14 7.82 0 7.97 0 8.18-.14.13-.07.3-.23.37-.35.12-.2.14-.3.1-.98a5.34 5.34 0 0 0-.2-1.37 7.2 7.2 0 0 0-1.1-2.14 7.08 7.08 0 0 0-1.84-1.63 7.73 7.73 0 0 0-2.18-.81c-.25-.04-.25-.04-.25-.36v-.33l.63-.26a11.04 11.04 0 0 0 5.03-4.33c.25-.38.54-.85.64-1.04l.19-.35h.9c1.05 0 1.6-.1 2.2-.42a3.86 3.86 0 0 0 1.4-1.4 3.7 3.7 0 0 0 .34-2.43 3.63 3.63 0 0 0-3.27-2.8c-.2 0-.2 0-.2-.35 0-.33-.15-1.44-.25-1.94-.04-.2-.03-.22.29-.3a6.25 6.25 0 0 0 1.78-.91c.47-.37 1-.92 1.31-1.37A4.94 4.94 0 0 0 30 5.76c0-.86-.02-1.1-.15-1.56a6.1 6.1 0 0 0-1.03-2.01A5.75 5.75 0 0 0 26.07.24c-.64-.22-.67-.22-1.81-.22-1.08 0-1.2.02-1.7.19a6.15 6.15 0 0 0-3.2 2.45c-.02.06-.23 0-.7-.2a8.93 8.93 0 0 0-3.66-.7c-1.38 0-2.4.2-3.65.7-.48.2-.7.26-.71.2A6.03 6.03 0 0 0 7.44.22 4.37 4.37 0 0 0 5.89 0c-.85-.02-1.11 0-1.5.1Zm2.54 2.15a3.61 3.61 0 0 1 1.94 1.6c0 .03-.22.24-.48.46a12.92 12.92 0 0 0-3.33 4.81l-.08.22-.46-.16a3.9 3.9 0 0 1-1.4-.91c-.35-.36-.72-1-.88-1.52a4.09 4.09 0 0 1-.03-1.92c.15-.6.5-1.22.93-1.64a3.58 3.58 0 0 1 3.06-1.08c.25.02.58.09.73.14Zm18.6.04c.56.2.95.47 1.37.9.42.42.78 1.05.94 1.64.13.49.12 1.3 0 1.8A3.73 3.73 0 0 1 25.5 9.2l-.46.16-.08-.22a12.49 12.49 0 0 0-3.3-4.77 4.39 4.39 0 0 1-.5-.48c-.04-.12.46-.73.83-1 .61-.48 1.16-.7 1.86-.77a3.9 3.9 0 0 1 1.66.19Zm-9.16 1.68a8.13 8.13 0 0 1 4.29 2.35 10.97 10.97 0 0 1 3.02 6.07 9.34 9.34 0 0 1-4.8-1.55c-.28-.19-.74-.6-1.02-.89a6.64 6.64 0 0 1-1.71-3.01c-.1-.34-.22-.7-.28-.79a1.04 1.04 0 0 0-.85-.43c-.34 0-.68.17-.85.43-.06.1-.19.45-.28.79a6.64 6.64 0 0 1-1.7 3.01c-.3.3-.75.7-1.03.9a9.1 9.1 0 0 1-2.74 1.23c-.87.22-1.98.4-2.06.32a10.94 10.94 0 0 1 3.03-6.08 8.48 8.48 0 0 1 4.24-2.34 9.84 9.84 0 0 1 2.74 0Zm-1 6.28a11.6 11.6 0 0 0 2.42 2.44c.71.46 1.75.97 2.55 1.23a15 15 0 0 0 2.95.6l.63.04-.05.66a12.9 12.9 0 0 1-.85 3.92 10.66 10.66 0 0 1-2.38 3.66 8.57 8.57 0 0 1-3.74 2.2c-1.18.3-2.58.3-3.76 0a8.61 8.61 0 0 1-3.75-2.21A10.73 10.73 0 0 1 7 19.15a12.96 12.96 0 0 1-.85-3.92l-.05-.66.63-.04c.8-.06 2.12-.33 2.95-.6.9-.3 2.18-.94 2.87-1.46A10.53 10.53 0 0 0 15 9.77c.02 0 .17.22.34.5Zm-5.48 5.31c-.48.15-.76.52-.76 1 0 .6.45 1.06 1.03 1.06.38 0 .7-.18.9-.5.1-.17.13-.3.12-.6-.03-.4-.17-.66-.47-.84a1.2 1.2 0 0 0-.82-.12Zm9.7 0c-.48.15-.74.52-.74 1.04a1 1 0 0 0 1.02 1.02 1 1 0 0 0 1.03-1.05c0-.39-.15-.69-.45-.87a1.17 1.17 0 0 0-.86-.14Zm-15.48.57.08.53c.04.37.34 1.83.42 2.04.04.09-.03.1-.51.07-.44-.03-.6-.07-.8-.2a1.4 1.4 0 0 1-.64-1.06 1.3 1.3 0 0 1 .77-1.36c.43-.22.64-.22.68-.02Zm22.63.08c.22.13.35.27.48.55.15.31.18.45.16.75-.04.44-.26.8-.65 1.07-.2.14-.36.17-.8.2-.46.01-.54 0-.5-.09.08-.2.38-1.67.42-2.03.08-.7.08-.7.35-.66.13.02.38.12.54.21ZM13.1 20.85c-.39.16-.63.53-.63.98 0 .36.15.66.4.85.29.2.93.4 1.58.49.41.05.7.05 1.12 0 .65-.1 1.3-.3 1.57-.5.1-.07.24-.22.3-.34.15-.27.14-.76-.02-1.02-.3-.52-.77-.64-1.5-.4a2.8 2.8 0 0 1-1.83.01c-.43-.16-.72-.18-1-.07ZM16 28.1c-.03.83-.1.98-.54 1.28-.18.13-.3.16-.54.13-.18-.01-.4-.09-.5-.16-.33-.25-.41-.48-.44-1.27l-.03-.73h2.08l-.03.75Zm-3.72 1.93c.22.44.63.88 1.06 1.15.45.28 1.1.47 1.65.47.55 0 1.2-.19 1.64-.47.43-.27.85-.73 1.08-1.15.1-.2.22-.36.26-.36a5 5 0 0 1 1.3.46 4.92 4.92 0 0 1 1.82 1.86c.14.29.27.62.3.74l.04.22H15c-5.71 0-6.43-.01-6.43-.1a4.51 4.51 0 0 1 3.45-3.17c.03-.01.15.15.26.35Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="attention__text">
+                    <p>
+                      Приобретая детский билет, будьте готовы по первому требованию предоставить
+                      водителю документ, подтверждающий возраст ребeнка (свидетельство о рождении)
+                    </p>
+                  </div></arcticle
+                ><arcticle class="attention attention_gray"
+                  ><div class="attention__pic">
+                    <svg viewBox="0 0 51 35" class="attention__icon">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.51.15A4.8 4.8 0 0 0 .16 3.4C.02 3.9 0 5.34 0 17.5c0 15.02-.04 14.02.66 15.22.39.66 1.17 1.4 1.85 1.74 1.12.57-.24.54 22.99.54 23.23 0 21.87.03 23-.54a5.08 5.08 0 0 0 1.84-1.74c.7-1.2.66-.2.66-15.22 0-15.02.04-14.03-.66-15.22A5.08 5.08 0 0 0 48.5.53C47.36-.04 48.74 0 25.45 0 7.35 0 3.95.03 3.51.15ZM47.08 3.2c.18.1.45.34.6.54l.28.37v26.78l-.28.36c-.15.2-.42.45-.6.54-.3.17-1.52.18-21.58.18s-21.28-.01-21.58-.18c-.18-.1-.45-.34-.6-.54l-.28-.36L3 17.75c-.02-7.22 0-13.27.03-13.44.07-.43.62-1.02 1.1-1.18C4.46 3 7.7 2.99 25.63 3c19.9.02 21.14.03 21.44.2ZM15.4 6.08c-.27.05-.91.29-1.41.53-.7.34-1.07.6-1.55 1.08a6.46 6.46 0 0 0-1.6 2.6 5 5 0 0 0-.2 1.79c0 .9.04 1.22.26 1.82.14.4.4.98.58 1.28a6.5 6.5 0 0 0 3.37 2.63c.91.28 2.17.34 3.08.15a7.8 7.8 0 0 0 1.49-.53 6.3 6.3 0 0 0 3.15-3.96c.18-.69.2-2 .04-2.75-.06-.3-.29-.91-.5-1.38a4.8 4.8 0 0 0-1.17-1.59 7.26 7.26 0 0 0-1.38-1.07 6.67 6.67 0 0 0-4.16-.6ZM28.23 8.5c-.79.4-.85 1.58-.1 2.07.23.15.93.17 7.44.17h7.18l.34-.34c.19-.19.34-.45.35-.57.02-.46-.03-.72-.19-.97-.34-.52-.28-.51-7.76-.5-5.99 0-7 .01-7.26.14Zm-10.6.65c.5.14 1.21.7 1.57 1.24.17.25.37.72.43 1.03a3.03 3.03 0 0 1-4.96 2.85 2.83 2.83 0 0 1-1-2.06c-.06-.89.16-1.53.74-2.17.87-.97 1.9-1.25 3.22-.89Zm15.94 6.13c-.46.23-.73.78-.64 1.27.09.47.53.9 1 .98.63.1 8.22.08 8.6-.03.2-.06.49-.23.64-.39.22-.23.28-.38.28-.74 0-.48-.15-.77-.53-1.04-.21-.15-.73-.17-4.62-.2-4.03-.02-4.41 0-4.73.15Zm-20.7 4.01c-.4.1-1 .34-1.34.52a6.73 6.73 0 0 0-2.39 2.42c-.56 1.08-.67 1.7-.67 3.88 0 1.81 0 1.92.22 2.24.32.48.81.7 1.4.65.56-.05.92-.28 1.18-.76.16-.3.19-.58.19-1.95 0-1.11.04-1.74.14-2.09a2.92 2.92 0 0 1 2.29-2.02c.76-.14 4.82-.14 5.59 0 .72.13 1.48.6 1.88 1.17.44.64.55 1.26.55 3 0 1.27.03 1.6.18 1.88.24.48.62.72 1.19.77.59.05 1.08-.17 1.4-.65.21-.32.22-.43.22-2.21 0-1.03-.05-2.1-.1-2.4a7.7 7.7 0 0 0-.51-1.36c-.31-.64-.57-1-1.12-1.54-.4-.4-.98-.85-1.32-1.03a7.64 7.64 0 0 0-1.39-.52c-.69-.18-1.1-.2-3.82-.2-2.67 0-3.13.03-3.77.2Zm20.7.52c-.37.2-.64.64-.64 1.06 0 .48.17.82.54 1.04.25.14.75.16 4.76.16h4.49l.3-.25c.62-.52.58-1.46-.08-1.9l-.34-.23h-4.39c-3.29 0-4.45.03-4.63.12Zm-5.5 4.67c-.14.13-.3.33-.37.44-.16.32-.13.81.06 1.14.36.6.14.59 7.74.59 7.47 0 7.4 0 7.75-.52.16-.24.21-.5.19-.96 0-.13-.16-.39-.35-.57l-.34-.34H28.34l-.27.22Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="attention__text">
+                    <p>Указывать персональные данные необязательно.</p>
+                    <p>
+                      Но если вам требуется предоставить билет для отчётности в организацию,
+                      рекомендуем указать их
+                    </p>
+                  </div></arcticle
+                ><arcticle class="attention attention_blue"
+                  ><div class="attention__pic">
+                    <svg viewBox="0 0 41 35" class="attention__icon">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.17.08a3.8 3.8 0 0 0-2.2 1.82c-.34.58-.37.73-.41 2.23l-.05 1.6H8.23c-4.64 0-5.24.07-6.27.67a4.65 4.65 0 0 0-1.73 2C.03 8.88 0 9.85 0 20.46v11.53l.36.75a4.1 4.1 0 0 0 1.96 1.95l.63.31h34.34l.73-.42a4.55 4.55 0 0 0 1.86-2.06c.2-.49.22-1.45.23-12.06V8.93l-.35-.76a4.17 4.17 0 0 0-3-2.3c-.42-.09-2.25-.14-4.91-.14H27.6l-.06-1.6c-.04-1.33-.1-1.68-.33-2.13A4.3 4.3 0 0 0 25.54.3c-.52-.27-.61-.27-5.3-.3a72.5 72.5 0 0 0-5.07.08Zm9.35 2.61c.15.12.33.34.41.5.08.14.14.78.14 1.4v1.14H15.04V4.59c0-.62.07-1.26.14-1.4.08-.16.26-.38.41-.5.24-.2.67-.21 4.47-.21 3.79 0 4.22.02 4.46.21ZM5.4 20.46v12.1h-.94c-.93 0-.95-.01-1.44-.5l-.5-.5V9.35l.5-.5c.5-.5.51-.5 1.44-.5h.94v12.1Zm4.39-9.72v2.39H8.02V8.36h1.76v2.38Zm18.05 9.72v12.1H12.28V8.36h15.55v12.1Zm4.26-9.72v2.39h-1.75V8.36h1.75v2.38Zm5.09-1.85.43.47v22.2l-.5.5c-.5.49-.52.5-1.45.5h-.94V8.34l1.02.04c.98.05 1.02.06 1.44.51Zm-27.4 7.62v.88H8.02v-1.76h1.76v.88Zm22.31 0v.88h-1.75v-1.76h1.75v.88ZM9.78 26.23v6.33H8.02V19.89h1.76v6.34Zm22.31 0v6.33h-1.75V19.89h1.75v6.34Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="attention__text">
+                    <p>
+                      Перевозчик (на выбранном рейсе) установил, что продажу квитанций на провоз
+                      платной ручной клади осуществляет водитель в момент посадки
+                    </p>
+                  </div></arcticle
+                ><arcticle class="attention attention_blue"
+                  ><div class="attention__pic">
+                    <svg viewBox="0 0 35 35" class="attention__icon">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.7.13c-.23.06-.58.2-.79.32-.5.26-1.2.99-1.48 1.5-.46.87-.43.13-.43 11.93v10.67l.17.52c.1.28.28.67.4.86a4.1 4.1 0 0 0 2.47 1.69c.26.04 1.99.07 4.9.07h4.5l1.54 3.07c1.28 2.57 1.59 3.13 1.89 3.45.5.56.85.74 1.46.78.74.05 1.12-.1 1.68-.66.44-.44.5-.54 2-3.55l1.55-3.09h4.5c2.91 0 4.64-.03 4.9-.07 1-.19 2.1-1 2.58-1.9.5-.94.46-.03.46-11.86 0-11.78.03-11.04-.43-11.91A4.43 4.43 0 0 0 33.05.43c-.88-.46.26-.43-15.6-.43C4.1 0 3.09.02 2.7.13ZM31.87 2.2c.38.18.7.5.88.86l.16.32v10.4c0 9.89 0 10.4-.12 10.71a2 2 0 0 1-1.06 1c-.2.06-1.57.08-5.15.08H21.7l-.3.15-.31.16-1.76 3.5c-.97 1.93-1.8 3.5-1.83 3.5-.04 0-.86-1.57-1.83-3.5l-1.76-3.5-.3-.16-.3-.15H8.4c-3.57 0-4.95-.02-5.14-.08a2 2 0 0 1-1.06-1c-.12-.3-.12-.82-.12-10.71V3.38l.16-.32c.17-.35.52-.7.82-.82.1-.04.3-.1.45-.12.15-.03 6.53-.05 14.18-.05 13.1.01 13.93.02 14.17.13ZM16.62 4.48a3.32 3.32 0 0 0-2.33 2.66c-.09.62-.09 5.06 0 5.68.13.9.7 1.8 1.48 2.3 1 .62 2.46.62 3.46 0a3.4 3.4 0 0 0 1.48-2.3c.04-.27.07-1.54.07-2.84 0-1.3-.03-2.57-.07-2.84a3.32 3.32 0 0 0-2.35-2.66 3.9 3.9 0 0 0-1.74 0Zm1.42 2.15c.14.08.32.26.42.4l.17.24v5.41l-.16.26c-.1.14-.28.32-.43.4-.53.27-1.2.1-1.5-.4l-.17-.26V7.27l.17-.25c.35-.5 1-.67 1.5-.39Zm-1.51 11.41a3.28 3.28 0 0 0-1.2 5.5c.44.41 1.06.71 1.67.81a3.3 3.3 0 0 0 3.54-2.07 3.7 3.7 0 0 0 .17-1.62 3.54 3.54 0 0 0-.85-1.75c-.65-.67-1.44-1-2.38-1-.35 0-.71.06-.95.13Zm1.5 2.1c.26.13.48.41.57.75.09.3-.02.7-.25.98a1.2 1.2 0 0 1-1.04.39c-.6-.1-1.07-.8-.91-1.37a1.1 1.1 0 0 1 1.09-.86c.16 0 .4.05.53.11Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="attention__text">
+                    <p>Для выбора или отмены места кликнете на него</p>
+                    <p>
+                      В случае замены автобуса расположение мест в подменном автобусе может
+                      отличаться от представленной схемы
+                    </p>
+                  </div></arcticle
+                >
+              </aside>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__main">
+              <div class="footer__stuff">
+                <div class="footer__brand">
+                  <a class="logo footer__logo" href="."
+                    ><img
+                      src="assets/img/logo.jpg"
+                      width="332"
+                      height="96"
+                      class="logo__img"
+                      alt="Logo"
+                  /></a>
+                  <p>Официальный сайт Автовокзала Улан-Удэ «Байкал»</p>
+                </div>
+                <div class="footer__contact">
+                  <div class="footer__info">
+                    <a href="tel:+79503835555" class="footer__info-item"
+                      ><svg viewBox="0 0 20 22">
+                        <path
+                          d="m18.1 6.7-1 1c1.8 1.8 1.8 4.6 0 6.5l1 1c2.5-2.3 2.5-6.1 0-8.5ZM16 8.8l-1 1c.5.7.5 1.6 0 2.3l1 1c1.2-1.2 1.2-3 0-4.3ZM12 0H2a2 2 0 0 0-2 2v18c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 19H2V3h10v16Z"
+                        ></path>
+                      </svg>
+                      +7 950 383 55 55</a
+                    ><span class="footer__info-item"
+                      ><svg viewBox="0 0 20 20">
+                        <path
+                          d="M9.99 0A10 10 0 1 0 10 19.99 10 10 0 0 0 9.99 0ZM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16ZM9.78 5h-.06c-.4 0-.72.32-.72.72v4.72c0 .35.18.68.49.86l4.15 2.49c.34.2.78.1.98-.24a.71.71 0 0 0-.25-.99l-3.87-2.3V5.72c0-.4-.32-.72-.72-.72Z"
+                        ></path>
+                      </svg>
+                      Eжедневно с 8:00 до 20:00</span
+                    >
+                  </div>
+                  <ul class="social footer__social">
+                    <li>
+                      <a href="#" class="social__link" aria-label="Telegram"
+                        ><svg
+                          viewBox="0 0 13 12"
+                          class="social__icon right-px top-px"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="m12.5.88-1.88 9.8s-.26.68-.98.36L5.3 7.6l-.02-.01 5.33-4.97c.3-.3.11-.47-.24-.25l-6.7 4.41-2.6-.9s-.4-.15-.44-.47c-.04-.33.46-.5.46-.5L11.63.6s.87-.39.87.27Z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="social__link" aria-label="Whatsapp"
+                        ><svg viewBox="0 0 14 14" class="social__icon left-px" aria-hidden="true">
+                          <path
+                            d="M11.45 2.54a6.53 6.53 0 0 0-10.29 7.84l-.91 3.37 3.48-.91a6.53 6.53 0 0 0 9.65-5.74 6.64 6.64 0 0 0-1.93-4.56ZM10 9.47c-.14.36-.78.73-1.1.77-.27.05-.64.05-1-.04-.23-.1-.55-.19-.92-.37a6.88 6.88 0 0 1-2.79-2.46c-.09-.1-.68-.87-.68-1.69s.4-1.18.55-1.36c.13-.19.32-.19.45-.19h.32c.1 0 .23-.04.37.28.14.32.46 1.14.5 1.18.05.1.05.18 0 .28a.85.85 0 0 1-.18.27c-.1.09-.18.23-.23.27-.1.1-.18.19-.1.32.1.18.42.69.92 1.14.64.55 1.15.73 1.33.82.18.1.27.05.37-.04.09-.1.4-.46.5-.64.09-.18.23-.14.36-.1.14.05.96.46 1.1.55.19.1.28.14.32.19.05.13.05.45-.09.82Z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="footer__text">
+                © 2013-2022 ООО "ОнлайнСервис". Все права защищены<br />Использование материалов
+                сайта с целью распространения информации осуществляется при условии указания ссылки
+                на сайт АВТОВОКЗАЛ-ОНЛАЙН.РФ
+              </p>
+            </div>
+            <div class="footer__side">
+              <ul class="footer__list">
+                <li><a class="footer__list-link" href="#">Соглашения</a></li>
+                <li><a class="footer__list-link" href="#board">Информация</a></li>
+                <li><a class="footer__list-link" href="#payment">Как оплатить</a></li>
+                <li><a class="footer__list-link" href="#offices">Кассы</a></li>
+                <li><a class="footer__list-link" href="#questions">Вопрос-ответ</a></li>
+                <li><a class="footer__list-link" href="#">Расписание рейсов</a></li>
+              </ul>
+              <form class="footer__form">
+                <h3 class="footer__form-title">Заказать звонок</h3>
+                <div class="footer__form-inputs">
+                  <div class="input input_secondary">
+                    <input
+                      class="input__input"
+                      type="text"
+                      required
+                      placeholder="Имя"
+                      name="name"
+                    />
+                  </div>
+                  <div class="input input_secondary">
+                    <input
+                      class="input__input"
+                      type="text"
+                      required
+                      placeholder="Телефон"
+                      name="phone"
+                    />
+                  </div>
+                </div>
+                <button
+                  data-hk="0-0-0-0-3-6-0-0"
+                  class="button button_secondary button_md footer__form-button"
+                  type="submit"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

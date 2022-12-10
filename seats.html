@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bus Station title</title>
+    <meta name="description" content="Bus Station description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Site title" />
+    <meta property="og:description" content="Site description" />
+    <meta property="og:image" content="http://via.placeholder.com/1200x630.jpg" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="assets/js/app.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/js/vendor.js" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div class="relative">
+        <header class="header">
+          <div class="container">
+            <div class="header__inner">
+              <a class="logo header__logo" href="."
+                ><img
+                  src="assets/img/logo.jpg"
+                  width="332"
+                  height="96"
+                  class="logo__img"
+                  alt="Logo"
+              /></a>
+              <p class="header__slogan">Официальный сайт Автовокзала Улан-Удэ «Байкал»</p>
+              <span class="grow"></span>
+              <div class="header__side">
+                <a href="tel:+79503835555" class="header__item"
+                  ><svg viewBox="0 0 20 22">
+                    <path
+                      d="m18.1 6.7-1 1c1.8 1.8 1.8 4.6 0 6.5l1 1c2.5-2.3 2.5-6.1 0-8.5ZM16 8.8l-1 1c.5.7.5 1.6 0 2.3l1 1c1.2-1.2 1.2-3 0-4.3ZM12 0H2a2 2 0 0 0-2 2v18c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 19H2V3h10v16Z"
+                    ></path>
+                  </svg>
+                  +7 950 383 55 55</a
+                ><span class="header__item"
+                  ><svg viewBox="0 0 20 20">
+                    <path
+                      d="M9.99 0A10 10 0 1 0 10 19.99 10 10 0 0 0 9.99 0ZM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16ZM9.78 5h-.06c-.4 0-.72.32-.72.72v4.72c0 .35.18.68.49.86l4.15 2.49c.34.2.78.1.98-.24a.71.71 0 0 0-.25-.99l-3.87-2.3V5.72c0-.4-.32-.72-.72-.72Z"
+                    ></path>
+                  </svg>
+                  Eжедневно с 8:00 до 20:00</span
+                ><a href="#" class="header__item header__item_auth" aria-label="Личный кабинет"
+                  ><svg viewBox="0 0 20 20">
+                    <path
+                      d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM5.07 16.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78a7.9 7.9 0 0 1-9.86 0Zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33A8.01 8.01 0 1 1 18 10c0 1.82-.62 3.49-1.64 4.83ZM10 4a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 10 11a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 10 4Zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+                    ></path></svg
+                  ><span class="hidden md:block">Личный кабинет</span></a
+                >
+              </div>
+              <button class="hamburger" type="button" aria-label="Toggle menu">
+                <span class="hamburger__bar"></span><span class="hamburger__bar"></span
+                ><span class="hamburger__bar"></span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <nav class="nav">
+          <div class="container">
+            <div class="nav__inner">
+              <form class="search">
+                <input class="search__input" type="text" placeholder="Поиск..." required /><button
+                  class="search__button"
+                  aria-label="Искать"
+                >
+                  <svg viewBox="0 0 18 18">
+                    <path
+                      d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                    ></path>
+                  </svg>
+                </button>
+              </form>
+              <ul class="nav__list">
+                <li><a class="nav__link" href="#">Соглашения</a></li>
+                <li><a class="nav__link" href="#board">Информация</a></li>
+                <li><a class="nav__link" href="#payment">Как оплатить</a></li>
+                <li><a class="nav__link" href="#offices">Кассы</a></li>
+                <li><a class="nav__link" href="#questions">Вопрос-ответ</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <main class="app__main">
+        <section class="intro intro_concise">
+          <img
+            src="assets/img/intro.jpg"
+            width="2160"
+            height="639"
+            alt="Intro"
+            class="intro__img"
+            fetchpriority="high"
+          />
+          <div class="container">
+            <div class="intro__inner">
+              <div class="intro__content"><h1 class="intro__title">Бронь</h1></div>
+              <ul class="social intro__social">
+                <li>
+                  <a href="#" class="social__link" aria-label="Telegram"
+                    ><svg
+                      viewBox="0 0 13 12"
+                      class="social__icon right-px top-px"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12.5.88-1.88 9.8s-.26.68-.98.36L5.3 7.6l-.02-.01 5.33-4.97c.3-.3.11-.47-.24-.25l-6.7 4.41-2.6-.9s-.4-.15-.44-.47c-.04-.33.46-.5.46-.5L11.63.6s.87-.39.87.27Z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social__link" aria-label="Whatsapp"
+                    ><svg viewBox="0 0 14 14" class="social__icon left-px" aria-hidden="true">
+                      <path
+                        d="M11.45 2.54a6.53 6.53 0 0 0-10.29 7.84l-.91 3.37 3.48-.91a6.53 6.53 0 0 0 9.65-5.74 6.64 6.64 0 0 0-1.93-4.56ZM10 9.47c-.14.36-.78.73-1.1.77-.27.05-.64.05-1-.04-.23-.1-.55-.19-.92-.37a6.88 6.88 0 0 1-2.79-2.46c-.09-.1-.68-.87-.68-1.69s.4-1.18.55-1.36c.13-.19.32-.19.45-.19h.32c.1 0 .23-.04.37.28.14.32.46 1.14.5 1.18.05.1.05.18 0 .28a.85.85 0 0 1-.18.27c-.1.09-.18.23-.23.27-.1.1-.18.19-.1.32.1.18.42.69.92 1.14.64.55 1.15.73 1.33.82.18.1.27.05.37-.04.09-.1.4-.46.5-.64.09-.18.23-.14.36-.1.14.05.96.46 1.1.55.19.1.28.14.32.19.05.13.05.45-.09.82Z"
+                      ></path></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="finder">
+          <div class="container">
+            <div class="finder__inner">
+              <div class="finder__head scrollbar-thin">
+                <a class="finder__tab active" href="#"><span>Республика Бурятия</span></a
+                ><a class="finder__tab" href="#"><span>Иркутская область</span></a>
+              </div>
+              <form class="finder__form">
+                <div class="finder__grid">
+                  <div class="input input_primary input_has-icon">
+                    <input
+                      class="input__input"
+                      type="text"
+                      name="from"
+                      required
+                      placeholder="Пункт отправки"
+                    /><span class="input__addon"
+                      ><svg viewBox="0 0 18 18" class="w-[18px]">
+                        <path
+                          d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                        ></path></svg
+                    ></span>
+                  </div>
+                  <div class="input input_primary input_has-icon">
+                    <input
+                      class="input__input"
+                      type="text"
+                      name="to"
+                      required
+                      placeholder="Пункт прибытия"
+                    /><span class="input__addon"
+                      ><svg viewBox="0 0 18 18" class="w-[18px]">
+                        <path
+                          d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                        ></path></svg
+                    ></span>
+                  </div>
+                  <div class="input input_primary input_has-icon">
+                    <input
+                      class="input__input"
+                      type="text"
+                      name="date"
+                      required
+                      placeholder="Дата"
+                    /><span class="input__addon"
+                      ><svg viewBox="0 0 20 22" class="w-[20px]">
+                        <path
+                          d="M18 2h-1V0h-2v2H5V0H3v2H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Zm0 18H2V9h16v11Zm0-13H2V4h16v3Z"
+                        ></path></svg
+                    ></span>
+                  </div>
+                  <button
+                    data-hk="0-0-0-0-2-5-0-0-1-3-0-0"
+                    class="button button_primary button_md"
+                    type="submit"
+                  >
+                    Найти рейсы
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="seats">
+          <div class="container">
+            <h2 class="seats__title title">Ваши места</h2>
+            <div class="seats__layout">
+              <div class="seats__main">
+                <div class="seats__headline">
+                  <h3 class="seats__headline-title">
+                    Маршрут № 260 Кяхта — Улан-Удэ, 01.11.2022, 07:00
+                  </h3>
+                </div>
+                <article class="flight flight_seats">
+                  <div class="flight__inner">
+                    <div class="flight__main">
+                      <span class="flight__line"></span>
+                      <div class="flight__end">
+                        <div class="flight__end-date">Вт, 01 нояб</div>
+                        <div>
+                          <div class="flight__end-time">
+                            <div class="flight__end-mask"></div>
+                            07:00
+                          </div>
+                          <div class="flight__end-city">Кяхта</div>
+                          <div class="flight__end-type">автовокзал</div>
+                        </div>
+                      </div>
+                      <div class="flight__duration">3&nbsp;ч. 30&nbsp;мин.</div>
+                      <div class="flight__end">
+                        <div class="flight__end-date">Вт, 01 нояб</div>
+                        <div>
+                          <div class="flight__end-time">
+                            <div class="flight__end-mask"></div>
+                            10:30
+                          </div>
+                          <div class="flight__end-city">Улан-Удэ</div>
+                          <div class="flight__end-type">автовокзал</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flight__side">
+                      <div class="flight__group">
+                        <div class="flight__allowed">
+                          <img
+                            class="flight__allowed-img"
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAARABEDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9M9A/4KH/ALdf/BTj4p/Cn9k74YaZ8D/2doPid8Dvhv8AtzXdz4U+PX7Rvg74h3n7P/iH4efs+/FXwv8ACvX/AIofC7wp4S8X+Ete8QJ+0j4S0zxNr/w11bRZ59R+G3i3SYbuTwrrwg1QA7nU/jz/AMFDP+CbH7UHwe/Zk1nWfgh8ZbT9ujXdOPwb0H4u/tMftf8Axj/4Vh4h8HeMfhH8LPGVjZfEz4xaP47+JUum+Lz8YND8bS6LdapfaFoMXgrxA+g6bBfazJb34B+W3/EcJ4M/6MA8T/8Ah8NK/wDmDoA9E/4JUftG/sofAv8AbV/Zf8W/GH45/B/4Taz4K/4JX/DH4AfEnUfiP8SdA8Fjwl4/8C/st/8ABMLw7d/DDxPbeJNZ0+z0DxloPjnwV8XdAvtFvLe010a34N8W6TdLJN4ZurexAPsj/gpL+2t+wd8TP+Ch3/BMr4o+G/2q/wBnTxt4Z+C174l1fXfGPhf40eDNa0HwHe6l+1N+xHdyzeIb7Q/EU+nWb3PgTQfiBqsdvrG9P7H8P69rMMIXRJru0AP83P8A4Yh/bH/6NZ+P/wD4abxv/wDKWgD/AHVaACgAoAD/2Q=="
+                            width="17"
+                            height="17"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                          /><img
+                            class="flight__allowed-img"
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAARABEDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD98f2dPG/w3/bdg074r/tc/tAftReEfE/xY+G/7Knx6+FPw6+Dn7U/7QP7JPwJ+G3wi/bv8R/ErRP2S/hR4buf2YPi58IfGfxW+L+u2Hwve6+KHiT4zDWZz488X2+leAjonhdrLwt4eAPUvjT8Ifhh8FNf8K+HP2TP2n/2xPD/AO1XqnxoT4KeB9N8eftnftTftcfCKz+MT/s5fET9qHwz4E/aS+Ef7VP7QPxG8PRfCzx18NPh9dQavq3gGz0P4nWS+KPD974R8TeH7wHXdHAPxI/4jW/2W/8Ao1j4of8AhT6Z/wDKmgD9SvGnwVv/APgmd40/aEh8MfFvUfBPwF+OP7LPwn+Hv7K/7Qfx/wDBui/Er4H/ALB3xL/Zf8b/ABz8S/C74PfE/V9C8K6bL4Z+CFna/HjTrz4FfEn4xTeIW8JP4E1bwT4l8faxe2nwx8M62Ac98OP+Fl/8FDdH/ZV+Emn/ALVXgr4q/EH4N/Gj4hftFftXft3/ALE2jeFb74SaVo178E/jn8Bfhp8DPhR8bNQ+GP8AwqX4sfHHW/Cvx006y1fxZ4Y8FQ3Pw78FfD7xNrOs+HPAfjHVfhpLrAB9Lf8AEPB/wSB/6M98Hf8Ag48Tf/LegD9raACgAoAA/9k="
+                            width="17"
+                            height="17"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="flight__info">
+                          <div class="flight__info-car">Автобус</div>
+                          <div class="flight__info-seats">
+                            <div class="opacity-50">Мест: 15</div>
+                            <div class="">
+                              <span class="opacity-50">Ваше место:</span> <b>1, 2</b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flight__extra">
+                        <div class="flight__cost">
+                          573,00&nbsp;₽ <span class="flight__muted">(серв.сбор 23,00&nbsp;₽)</span>
+                        </div>
+                        <div class="flight__slot">
+                          Итого: <br />1146,00 ₽
+                          <span class="flight__muted">(серв.сбор 46,00&nbsp;₽)</span>
+                        </div>
+                        <span class="flight__benefits">Льгот нет</span>
+                      </div>
+                    </div>
+                  </div>
+                  <details class="flight__details">
+                    <summary class="flight__more">
+                      Остановочные пункты
+                      <svg viewBox="0 0 13 8" class="flight__more-icon">
+                        <path
+                          d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                        ></path>
+                      </svg>
+                    </summary>
+                    <section class="stops flight__stops">
+                      <div class="stops__main">
+                        <div class="stops__stack">
+                          <span class="stops__line"></span>
+                          <div class="stops__end">
+                            <div class="stops__end-mask"></div>
+                            <div class="">
+                              <span class="stops__end-city"><b>Кяхта</b></span
+                              ><span class="stops__end-type">автовокзал</span>
+                            </div>
+                          </div>
+                          <div class="stops__item">
+                            <div class="">
+                              <span class="stops__item-city">Гусиноозерск</span
+                              ><span class="stops__item-type">на трассе кафе «Лотос»</span>
+                            </div>
+                            <span>08:29</span>
+                          </div>
+                          <div class="stops__item">
+                            <div class="">
+                              <span class="stops__item-city">Гусиноозерск</span
+                              ><span class="stops__item-type">на трассе кафе «Лотос»</span>
+                            </div>
+                            <span>08:29</span>
+                          </div>
+                          <div class="stops__item">
+                            <div class="">
+                              <span class="stops__item-city">Гусиноозерск</span
+                              ><span class="stops__item-type">на трассе кафе «Лотос»</span>
+                            </div>
+                            <span>08:29</span>
+                          </div>
+                          <div class="stops__end">
+                            <div class="stops__end-mask"></div>
+                            <div class="">
+                              <span class="stops__end-city"><b>Улан-Удэ</b></span
+                              ><span class="stops__end-type">автовокзал</span>
+                            </div>
+                            <b>10:30</b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stops__side">
+                        <iframe
+                          class="stops__map"
+                          src="https://api-maps.yandex.ru/frame/v1/-/CVh7YBYg?lang=en_RU"
+                          frameborder="0"
+                        ></iframe>
+                      </div>
+                    </section>
+                  </details>
+                </article>
+              </div>
+              <aside class="seats__side">
+                <arcticle class="attention attention_blue"
+                  ><div class="attention__pic">
+                    <svg viewBox="0 0 41 35" class="attention__icon">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.17.08a3.8 3.8 0 0 0-2.2 1.82c-.34.58-.37.73-.41 2.23l-.05 1.6H8.23c-4.64 0-5.24.07-6.27.67a4.65 4.65 0 0 0-1.73 2C.03 8.88 0 9.85 0 20.46v11.53l.36.75a4.1 4.1 0 0 0 1.96 1.95l.63.31h34.34l.73-.42a4.55 4.55 0 0 0 1.86-2.06c.2-.49.22-1.45.23-12.06V8.93l-.35-.76a4.17 4.17 0 0 0-3-2.3c-.42-.09-2.25-.14-4.91-.14H27.6l-.06-1.6c-.04-1.33-.1-1.68-.33-2.13A4.3 4.3 0 0 0 25.54.3c-.52-.27-.61-.27-5.3-.3a72.5 72.5 0 0 0-5.07.08Zm9.35 2.61c.15.12.33.34.41.5.08.14.14.78.14 1.4v1.14H15.04V4.59c0-.62.07-1.26.14-1.4.08-.16.26-.38.41-.5.24-.2.67-.21 4.47-.21 3.79 0 4.22.02 4.46.21ZM5.4 20.46v12.1h-.94c-.93 0-.95-.01-1.44-.5l-.5-.5V9.35l.5-.5c.5-.5.51-.5 1.44-.5h.94v12.1Zm4.39-9.72v2.39H8.02V8.36h1.76v2.38Zm18.05 9.72v12.1H12.28V8.36h15.55v12.1Zm4.26-9.72v2.39h-1.75V8.36h1.75v2.38Zm5.09-1.85.43.47v22.2l-.5.5c-.5.49-.52.5-1.45.5h-.94V8.34l1.02.04c.98.05 1.02.06 1.44.51Zm-27.4 7.62v.88H8.02v-1.76h1.76v.88Zm22.31 0v.88h-1.75v-1.76h1.75v.88ZM9.78 26.23v6.33H8.02V19.89h1.76v6.34Zm22.31 0v6.33h-1.75V19.89h1.75v6.34Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="attention__text">
+                    <p>
+                      На одном пассажирском месте БЕСПЛАТНО можно провезти 1 сумку (пакет, коробку,
+                      рюкзак и т.п.) размером не более 120 см (сумма длины, ширины и высоты) либо
+                      одну пару лыж в чехле, детские санки, детскую коляску. Каждое ДОПОЛНИТЕЛЬНОЕ
+                      место ручной клади провозится по согласованию с водителем ЗА ПЛАТУ.
+                      Запрещается размещение ручной клади на пассажирских местах и в проходах, если
+                      такое размещение будет препятствовать проходу пассажиров
+                    </p>
+                  </div></arcticle
+                ><arcticle class="attention attention_gray"
+                  ><div class="attention__pic">
+                    <svg viewBox="0 0 51 35" class="attention__icon">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.51.15A4.8 4.8 0 0 0 .16 3.4C.02 3.9 0 5.34 0 17.5c0 15.02-.04 14.02.66 15.22.39.66 1.17 1.4 1.85 1.74 1.12.57-.24.54 22.99.54 23.23 0 21.87.03 23-.54a5.08 5.08 0 0 0 1.84-1.74c.7-1.2.66-.2.66-15.22 0-15.02.04-14.03-.66-15.22A5.08 5.08 0 0 0 48.5.53C47.36-.04 48.74 0 25.45 0 7.35 0 3.95.03 3.51.15ZM47.08 3.2c.18.1.45.34.6.54l.28.37v26.78l-.28.36c-.15.2-.42.45-.6.54-.3.17-1.52.18-21.58.18s-21.28-.01-21.58-.18c-.18-.1-.45-.34-.6-.54l-.28-.36L3 17.75c-.02-7.22 0-13.27.03-13.44.07-.43.62-1.02 1.1-1.18C4.46 3 7.7 2.99 25.63 3c19.9.02 21.14.03 21.44.2ZM15.4 6.08c-.27.05-.91.29-1.41.53-.7.34-1.07.6-1.55 1.08a6.46 6.46 0 0 0-1.6 2.6 5 5 0 0 0-.2 1.79c0 .9.04 1.22.26 1.82.14.4.4.98.58 1.28a6.5 6.5 0 0 0 3.37 2.63c.91.28 2.17.34 3.08.15a7.8 7.8 0 0 0 1.49-.53 6.3 6.3 0 0 0 3.15-3.96c.18-.69.2-2 .04-2.75-.06-.3-.29-.91-.5-1.38a4.8 4.8 0 0 0-1.17-1.59 7.26 7.26 0 0 0-1.38-1.07 6.67 6.67 0 0 0-4.16-.6ZM28.23 8.5c-.79.4-.85 1.58-.1 2.07.23.15.93.17 7.44.17h7.18l.34-.34c.19-.19.34-.45.35-.57.02-.46-.03-.72-.19-.97-.34-.52-.28-.51-7.76-.5-5.99 0-7 .01-7.26.14Zm-10.6.65c.5.14 1.21.7 1.57 1.24.17.25.37.72.43 1.03a3.03 3.03 0 0 1-4.96 2.85 2.83 2.83 0 0 1-1-2.06c-.06-.89.16-1.53.74-2.17.87-.97 1.9-1.25 3.22-.89Zm15.94 6.13c-.46.23-.73.78-.64 1.27.09.47.53.9 1 .98.63.1 8.22.08 8.6-.03.2-.06.49-.23.64-.39.22-.23.28-.38.28-.74 0-.48-.15-.77-.53-1.04-.21-.15-.73-.17-4.62-.2-4.03-.02-4.41 0-4.73.15Zm-20.7 4.01c-.4.1-1 .34-1.34.52a6.73 6.73 0 0 0-2.39 2.42c-.56 1.08-.67 1.7-.67 3.88 0 1.81 0 1.92.22 2.24.32.48.81.7 1.4.65.56-.05.92-.28 1.18-.76.16-.3.19-.58.19-1.95 0-1.11.04-1.74.14-2.09a2.92 2.92 0 0 1 2.29-2.02c.76-.14 4.82-.14 5.59 0 .72.13 1.48.6 1.88 1.17.44.64.55 1.26.55 3 0 1.27.03 1.6.18 1.88.24.48.62.72 1.19.77.59.05 1.08-.17 1.4-.65.21-.32.22-.43.22-2.21 0-1.03-.05-2.1-.1-2.4a7.7 7.7 0 0 0-.51-1.36c-.31-.64-.57-1-1.12-1.54-.4-.4-.98-.85-1.32-1.03a7.64 7.64 0 0 0-1.39-.52c-.69-.18-1.1-.2-3.82-.2-2.67 0-3.13.03-3.77.2Zm20.7.52c-.37.2-.64.64-.64 1.06 0 .48.17.82.54 1.04.25.14.75.16 4.76.16h4.49l.3-.25c.62-.52.58-1.46-.08-1.9l-.34-.23h-4.39c-3.29 0-4.45.03-4.63.12Zm-5.5 4.67c-.14.13-.3.33-.37.44-.16.32-.13.81.06 1.14.36.6.14.59 7.74.59 7.47 0 7.4 0 7.75-.52.16-.24.21-.5.19-.96 0-.13-.16-.39-.35-.57l-.34-.34H28.34l-.27.22Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="attention__text">
+                    <p>
+                      Данные билеты являются электронными. Для посадки в автобус распечатывать
+                      билеты не требуется. В случае необходимости вы можете получить печатный
+                      вариант билетов на бланке строгой отчетности в кассах автовокзала г. Улан-Удэ
+                    </p>
+                  </div></arcticle
+                >
+              </aside>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__main">
+              <div class="footer__stuff">
+                <div class="footer__brand">
+                  <a class="logo footer__logo" href="."
+                    ><img
+                      src="assets/img/logo.jpg"
+                      width="332"
+                      height="96"
+                      class="logo__img"
+                      alt="Logo"
+                  /></a>
+                  <p>Официальный сайт Автовокзала Улан-Удэ «Байкал»</p>
+                </div>
+                <div class="footer__contact">
+                  <div class="footer__info">
+                    <a href="tel:+79503835555" class="footer__info-item"
+                      ><svg viewBox="0 0 20 22">
+                        <path
+                          d="m18.1 6.7-1 1c1.8 1.8 1.8 4.6 0 6.5l1 1c2.5-2.3 2.5-6.1 0-8.5ZM16 8.8l-1 1c.5.7.5 1.6 0 2.3l1 1c1.2-1.2 1.2-3 0-4.3ZM12 0H2a2 2 0 0 0-2 2v18c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 19H2V3h10v16Z"
+                        ></path>
+                      </svg>
+                      +7 950 383 55 55</a
+                    ><span class="footer__info-item"
+                      ><svg viewBox="0 0 20 20">
+                        <path
+                          d="M9.99 0A10 10 0 1 0 10 19.99 10 10 0 0 0 9.99 0ZM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16ZM9.78 5h-.06c-.4 0-.72.32-.72.72v4.72c0 .35.18.68.49.86l4.15 2.49c.34.2.78.1.98-.24a.71.71 0 0 0-.25-.99l-3.87-2.3V5.72c0-.4-.32-.72-.72-.72Z"
+                        ></path>
+                      </svg>
+                      Eжедневно с 8:00 до 20:00</span
+                    >
+                  </div>
+                  <ul class="social footer__social">
+                    <li>
+                      <a href="#" class="social__link" aria-label="Telegram"
+                        ><svg
+                          viewBox="0 0 13 12"
+                          class="social__icon right-px top-px"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="m12.5.88-1.88 9.8s-.26.68-.98.36L5.3 7.6l-.02-.01 5.33-4.97c.3-.3.11-.47-.24-.25l-6.7 4.41-2.6-.9s-.4-.15-.44-.47c-.04-.33.46-.5.46-.5L11.63.6s.87-.39.87.27Z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="social__link" aria-label="Whatsapp"
+                        ><svg viewBox="0 0 14 14" class="social__icon left-px" aria-hidden="true">
+                          <path
+                            d="M11.45 2.54a6.53 6.53 0 0 0-10.29 7.84l-.91 3.37 3.48-.91a6.53 6.53 0 0 0 9.65-5.74 6.64 6.64 0 0 0-1.93-4.56ZM10 9.47c-.14.36-.78.73-1.1.77-.27.05-.64.05-1-.04-.23-.1-.55-.19-.92-.37a6.88 6.88 0 0 1-2.79-2.46c-.09-.1-.68-.87-.68-1.69s.4-1.18.55-1.36c.13-.19.32-.19.45-.19h.32c.1 0 .23-.04.37.28.14.32.46 1.14.5 1.18.05.1.05.18 0 .28a.85.85 0 0 1-.18.27c-.1.09-.18.23-.23.27-.1.1-.18.19-.1.32.1.18.42.69.92 1.14.64.55 1.15.73 1.33.82.18.1.27.05.37-.04.09-.1.4-.46.5-.64.09-.18.23-.14.36-.1.14.05.96.46 1.1.55.19.1.28.14.32.19.05.13.05.45-.09.82Z"
+                          ></path></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="footer__text">
+                © 2013-2022 ООО "ОнлайнСервис". Все права защищены<br />Использование материалов
+                сайта с целью распространения информации осуществляется при условии указания ссылки
+                на сайт АВТОВОКЗАЛ-ОНЛАЙН.РФ
+              </p>
+            </div>
+            <div class="footer__side">
+              <ul class="footer__list">
+                <li><a class="footer__list-link" href="#">Соглашения</a></li>
+                <li><a class="footer__list-link" href="#board">Информация</a></li>
+                <li><a class="footer__list-link" href="#payment">Как оплатить</a></li>
+                <li><a class="footer__list-link" href="#offices">Кассы</a></li>
+                <li><a class="footer__list-link" href="#questions">Вопрос-ответ</a></li>
+                <li><a class="footer__list-link" href="#">Расписание рейсов</a></li>
+              </ul>
+              <form class="footer__form">
+                <h3 class="footer__form-title">Заказать звонок</h3>
+                <div class="footer__form-inputs">
+                  <div class="input input_secondary">
+                    <input
+                      class="input__input"
+                      type="text"
+                      required
+                      placeholder="Имя"
+                      name="name"
+                    />
+                  </div>
+                  <div class="input input_secondary">
+                    <input
+                      class="input__input"
+                      type="text"
+                      required
+                      placeholder="Телефон"
+                      name="phone"
+                    />
+                  </div>
+                </div>
+                <button
+                  data-hk="0-0-0-0-3-6-0-0"
+                  class="button button_secondary button_md footer__form-button"
+                  type="submit"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
