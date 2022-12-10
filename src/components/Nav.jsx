@@ -18,7 +18,6 @@ function script() {
 
   window.addEventListener('toggle-nav', (e) => {
     el.classList.toggle('nav_open', e.detail)
-    el.inert = !e.detail
   })
 
   linkEls.forEach((linkEl) => {

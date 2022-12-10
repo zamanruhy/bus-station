@@ -1,0 +1,13 @@
+.radio {
+  @apply relative isolate flex w-fit cursor-pointer select-none items-center;
+
+  &__input {
+    @apply sr-only;
+  }
+  &__box {
+    @apply relative h-[20px] w-[20px] shrink-0 rounded-[5px] border border-[#323232]/10 bg-white [input:checked~&]:border-transparent [input:checked~&]:bg-primary;
+  }
+  &__label {
+    @apply ml-[10px] text-[14px];
+  }
+}

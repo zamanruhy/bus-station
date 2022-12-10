@@ -8,9 +8,9 @@
   tabEls.forEach((tabEl) => {
     tabEl.addEventListener('click', (e) => {
       const index = tabEls.indexOf(tabEl)
-      tabEls.forEach((node) => node.setAttribute('aria-selected', 'false'))
+      tabEls.forEach((node) => node.classList.remove('active'))
       panelEls.forEach((node) => (node.hidden = true))
-      tabEl.setAttribute('aria-selected', 'true')
+      tabEl.classList.add('active')
       panelEls[index].hidden = false
       window.dispatchEvent(new CustomEvent('resize'))
     })

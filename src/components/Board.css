@@ -5,7 +5,7 @@
     @apply mb-8 text-[24px] font-black uppercase leading-tight md:mb-12 md:text-[28px];
   }
   &__inner {
-    @apply overflow-auto rounded-[10px] shadow;
+    @apply overflow-auto rounded shadow;
   }
   &__content {
     @apply min-w-[500px];
@@ -21,7 +21,7 @@
     }
   }
   &__list {
-    @apply max-h-[500px] overflow-y-auto py-2;
+    @apply max-h-[50vh] overflow-y-auto py-2 lg:max-h-[500px];
   }
   &__item {
     @apply grid grid-cols-[20%_minmax(0,1fr)_20%];

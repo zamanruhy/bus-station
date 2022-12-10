@@ -56,5 +56,6 @@
   }
   body {
     @apply h-full bg-white font-brand text-[14px] leading-[1.5] text-[#323232];
+    @apply [&:has(dialog[open])]:overflow-hidden;
   }
 }

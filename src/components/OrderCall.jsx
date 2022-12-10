@@ -1,3 +1,4 @@
+import { onMount } from 'solid-js'
 import orderCallImg from '../images/order-call.jpg?jpg'
 import Button from './Button'
 import Checkbox from './Checkbox'
@@ -6,7 +7,24 @@ import Input from './Input'
 
 import './OrderCall.css'
 
+function script() {
+  const el = document.querySelector('.order-call')
+  if (!el) return
+
+  const buttonEl = el.querySelector('.order-call__button')
+  const confirmEl = el.querySelector('[name="confirm"]')
+
+  confirmEl.addEventListener('change', (e) => {
+    buttonEl.disabled = !e.target.checked
+  })
+}
+
+if (import.meta.env.PROD && !import.meta.env.SSR) {
+  script()
+}
+
 export default function OrderCall() {
+  onMount(script)
   return (
     <section className="order-call">
       <Image
@@ -33,8 +51,17 @@ export default function OrderCall() {
             placeholder="Телефон"
             name="phone"
           />
-          <Checkbox label="Я согласен на обработку своих персональных данных" />
-          <Button type="submit" variant="secondary" size="md">
+          <Checkbox
+            name="confirm"
+            label="Я согласен на обработку своих персональных данных"
+          />
+          <Button
+            type="submit"
+            variant="secondary"
+            size="md"
+            disabled
+            class="order-call__button"
+          >
             Отправить
           </Button>
         </form>

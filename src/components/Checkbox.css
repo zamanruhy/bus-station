@@ -1,0 +1,16 @@
+.checkbox {
+  @apply relative isolate flex w-fit cursor-pointer select-none items-center;
+
+  &__input {
+    @apply sr-only;
+  }
+  &__box {
+    @apply relative flex h-[15px] w-[15px] shrink-0 items-center justify-center rounded-[1px] bg-white;
+  }
+  &__icon {
+    @apply hidden w-[9px] text-[#323232] [input:checked~*>&]:block;
+  }
+  &__label {
+    @apply ml-[8px] text-[10px];
+  }
+}

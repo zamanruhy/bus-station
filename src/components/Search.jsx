@@ -10,7 +10,7 @@ export default function Search() {
         placeholder="Поиск..."
         required
       />
-      <button className="search__button">
+      <button className="search__button" aria-label="Искать">
         <MagIcon />
       </button>
     </form>

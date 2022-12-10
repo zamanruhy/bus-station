@@ -29,4 +29,19 @@
       }
     }
   }
+  .scrollbar-thin {
+    @media not all and (pointer: coarse) {
+      scrollbar-width: thin;
+      scrollbar-color: #323232 #ebebeb;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background-color: #ebebeb;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #323232;
+      }
+    }
+  }
 }

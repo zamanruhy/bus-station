@@ -2,7 +2,7 @@
   @apply flex flex-col gap-7;
 
   &__link {
-    @apply flex h-[25px] w-[25px] items-center justify-center rounded-full bg-white;
+    @apply flex h-[25px] w-[25px] items-center justify-center rounded-full bg-white transition hover:opacity-70;
   }
   &__icon {
     @apply relative h-3.5 fill-current;

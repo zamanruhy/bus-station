@@ -29,6 +29,7 @@ export default function Parts() {
     <section className="parts">
       {items.map(({ Icon, name, text, href }) => (
         <a href={href} className="parts__item">
+          <span className="parts__item-overlay" />
           <div className="parts__item-head">
             <Icon className="parts__item-icon" />
             <h2 className="parts__item-title">{name}</h2>

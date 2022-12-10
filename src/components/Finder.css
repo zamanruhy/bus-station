@@ -1,21 +1,51 @@
 .finder {
   @apply relative mt-[-75px] mb-[50px];
 
+  .intro_concise ~ & {
+    @apply mt-[-48px] mb-0;
+  }
+
   &__inner {
     @apply xl:-mx-5;
   }
   &__head {
-    @apply flex text-center text-[12px];
+    @apply mr-[10px] flex overflow-x-auto scroll-smooth text-center text-[12px];
+
+    /* &:not(:hover) {
+      @apply snap-x snap-mandatory;
+    } */
   }
   &__tab {
-    @apply relative grow rounded-t-[10px] bg-white px-5 py-1.5 sm:grow-0 md:min-w-[166px] [&.active]:z-10 [&.active]:shadow;
+    @apply relative rounded-t bg-white px-5 py-1.5 md:min-w-[166px];
 
-    &:not(&_active) span {
-      @apply opacity-50;
+    span {
+      @apply relative z-40 opacity-50 transition;
+    }
+
+    &:hover {
+      span {
+        @apply opacity-90;
+      }
+    }
+    &.active {
+      @apply snap-start;
+
+      span {
+        @apply opacity-100;
+      }
+    }
+
+    &.active::before {
+      content: "";
+      @apply absolute inset-0 z-10 rounded-[inherit] shadow;
+    }
+    &.active::after {
+      content: "";
+      @apply absolute inset-0 z-30 rounded-[inherit] bg-white;
     }
   }
-  &__content {
-    @apply relative z-10 rounded-b-[10px] bg-white p-5 shadow sm:rounded-tr-[10px];
+  &__form {
+    @apply relative z-20 rounded-b rounded-tr bg-white p-5 shadow;
   }
   &__grid {
     @apply grid gap-4 sm:grid-cols-2 sm:gap-5 md:gap-7 lg:grid-cols-4;

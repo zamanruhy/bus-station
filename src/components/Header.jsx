@@ -22,7 +22,11 @@ export default function Header() {
             <span className="header__item">
               <ClockIcon /> Eжедневно с 8:00 до 20:00
             </span>
-            <a href="#" className="header__item header__item_auth">
+            <a
+              href="#"
+              className="header__item header__item_auth"
+              aria-label="Личный кабинет"
+            >
               <UserIcon />
               <span className="hidden md:block">Личный кабинет</span>
             </a>

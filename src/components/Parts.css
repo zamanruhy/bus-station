@@ -2,7 +2,13 @@
   @apply mb-[50px] grid gap-4 md:mb-[120px] md:grid-cols-3 md:gap-[30px];
 
   &__item {
-    @apply rounded-[10px] bg-gradient-80 from-primary-lightest to-primary p-7 text-white;
+    @apply relative isolate rounded bg-primary-lighter p-7 text-white;
+  }
+  &__item-overlay {
+    @apply absolute inset-0 z-[-1] rounded bg-gradient-80 from-primary-lightest to-primary transition;
+  }
+  &__item:hover &__item-overlay {
+    @apply opacity-0;
   }
   &__item-head {
     @apply mb-4 flex items-center;

@@ -1,8 +1,14 @@
 .route {
   @apply flex flex-col rounded-[10px] shadow;
 
+  &__img-wrap {
+    @apply overflow-hidden rounded-[10px];
+  }
   &__img {
-    @apply aspect-[1.9] max-h-[300px] w-full rounded-[10px] object-cover;
+    @apply aspect-[1.9] max-h-[300px] w-full max-w-none object-cover transition duration-200 ease-out will-change-transform;
+  }
+  &:hover &__img {
+    @apply scale-[1.03];
   }
   &__content {
     @apply flex grow flex-col p-5;

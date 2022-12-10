@@ -25,8 +25,7 @@ export default function Offices() {
                 type="button"
                 role="tab"
                 className="offices__tab"
-                classList={{ offices__tab_active: i === 0 }}
-                aria-selected={i === 0}
+                classList={{ active: i === 0 }}
               >
                 {name}
               </button>
