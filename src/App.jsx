@@ -4,7 +4,7 @@ import { Route, Routes } from '@solidjs/router'
 import { Layout } from './components/Layout'
 import Home from './pages/Home'
 import Schedule from './pages/Schedule'
-import Сhoice from './pages/Сhoice'
+import Сhoice from './pages/Choice'
 import Booking from './pages/Booking'
 import Seats from './pages/Seats'
 

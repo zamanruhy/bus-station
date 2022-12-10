@@ -8,7 +8,7 @@ import AttentionIcon from '../icons/attention.svg?component'
 import GirlIcon from '../icons/girl.svg?component'
 import LicenseIcon from '../icons/license.svg?component'
 
-export default function Сhoice() {
+export default function Choice() {
   return (
     <>
       <Intro concise title="Поиск рейса" />
