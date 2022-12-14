@@ -2,6 +2,8 @@ import { onMount } from 'solid-js'
 import Button from './Button'
 import Input from './Input'
 
+import './BookingDone.css'
+
 function script() {
   const els = Array.from(document.querySelectorAll('dialog'))
   if (!els.length) return
@@ -24,21 +26,14 @@ if (import.meta.env.PROD && !import.meta.env.SSR) {
 export default function BookingDone() {
   onMount(script)
   return (
-    <dialog
-      id="bookingModal"
-      className="booking-done max-h-[calc(100%-20px)] w-[calc(100%-20px)] max-w-[558px] rounded bg-primary
-      p-[30px] text-center text-white backdrop:pointer-events-none backdrop:bg-black/60
-      open:animate-scale-in open:backdrop:animate-fade-in sm:p-[50px]"
-    >
-      <h5 className="mb-[10px] text-[24px] font-black leading-tight sm:text-[28px]">
-        Завершение бронирования
-      </h5>
-      <form method="dialog" className="mx-auto max-w-[362px]">
-        <p className="mb-[30px]">
+    <dialog id="bookingModal" className="booking-done scrollbar-dark">
+      <h5 className="booking-done__title">Завершение бронирования</h5>
+      <form className="booking-done__form">
+        <p className="booking-done__lead">
           Для завершения бронирования введите реквизиты электронного билета. Они
           поступят в виде СМС на указанный номер телефона
         </p>
-        <div className="mb-[30px] grid gap-[30px]">
+        <div className="booking-done__inputs">
           <Input
             variant="secondary"
             required
@@ -46,7 +41,7 @@ export default function BookingDone() {
             name="req"
           />
           <div className="">
-            <p className="mb-[10px] opacity-50">
+            <p className="booking-done__msg">
               Если вы хотите получить копию билета и кассовый чек на электронную
               почту, то укажите еe ниже
             </p>
@@ -60,7 +55,12 @@ export default function BookingDone() {
           </div>
         </div>
 
-        <Button type="submit" variant="secondary" size="md" class="w-full">
+        <Button
+          type="submit"
+          variant="secondary"
+          size="md"
+          class="booking-done__button"
+        >
           Отправить
         </Button>
       </form>

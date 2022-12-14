@@ -120,7 +120,7 @@ export default defineConfig({
   },
   ssr: {
     // Vite attempts to load this as a Commonjs dependency
-    noExternal: ['solid-meta', '@solidjs/router']
+    noExternal: ['solid-meta', '@solidjs/router', '@fancyapps/ui']
   },
   // assetsInclude: [/\/static\/.*$/],
   server: { port: 3000, strictPort: true },

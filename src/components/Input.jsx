@@ -1,8 +1,9 @@
-import { splitProps } from 'solid-js'
+import { mergeProps, splitProps } from 'solid-js'
 import './Input.css'
 
 export default function Input(props) {
-  const [, rest] = splitProps(props, ['class', 'variant', 'icon'])
+  props = mergeProps({ as: 'button', type: 'text' }, props)
+  const [, rest] = splitProps(props, ['class', 'variant', 'icon', 'type'])
 
   return (
     <div
@@ -13,7 +14,7 @@ export default function Input(props) {
         'input_has-icon': Boolean(props.icon)
       }}
     >
-      <input class="input__input" type="text" {...rest} />
+      <input class="input__input" type={props.type} {...rest} />
       {props.icon && <span className="input__addon">{props.icon}</span>}
     </div>
   )

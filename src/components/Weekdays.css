@@ -1,0 +1,32 @@
+.weekdays {
+  &__inner {
+    @apply flex;
+  }
+
+  &__prev,
+  &__next {
+    @apply flex w-[25px] shrink-0 items-center justify-center rounded disabled:opacity-50;
+
+    svg {
+      @apply h-3 fill-current;
+    }
+  }
+  &__prev {
+    @apply pr-[10px];
+  }
+  &__next {
+    @apply order-last pl-[10px];
+  }
+  &__viewport {
+    @apply grow overflow-hidden;
+  }
+  &__container {
+    @apply -ml-5 flex select-none;
+  }
+  &__item {
+    @apply flex w-full shrink-0 pl-5 sm:w-1/2 md:w-1/4;
+  }
+  &__link {
+    @apply w-full rounded border border-[#323232]/10 p-1 text-center text-[#323232]/50 transition hover:border-[#323232]/30 hover:text-[#323232]/90 [.active>&]:border-[#323232] [.active>&]:text-[#323232];
+  }
+}

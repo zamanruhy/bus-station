@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@fancyapps/ui': ^4.0.31
       '@solidjs/router': ^0.4.2
       '@typescript-eslint/eslint-plugin': ^5.36.1
       '@typescript-eslint/parser': ^5.36.1
@@ -38,6 +39,7 @@ importers:
       vite-plugin-solid: ^2.3.0
       vite-plugin-solid-svg: ^0.4.1
     dependencies:
+      '@fancyapps/ui': 4.0.31
       embla-carousel: 7.0.2
       imask: 6.4.2
       solid-js: 1.5.3
@@ -471,6 +473,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@fancyapps/ui/4.0.31:
+    resolution: {integrity: sha512-D7+PMIloxSOFJyY+lXcNlVDhmssOmDT6PT5fqQUIiws2hT7PH29r0EKZxERmACSQpm6qrFkP7rSguzXWvRJduQ==}
+    dev: false
 
   /@humanwhocodes/config-array/0.10.4:
     resolution: {integrity: sha512-mXAIHxZT3Vcpg83opl1wGlVZ9xydbfZO3r5YfRSH6Gpp2J/PfdBP0wbDa2sO6/qRbcalpoevVyW6A/fI6LfeMw==}

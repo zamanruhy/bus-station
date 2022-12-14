@@ -14,34 +14,36 @@ import Select from '@/components/Select'
 import Button from '@/components/Button'
 import BookingDone from '@/components/BookingDone'
 
+import seatsImg from '../images/seats.jpg?jpg'
+
+import './Booking.css'
+import Image from '@/components/Image'
+import Gallery from '@/components/Gallery'
+
 export default function Booking() {
   return (
     <>
       <Intro concise title="Бронь" />
       <Finder />
-      <div className="booking pt-[60px] pb-[100px]">
+      <div className="booking">
         <div className="container">
-          <h2 className="mb-[40px] max-w-[57ch] text-[26px] font-black uppercase md:mb-[50px] md:text-[28px]">
-            Забронируйте билет online
-          </h2>
-          <div className="grid grid-cols-1 gap-x-[30px] gap-y-[60px] lg:grid-cols-[minmax(0,1fr)_26%] xl:gap-x-[50px]">
-            <div className="">
-              <div className="mb-[40px] flex flex-wrap items-center justify-between gap-x-[30px] gap-y-3 md:mb-[50px]">
-                <h3 className="text-[20px] font-semibold">
+          <h2 className="booking__title title">Забронируйте билет online</h2>
+          <div className="booking__layout">
+            <div className="booking__main">
+              <div className="booking__headline">
+                <h3 className="booking__headline-title">
                   Маршрут № 260 Кяхта — Улан-Удэ, 01.11.2022, 07:00
                 </h3>
               </div>
               <Flight />
               <hr className="mt-[30px] mb-[50px]" />
               <form action="#" className="">
-                <h4 className="mb-5 text-[20px] font-semibold">
-                  Данные пассажира:
-                </h4>
-                <div className="grid gap-[50px]">
+                <h4 className="booking__subtitle">Данные пассажира:</h4>
+                <div className="booking__fieldsets">
                   {Array.from({ length: 2 }).map((_, i) => (
-                    <fieldset className="">
+                    <fieldset className="booking__fieldset">
                       <legend className="mb-[10px]">Пассажир № {i + 1}</legend>
-                      <div className="mb-5 grid grid-cols-1 gap-y-[16px] gap-x-[30px] md:grid-cols-3">
+                      <div className="booking__inputs">
                         <Input
                           variant="primary"
                           name="name"
@@ -66,7 +68,7 @@ export default function Booking() {
                           ]}
                         />
                       </div>
-                      <div className="grid gap-[10px]">
+                      <div className="booking__radios">
                         <Radio
                           name="age"
                           value="adult"
@@ -95,21 +97,16 @@ export default function Booking() {
                     </fieldset>
                   ))}
                 </div>
-                <div className="mt-[50px]">
-                  <a
-                    href="#"
-                    className="flex items-center text-primary transition hover:opacity-80"
-                  >
-                    Добавить пассажира{' '}
-                    <span className="ml-[10px] text-[16px] leading-none">
-                      +
-                    </span>
+                <div className="booking__add-wrap">
+                  <a href="#" className="booking__add">
+                    Добавить пассажира <span>+</span>
                   </a>
                 </div>
                 <hr className="my-[50px]" />
-                <h4 className="mb-5 text-[20px] font-semibold">Выбор места:</h4>
-                <div className="flex flex-col flex-wrap gap-[30px] sm:flex-row">
-                  <div className="sm:w-[24%]">
+
+                <h4 className="booking__subtitle">Выбор места:</h4>
+                <div className="booking__sel">
+                  <div className="booking__sel-left">
                     <Input
                       variant="primary"
                       name="place"
@@ -119,46 +116,24 @@ export default function Booking() {
                       placeholder="Место"
                     />
                   </div>
-                  <div className="grow basis-0"></div>
-                  <div className="flex w-full justify-center md:w-[26%]">
-                    <div className="max-w-[340px]">
-                      <img
-                        className="aspect-[1.3] w-full rounded object-cover"
-                        src="https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=470&q=80"
-                        alt="#"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <div className="mt-[5px] grid grid-cols-3 gap-[10px]">
-                        {[
-                          {
-                            src: 'https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80'
-                          },
-                          {
-                            src: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80'
-                          },
-                          {
-                            src: 'https://images.unsplash.com/photo-1520442922418-8211a6fe605c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&q=80'
-                          }
-                        ].map(({ src }, i) => (
-                          <img
-                            className="aspect-[1.14] w-full rounded-[7px] object-cover"
-                            src={src}
-                            alt="#"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        ))}
-                      </div>
+                  <div className="booking__seats">
+                    <Image
+                      src={seatsImg}
+                      alt="#"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div className="booking__gallery">
+                    <div className="booking__gallery-inner">
+                      <Gallery />
                     </div>
                   </div>
                 </div>
-                <div
-                  className="mt-[55px] flex items-center justify-center"
-                  onclick="bookingModal.showModal()"
-                >
+                <div className="booking__footer">
+                  {/* onclick="bookingModal.showModal()" */}
                   <Button
-                    class="min-w-[166px]"
+                    class="booking__button"
                     type="submit"
                     variant="primary"
                     size="md"
@@ -169,7 +144,7 @@ export default function Booking() {
               </form>
               <BookingDone />
             </div>
-            <aside className="grid content-start items-start gap-[30px]">
+            <aside className="booking__side">
               <Attention Icon={AttentionIcon} variant="blue">
                 <p>В одном заказе вы можете выбрать до 4-х мест</p>
                 <p>

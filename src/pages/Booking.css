@@ -1,0 +1,69 @@
+.booking {
+  @apply pt-[60px] pb-[100px];
+
+  &__layout {
+    @apply grid grid-cols-1 gap-x-[30px] gap-y-[60px] lg:grid-cols-[minmax(0,1fr)_26%] xl:gap-x-[50px];
+  }
+  &__headline {
+    @apply mb-[40px] flex flex-wrap items-center justify-between gap-x-[30px] gap-y-3 md:mb-[50px];
+  }
+  &__headline-title {
+    @apply text-[20px] font-semibold;
+  }
+  &__headline-extra {
+    @apply text-[14px] opacity-50;
+  }
+  &__subtitle {
+    @apply mb-5 text-[20px] font-semibold;
+  }
+  &__fieldsets {
+    @apply grid gap-[50px];
+  }
+  &__inputs {
+    @apply mb-5 grid grid-cols-1 gap-y-[16px] gap-x-[30px] md:grid-cols-3;
+  }
+  &__radios {
+    @apply grid gap-[10px];
+  }
+  &__add-wrap {
+    @apply mt-[50px] flex;
+  }
+  &__add {
+    @apply flex items-center text-primary transition hover:opacity-80;
+
+    span {
+      @apply ml-[10px] text-[16px] leading-none;
+    }
+  }
+
+  &__sel {
+    @apply flex flex-col items-start gap-[30px] sm:flex-row sm:flex-wrap;
+  }
+  &__sel-left {
+    @apply sm:w-[24%];
+  }
+  &__seats {
+    @apply flex grow basis-0;
+
+    img {
+      @apply w-full;
+    }
+  }
+
+  &__gallery {
+    @apply flex w-full justify-center md:w-[26%];
+  }
+  &__gallery-inner {
+    @apply max-w-[340px];
+  }
+
+  &__footer {
+    @apply mt-[55px] flex items-center justify-center;
+  }
+  &__button {
+    @apply min-w-[166px];
+  }
+  &__side {
+    @apply grid content-start items-start gap-[30px];
+  }
+}

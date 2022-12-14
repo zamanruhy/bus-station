@@ -29,6 +29,22 @@
       }
     }
   }
+  .scrollbar-dark {
+    @media not all and (pointer: coarse) {
+      scrollbar-width: thin;
+      scrollbar-color: #323232 transparent;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #323232;
+        border-radius: 10px;
+      }
+    }
+  }
   .scrollbar-thin {
     @media not all and (pointer: coarse) {
       scrollbar-width: thin;
@@ -43,5 +59,8 @@
         background-color: #323232;
       }
     }
+  }
+  .title {
+    @apply mb-[40px] max-w-[57ch] text-[26px] font-black uppercase md:mb-[50px] md:text-[28px];
   }
 }

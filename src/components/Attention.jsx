@@ -1,24 +1,17 @@
+import './Attention.css'
+
 export default function Attention(props) {
   return (
     <arcticle
-      className="attention rounded p-5"
+      className="attention"
       classList={{
-        'bg-primary-lightest/[0.15] text-primary': props.variant === 'blue',
-        'bg-[#fcc02a]/[0.15]': props.variant === 'yellow',
-        'bg-[#ebebeb]/50': props.variant === 'gray'
+        [`attention_${props.variant}`]: Boolean(props.variant)
       }}
     >
-      <div className="mb-3">
-        <props.Icon
-          className="h-[35px]"
-          classList={{
-            'fill-primary': props.variant === 'blue',
-            'fill-[#fcc02a]': props.variant === 'yellow',
-            'fill-current': props.variant === 'gray'
-          }}
-        />
+      <div className="attention__pic">
+        <props.Icon className="attention__icon" />
       </div>
-      <div className="max-w-[80ch] [&_p+p]:mt-4">{props.children}</div>
+      <div className="attention__text">{props.children}</div>
     </arcticle>
   )
 }

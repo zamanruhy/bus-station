@@ -1,0 +1,77 @@
+.schedule {
+  @apply pt-[60px] pb-[100px];
+
+  &__layout {
+    @apply grid grid-cols-1 gap-x-[30px] gap-y-[60px] lg:grid-cols-[30%_minmax(0,1fr)];
+  }
+  &__side {
+  }
+  &__side-title {
+    @apply mb-[40px] text-[20px] font-semibold md:mb-[50px];
+  }
+  &__side-table {
+    @apply rounded shadow;
+  }
+  &__side-head {
+    @apply grid grid-cols-[clamp(50px,20%,100px)_minmax(0,1fr)] border-b border-[#323232]/10 font-semibold;
+  }
+  &__side-cell {
+    @apply px-5 pt-[16px] pb-[10px];
+
+    &:first-child {
+      @apply sm:pl-7;
+    }
+  }
+  &__side-content {
+    @apply max-h-[50vh] overflow-y-auto pb-[10px] lg:max-h-[615px];
+  }
+  &__side-item {
+    @apply grid grid-cols-[clamp(50px,20%,100px)_minmax(0,1fr)] transition hover:bg-primary-lightest/10
+    [&.active]:bg-primary-lightest/[0.15] [&.active]:font-semibold;
+  }
+  &__side-item-cell {
+    @apply px-5 py-[10px];
+
+    &:first-child {
+      @apply sm:pl-7;
+    }
+  }
+  &__headline {
+    @apply mb-[40px] flex flex-wrap items-center justify-between gap-x-[30px] gap-y-3 md:mb-[50px];
+  }
+  &__headline-title {
+    @apply text-[20px] font-semibold;
+  }
+  &__headline-extra {
+    @apply text-[14px] opacity-50;
+  }
+  &__weekdays {
+    @apply mb-[50px];
+  }
+
+  &__date {
+    @apply mb-[50px] grid gap-x-[30px] gap-y-[40px] md:grid-cols-[auto_minmax(0,1fr)];
+  }
+  &__date-subtitle {
+    @apply mb-5;
+  }
+  &__date-self {
+    @apply block w-fit min-w-[166px] justify-center rounded border border-current p-[14px] text-center;
+  }
+  &__date-times {
+    @apply grid grid-cols-[repeat(auto-fill,minmax(68px,1fr))] gap-[20px] sm:gap-[30px];
+  }
+  &__date-time {
+    @apply flex items-center justify-center rounded border border-[#323232]/10 p-[14px] text-center transition hover:border-[#323232]/30 [&.active]:border-[#323232];
+  }
+
+  &__footer {
+    @apply mt-[30px] flex flex-wrap items-center justify-between gap-y-[20px] gap-x-[30px];
+  }
+  &__button {
+    @apply min-w-[264px];
+  }
+  &__suminfo {
+    @apply font-semibold;
+  }
+}

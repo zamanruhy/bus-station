@@ -1,0 +1,24 @@
+.booking-done {
+  @apply max-h-[calc(100%-20px)] w-[calc(100%-20px)] max-w-[558px] rounded bg-primary
+      p-[30px] text-center text-white [overflow:overlay] backdrop:pointer-events-none
+      backdrop:bg-black/60 open:animate-scale-in open:backdrop:animate-fade-in sm:p-[50px];
+
+  &__title {
+    @apply mb-[10px] text-[24px] font-black leading-tight sm:text-[28px];
+  }
+  &__form {
+    @apply mx-auto max-w-[362px];
+  }
+  &__lead {
+    @apply mb-[30px];
+  }
+  &__inputs {
+    @apply mb-[30px] grid gap-[30px];
+  }
+  &__msg {
+    @apply mb-[10px] opacity-50;
+  }
+  &__button {
+    @apply w-full;
+  }
+}

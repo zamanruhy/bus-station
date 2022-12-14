@@ -1,0 +1,25 @@
+.choice {
+  @apply pt-[60px] pb-[100px];
+
+  &__layout {
+    @apply grid grid-cols-1 gap-x-[30px] gap-y-[60px] lg:grid-cols-[minmax(0,1fr)_26%] xl:gap-x-[50px];
+  }
+  &__headline {
+    @apply mb-[40px] flex flex-wrap items-center justify-between gap-x-[30px] gap-y-3 md:mb-[50px];
+  }
+  &__headline-title {
+    @apply text-[20px] font-semibold;
+  }
+  &__headline-extra {
+    @apply text-[14px] opacity-50;
+  }
+  &__weekdays {
+    @apply mb-[35px];
+  }
+  &__flights {
+    @apply grid gap-[30px];
+  }
+  &__side {
+    @apply grid content-start items-start gap-[30px];
+  }
+}

@@ -1,0 +1,32 @@
+.attention {
+  @apply rounded p-5;
+
+  &_blue {
+    @apply bg-primary-lightest/[0.15] text-primary;
+  }
+  &_yellow {
+    @apply bg-[#fcc02a]/[0.15];
+  }
+  &_gray {
+    @apply bg-[#ebebeb]/50;
+  }
+
+  &__pic {
+    @apply mb-3;
+  }
+  &__icon {
+    @apply h-[35px];
+  }
+  &_blue &__icon {
+    @apply fill-primary;
+  }
+  &_yellow &__icon {
+    @apply fill-[#fcc02a];
+  }
+  &_gray &__icon {
+    @apply fill-current;
+  }
+  &__text {
+    @apply max-w-[80ch] [&_p+p]:mt-4;
+  }
+}

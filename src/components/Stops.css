@@ -1,0 +1,50 @@
+.stops {
+  @apply grid grid-cols-1 gap-[30px] md:grid-cols-[36%,minmax(0,1fr)] md:gap-[40px];
+
+  &__main {
+    @apply max-w-[320px];
+  }
+  &__legend {
+    @apply mb-5;
+  }
+  &__stack {
+    @apply relative grid gap-[20px] pl-[18px];
+  }
+  &__line {
+    @apply absolute inset-y-0 left-[3px] w-px bg-primary;
+  }
+  &__end {
+    @apply relative flex justify-between gap-[20px];
+  }
+  &__end-city {
+    @apply block;
+  }
+  &__end-type {
+    @apply block text-[12px] opacity-50;
+  }
+  &__end-mask {
+    @apply absolute left-[-18px] w-[7px] bg-white before:absolute before:aspect-square before:w-full before:rounded-full before:bg-primary;
+  }
+  &__end:first-of-type &__end-mask {
+    @apply top-0 h-[13px] before:bottom-0;
+  }
+  &__end:last-of-type &__end-mask {
+    @apply bottom-0 top-[7px] before:top-0;
+  }
+  &__item {
+    @apply flex justify-between gap-[20px] pl-[10px];
+  }
+  &__item-city {
+    @apply block;
+  }
+  &__item-type {
+    @apply block text-[12px] opacity-50;
+  }
+
+  &__side {
+    @apply self-start overflow-hidden rounded;
+  }
+  &__map {
+    @apply h-[350px] w-full;
+  }
+}

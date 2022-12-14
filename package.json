@@ -28,6 +28,7 @@
     "ghpages": "deploy.sh"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
     "embla-carousel": "^7.0.2",
     "imask": "^6.4.2",
     "solid-js": "^1.5.3"
