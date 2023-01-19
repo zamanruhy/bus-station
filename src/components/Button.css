@@ -1,17 +1,17 @@
 .button {
   @apply relative inline-flex cursor-pointer items-center justify-center text-center align-middle transition;
 
-  &_primary:not([disabled]) {
+  &_primary:not(:disabled) {
     @apply bg-primary text-white hover:bg-primary-lighter;
   }
-  &_secondary:not([disabled]) {
-    @apply bg-white text-primary hover:bg-white/90;
+  &_secondary:not(:disabled) {
+    @apply bg-white text-[#323232] hover:bg-white/90;
     /* text-[#323232] */
   }
   &_md {
     @apply min-h-[50px] rounded-[10px] py-1 px-5;
   }
-  &[disabled] {
+  &:disabled {
     @apply pointer-events-none bg-gray-300 text-gray-500;
   }
 }

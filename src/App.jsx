@@ -7,6 +7,7 @@ import Schedule from './pages/Schedule'
 import Сhoice from './pages/Choice'
 import Booking from './pages/Booking'
 import Seats from './pages/Seats'
+import Orders from './pages/Orders'
 
 import './styles/utilities.css'
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path={'/choice'} element={<Сhoice />} />
         <Route path={'/booking'} element={<Booking />} />
         <Route path={'/seats'} element={<Seats />} />
+        <Route path={'/orders'} element={<Orders />} />
       </Routes>
     </Layout>
   )

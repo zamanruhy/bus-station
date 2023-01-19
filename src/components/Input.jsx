@@ -2,7 +2,7 @@ import { mergeProps, splitProps } from 'solid-js'
 import './Input.css'
 
 export default function Input(props) {
-  props = mergeProps({ as: 'button', type: 'text' }, props)
+  props = mergeProps({ type: 'text' }, props)
   const [, rest] = splitProps(props, ['class', 'variant', 'icon', 'type'])
 
   return (
