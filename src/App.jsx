@@ -8,6 +8,8 @@ import Сhoice from './pages/Choice'
 import Booking from './pages/Booking'
 import Seats from './pages/Seats'
 import Orders from './pages/Orders'
+import Payments from './pages/Payments'
+import Faq from './pages/Faq'
 
 import './styles/utilities.css'
 
@@ -21,6 +23,8 @@ export default function App() {
         <Route path={'/booking'} element={<Booking />} />
         <Route path={'/seats'} element={<Seats />} />
         <Route path={'/orders'} element={<Orders />} />
+        <Route path={'/payment'} element={<Payments />} />
+        <Route path={'/faq'} element={<Faq />} />
       </Routes>
     </Layout>
   )

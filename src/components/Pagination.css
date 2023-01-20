@@ -1,0 +1,33 @@
+.pagination {
+  @apply flex items-center justify-between gap-[20px];
+  margin-top: 30px;
+
+  &__end {
+    @apply flex h-[30px] items-center gap-[8px] whitespace-nowrap max-sm:hidden;
+
+    &.disabled {
+      @apply pointer-events-none opacity-50;
+    }
+
+    svg {
+      @apply h-[10px] fill-current;
+    }
+  }
+  &__items {
+    @apply mx-auto flex flex-wrap items-center justify-center gap-[4px];
+  }
+  &__item {
+    @apply flex h-[30px] min-w-[24px] items-center justify-center;
+
+    &.disabled {
+      @apply pointer-events-none opacity-50;
+    }
+    &.active {
+      @apply font-semibold;
+    }
+
+    svg {
+      @apply h-[10px] fill-current;
+    }
+  }
+}

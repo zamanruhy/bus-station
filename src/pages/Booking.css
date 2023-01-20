@@ -37,17 +37,17 @@
   }
 
   &__sel {
-    @apply flex flex-col items-start gap-[30px] sm:flex-row sm:flex-wrap;
+    @apply flex flex-col items-start gap-[30px] sm:flex-row sm:flex-wrap md:flex-nowrap;
   }
   &__sel-left {
     @apply sm:w-[24%];
   }
   &__seats {
-    @apply flex grow basis-0;
+    @apply grow;
 
-    img {
+    /* img {
       @apply w-full;
-    }
+    } */
   }
 
   &__gallery {

@@ -3,7 +3,13 @@ import './Input.css'
 
 export default function Input(props) {
   props = mergeProps({ type: 'text' }, props)
-  const [, rest] = splitProps(props, ['class', 'variant', 'icon', 'type'])
+  const [, rest] = splitProps(props, [
+    'class',
+    'variant',
+    'icon',
+    'type',
+    'multiline'
+  ])
 
   return (
     <div
@@ -14,7 +20,12 @@ export default function Input(props) {
         'input_has-icon': Boolean(props.icon)
       }}
     >
-      <input class="input__input" type={props.type} {...rest} />
+      {props.multiline ? (
+        <textarea class="input__input" {...rest}></textarea>
+      ) : (
+        <input class="input__input" type={props.type} {...rest} />
+      )}
+
       {props.icon && <span className="input__addon">{props.icon}</span>}
     </div>
   )

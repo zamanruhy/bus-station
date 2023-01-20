@@ -1,0 +1,34 @@
+.arrangement {
+  @apply max-w-[400px] text-[12px] text-[#323232]/50;
+
+  &__head {
+    @apply mb-[8px] flex gap-[30px];
+  }
+  &__legend {
+    @apply flex items-center gap-[5px];
+  }
+  &__legend-cell {
+    @apply aspect-square w-[25px] shrink-0 rounded-[7px];
+  }
+  &__legend-text {
+    @apply leading-none;
+  }
+  &__grid {
+    @apply grid gap-[5px] rounded border border-[#323232]/10 p-[8px];
+  }
+  &__row {
+    @apply flex min-w-0 justify-evenly gap-[5px];
+  }
+  &__cell {
+    @apply flex aspect-square w-[35px] items-center justify-center rounded first:mr-[5%];
+  }
+  &__free {
+    @apply border border-[#323232]/10;
+  }
+  &__busy {
+    @apply bg-[#323232]/10;
+  }
+  &__selected {
+    @apply bg-primary text-white;
+  }
+}

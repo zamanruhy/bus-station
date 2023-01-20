@@ -1,0 +1,34 @@
+.faq {
+  @apply pt-[60px] pb-[100px];
+
+  &__layout {
+    @apply grid grid-cols-1 items-baseline gap-x-[30px] gap-y-[60px] lg:grid-cols-[minmax(0,1fr)_362px] xl:gap-x-[50px];
+  }
+  &__main {
+    max-width: 588px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__item {
+    @apply border-b border-b-[#323232]/10 py-[30px] first-of-type:pt-0;
+  }
+  &__item-question {
+  }
+  &__item-title {
+    @apply mb-[5px] font-semibold;
+  }
+  &__item-text {
+  }
+  &__item-date {
+    @apply mt-[5px] block opacity-50;
+  }
+  &__item-answer {
+    @apply mt-[20px] ml-[20px] md:ml-[68px];
+  }
+
+  &__side {
+    @apply grid content-start items-start gap-[30px] max-lg:max-w-[450px];
+  }
+}

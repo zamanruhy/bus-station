@@ -14,11 +14,13 @@ import Select from '@/components/Select'
 import Button from '@/components/Button'
 import BookingDone from '@/components/BookingDone'
 
-import seatsImg from '../images/seats.jpg?jpg'
+// import seatsImg from '../images/seats.jpg?jpg'
+
+// import Image from '@/components/Image'
+import Gallery from '@/components/Gallery'
 
 import './Booking.css'
-import Image from '@/components/Image'
-import Gallery from '@/components/Gallery'
+import Arrangement from '@/components/Arrangement'
 
 export default function Booking() {
   return (
@@ -117,12 +119,13 @@ export default function Booking() {
                     />
                   </div>
                   <div className="booking__seats">
-                    <Image
+                    {/* <Image
                       src={seatsImg}
                       alt="#"
                       loading="lazy"
                       decoding="async"
-                    />
+                    /> */}
+                    <Arrangement />
                   </div>
                   <div className="booking__gallery">
                     <div className="booking__gallery-inner">

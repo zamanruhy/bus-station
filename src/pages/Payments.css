@@ -1,0 +1,22 @@
+.payments {
+  @apply pt-[60px] pb-[100px];
+
+  &__layout {
+    @apply grid grid-cols-1 gap-x-[30px] gap-y-[60px] lg:grid-cols-[minmax(0,1fr)_26%] xl:gap-x-[50px];
+  }
+  &__list {
+    display: grid;
+    gap: 30px;
+  }
+  &__locations {
+    @apply rounded p-[30px] shadow;
+
+    a {
+      @apply underline hover:no-underline;
+    }
+  }
+
+  &__side {
+    @apply grid content-start items-start gap-[30px];
+  }
+}

@@ -1,0 +1,81 @@
+.payment {
+  @apply relative rounded shadow;
+
+  &__content {
+    @apply p-[30px];
+  }
+  &__head {
+    @apply flex flex-col-reverse gap-x-[40px] gap-y-[10px] sm:flex-row;
+  }
+  &__caption {
+    @apply grow;
+  }
+  &__title {
+    @apply mb-1.5 text-[20px] font-semibold;
+  }
+  &__text {
+    @apply text-[14px];
+  }
+  &__img {
+    @apply h-[70px] w-[180px] shrink-0 object-contain;
+  }
+  &__placeholder {
+    @apply hidden w-[180px] shrink-0 sm:block;
+  }
+  &__detials {
+    @apply flex flex-col-reverse open:relative open:pb-[45px];
+  }
+  &__pointer {
+    @apply absolute right-0 bottom-[10px] mr-[15px] flex cursor-pointer items-start p-[15px] group-open:inset-x-0 group-open:bottom-0 group-open:m-0 group-open:h-[45px] group-open:justify-end group-open:p-0;
+  }
+  &__pointer-icon {
+    @apply h-[8px] fill-current group-open:mt-[8px] group-open:mr-[30px] group-open:rotate-180;
+  }
+  &__hr {
+    @apply opacity-50;
+  }
+
+  &__expl {
+    @apply grid gap-x-[30px] gap-y-[40px] px-[30px] pb-[30px] pt-[20px] sm:grid-cols-2;
+  }
+  &__expl-title {
+    @apply mb-[20px] font-semibold;
+  }
+  &__expl-text {
+    @apply mb-[30px];
+  }
+  &__expl-list {
+    @apply grid gap-[30px];
+  }
+  &__expl-item {
+    @apply flex;
+  }
+  &__expl-num {
+    @apply mr-[10px] shrink-0 text-[28px] font-black;
+  }
+  &__expl-def {
+    @apply grow;
+  }
+  &__expl-subtitle {
+    @apply font-semibold;
+  }
+  &__expl-info {
+    @apply opacity-50;
+  }
+
+  &__facts {
+    @apply grid gap-[50px] p-[30px];
+  }
+  &__fact {
+  }
+  &__fact-img {
+    @apply mb-[10px] h-[35px];
+  }
+  &__fact-title {
+    @apply mb-[10px] font-semibold;
+  }
+
+  &__content-list {
+    @apply ml-[24px] list-disc;
+  }
+}
