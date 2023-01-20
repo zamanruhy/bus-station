@@ -88,7 +88,756 @@
           </div>
         </nav>
       </div>
-      <main class="app__main"></main>
+      <main class="app__main">
+        <section class="intro intro_concise">
+          <img
+            src="assets/img/intro.jpg"
+            width="2160"
+            height="639"
+            alt="Intro"
+            class="intro__img"
+            fetchpriority="high"
+          />
+          <div class="container">
+            <div class="intro__inner">
+              <div class="intro__content"><h1 class="intro__title">Как оплатить</h1></div>
+              <ul class="social intro__social">
+                <li>
+                  <a href="#" class="social__link" aria-label="Telegram"
+                    ><svg
+                      viewBox="0 0 13 12"
+                      class="social__icon right-px top-px"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12.5.88-1.88 9.8s-.26.68-.98.36L5.3 7.6l-.02-.01 5.33-4.97c.3-.3.11-.47-.24-.25l-6.7 4.41-2.6-.9s-.4-.15-.44-.47c-.04-.33.46-.5.46-.5L11.63.6s.87-.39.87.27Z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social__link" aria-label="Whatsapp"
+                    ><svg viewBox="0 0 14 14" class="social__icon left-px" aria-hidden="true">
+                      <path
+                        d="M11.45 2.54a6.53 6.53 0 0 0-10.29 7.84l-.91 3.37 3.48-.91a6.53 6.53 0 0 0 9.65-5.74 6.64 6.64 0 0 0-1.93-4.56ZM10 9.47c-.14.36-.78.73-1.1.77-.27.05-.64.05-1-.04-.23-.1-.55-.19-.92-.37a6.88 6.88 0 0 1-2.79-2.46c-.09-.1-.68-.87-.68-1.69s.4-1.18.55-1.36c.13-.19.32-.19.45-.19h.32c.1 0 .23-.04.37.28.14.32.46 1.14.5 1.18.05.1.05.18 0 .28a.85.85 0 0 1-.18.27c-.1.09-.18.23-.23.27-.1.1-.18.19-.1.32.1.18.42.69.92 1.14.64.55 1.15.73 1.33.82.18.1.27.05.37-.04.09-.1.4-.46.5-.64.09-.18.23-.14.36-.1.14.05.96.46 1.1.55.19.1.28.14.32.19.05.13.05.45-.09.82Z"
+                      ></path></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="finder">
+          <div class="container">
+            <div class="finder__inner">
+              <div class="finder__head scrollbar-thin">
+                <a class="finder__tab active" href="#"><span>Республика Бурятия</span></a
+                ><a class="finder__tab" href="#"><span>Иркутская область</span></a>
+              </div>
+              <form class="finder__form">
+                <div class="finder__grid">
+                  <div class="input input_primary input_has-icon">
+                    <input
+                      class="input__input"
+                      type="text"
+                      name="from"
+                      required
+                      placeholder="Пункт отправки"
+                    /><span class="input__addon"
+                      ><svg viewBox="0 0 18 18" class="w-[18px]">
+                        <path
+                          d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                        ></path></svg
+                    ></span>
+                  </div>
+                  <div class="input input_primary input_has-icon">
+                    <input
+                      class="input__input"
+                      type="text"
+                      name="to"
+                      required
+                      placeholder="Пункт прибытия"
+                    /><span class="input__addon"
+                      ><svg viewBox="0 0 18 18" class="w-[18px]">
+                        <path
+                          d="M12.5 11h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0a4.5 4.5 0 1 1-.01-8.99A4.5 4.5 0 0 1 6.5 11Z"
+                        ></path></svg
+                    ></span>
+                  </div>
+                  <div class="input input_primary input_has-icon">
+                    <input
+                      class="input__input"
+                      type="text"
+                      name="date"
+                      required
+                      placeholder="Дата"
+                    /><span class="input__addon"
+                      ><svg viewBox="0 0 20 22" class="w-[20px]">
+                        <path
+                          d="M18 2h-1V0h-2v2H5V0H3v2H2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Zm0 18H2V9h16v11Zm0-13H2V4h16v3Z"
+                        ></path></svg
+                    ></span>
+                  </div>
+                  <button
+                    data-hk="0-0-0-0-2-8-0-0-1-3-0-0"
+                    class="button button_primary button_md"
+                    type="submit"
+                  >
+                    Найти рейсы
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="payments">
+          <div class="container">
+            <div class="payments__layout">
+              <div class="payments__main">
+                <h2 class="payments__title title">Как оплатить забронированые билеты</h2>
+                <div class="payments__list">
+                  <article class="payment">
+                    <div class="payment__content">
+                      <div class="payment__head">
+                        <div class="payment__caption">
+                          <h2 class="payment__title">
+                            Оплатить картой Visa, MasterCard, МИР <br /><span class="opacity-50"
+                              >(карты любых банков)</span
+                            >
+                          </h2>
+                          <p class="payment__text">
+                            C использованием надёжного и безопасного сервиса от АО «Альфа банк» или
+                            ПАО «СберБанк»
+                          </p>
+                        </div>
+                        <img
+                          src="assets/img/visa.png"
+                          width="360"
+                          height="96"
+                          class="payment__img"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <details class="payment__detials group">
+                      <summary class="payment__pointer">
+                        <svg viewBox="0 0 13 8" class="payment__pointer-icon">
+                          <path
+                            d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                          ></path>
+                        </svg>
+                      </summary>
+                      <div>
+                        <hr class="payment__hr" />
+                        <div class="payment__expl">
+                          <div class="">
+                            <h3 class="payment__expl-title">
+                              Порядок ввода данных банковской карты
+                            </h3>
+                            <p class="payment__expl-text">
+                              Для корректного ввода необходимо внимательно и точно, соблюдая
+                              последовательность цифр и букв, ввести данные так, как они указаны на
+                              вашей карте:
+                            </p>
+                            <img
+                              src="assets/img/card.jpg"
+                              width="724"
+                              height="296"
+                              class=""
+                              alt=""
+                              loading="lazy"
+                            />
+                          </div>
+                          <ul class="payment__expl-list">
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">1</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">Номер карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на лицевой стороне банковской карты и состоит
+                                  из 16-и цифр. Например: 0123 4567 8901 2345
+                                </p>
+                              </div>
+                            </li>
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">2</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">Срок действия карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на лицевой стороне банковской карты — месяц и
+                                  год, до которого действительна карта. Срок действия карты вводится
+                                  цифрами. Например, 11 (вводится в поле месяца) и 17 (вводится в
+                                  поле года), что означает, что карта действительна до ноября 2017
+                                  года
+                                </p>
+                              </div>
+                            </li>
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">3</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">Владелец карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на лицевой стороне банковской карты на
+                                  английском языке заглавными буквами. Например, IVAN IVANOV
+                                </p>
+                              </div>
+                            </li>
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">4</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">CVV2 или CVC2 код карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на обратной стороне банковской карты и состоит
+                                  из 3-х цифр. Например, 123
+                                </p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <hr class="payment__hr" />
+                        <div class="payment__facts">
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/percent.svg"
+                              width="35"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Оплата предоставляется без комиссии</h3>
+                            <p>
+                              Платежи осуществляются перечислением денежных средств с банковских
+                              карт Visa и Mastercard при наличии возможности совершения
+                              интернет-платежей, предоставленных Вашим банком, выпустившим
+                              банковскую карту. <br />О наличии возможности совершения
+                              интернет-платежей с использованием банковской карты, вы можете узнать,
+                              обратившись в банк. Услуга оплаты осуществляется в соответствии с
+                              Правилами международных платежных систем на принципах соблюдения
+                              конфиденциальности и безопасности совершения платежа, для чего
+                              используются самые современные методы проверки, шифрования и передачи
+                              данных по закрытым каналам связи. Ввод данных банковской карты
+                              осуществляется на защищенной платежной странице банка — партнера,
+                              предоставляющего услугу. Банком-партнером Автовокзал-онлайн.РФ
+                              является ОАО «Альфа-Банк» и ПАО «СберБанк».
+                            </p>
+                          </div>
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/eye.svg"
+                              width="36"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Конфиденциальность</h3>
+                            <p>
+                              Услуга оплаты через интернет предоставляется в соответствии с
+                              Правилами международных платежных систем на принципах соблюдения
+                              конфиденциальности и безопасности совершения платежа, для чего
+                              используются самые современные методы проверки, шифрования и передачи
+                              данных по закрытым каналам связи. Ввод данных банковской карты
+                              осуществляется на защищенной платежной странице банка ОАО «Альфа-Банк»
+                              и ПАО «СберБанк».
+                            </p>
+                          </div>
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/shield.svg"
+                              width="27"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Безопасность</h3>
+                            <p>
+                              Если ваша банковская карта поддерживает технологию 3D Secure, для
+                              осуществления платежа, вам необходимо будет пройти дополнительную
+                              проверку в банке, выпустившем Вашу карту. Вид проверки зависит от
+                              банка, как правило (но не всегда) это дополнительный пароль, который
+                              отправляется в СМС на номер телефона, привязанный к карте.
+                            </p>
+                          </div>
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/cross.svg"
+                              width="35"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Случаи отказа в совершении платежа:</h3>
+                            <ul class="payment__content-list">
+                              <li>
+                                Банковская карта не предназначена для совершения платежей через
+                                интернет, о чем можно узнать, осведомившись в Вашем банке
+                              </li>
+                              <li>Данные банковской карты введены неверно</li>
+                              <li>
+                                Истек срок действия банковской карты. Срок действия карты, как
+                                правило, указан на лицевой стороне карты (это месяц и год, до
+                                которого действительна карта). Подробнее о сроке действия карты вы
+                                можете узнать, обратившись в банк, выпустивший банковскую карту
+                              </li>
+                              <li>
+                                Недостаточно средств для оплаты на банковской карте. Подробнее о
+                                наличии средств на банковской карте вы можете узнать, обратившись в
+                                банк, выпустивший банковскую карту
+                              </li>
+                              <li>
+                                Превышен установленный лимит операций за день. Сумма ежедневного
+                                лимита для всех операций определяется банком-партнером
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </details>
+                  </article>
+                  <article class="payment">
+                    <div class="payment__content">
+                      <div class="payment__head">
+                        <div class="payment__caption">
+                          <h2 class="payment__title">
+                            Оплатить со счета ПАО «Сбербанк» с использованием сервиса «Сбербанк
+                            Онлайн»
+                          </h2>
+                          <p class="payment__text">
+                            Любые карты выпущенные банком ПАО «СберБанк»: Visa, Mastercard, Maestro,
+                            МИР
+                          </p>
+                        </div>
+                        <img
+                          src="assets/img/sberbank-online.png"
+                          width="300"
+                          height="140"
+                          class="payment__img"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <details class="payment__detials group">
+                      <summary class="payment__pointer">
+                        <svg viewBox="0 0 13 8" class="payment__pointer-icon">
+                          <path
+                            d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                          ></path>
+                        </svg>
+                      </summary>
+                      <div>
+                        <hr class="payment__hr" />
+                        <div class="payment__expl">
+                          <div class="">
+                            <h3 class="payment__expl-title">
+                              Порядок ввода данных банковской карты
+                            </h3>
+                            <p class="payment__expl-text">
+                              Для корректного ввода необходимо внимательно и точно, соблюдая
+                              последовательность цифр и букв, ввести данные так, как они указаны на
+                              вашей карте:
+                            </p>
+                            <img
+                              src="assets/img/card.jpg"
+                              width="724"
+                              height="296"
+                              class=""
+                              alt=""
+                              loading="lazy"
+                            />
+                          </div>
+                          <ul class="payment__expl-list">
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">1</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">Номер карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на лицевой стороне банковской карты и состоит
+                                  из 16-и цифр. Например: 0123 4567 8901 2345
+                                </p>
+                              </div>
+                            </li>
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">2</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">Срок действия карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на лицевой стороне банковской карты — месяц и
+                                  год, до которого действительна карта. Срок действия карты вводится
+                                  цифрами. Например, 11 (вводится в поле месяца) и 17 (вводится в
+                                  поле года), что означает, что карта действительна до ноября 2017
+                                  года
+                                </p>
+                              </div>
+                            </li>
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">3</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">Владелец карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на лицевой стороне банковской карты на
+                                  английском языке заглавными буквами. Например, IVAN IVANOV
+                                </p>
+                              </div>
+                            </li>
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">4</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">CVV2 или CVC2 код карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на обратной стороне банковской карты и состоит
+                                  из 3-х цифр. Например, 123
+                                </p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <hr class="payment__hr" />
+                        <div class="payment__facts">
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/percent.svg"
+                              width="35"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Оплата предоставляется без комиссии</h3>
+                            <p>
+                              Платежи осуществляются перечислением денежных средств с банковских
+                              карт Visa и Mastercard при наличии возможности совершения
+                              интернет-платежей, предоставленных Вашим банком, выпустившим
+                              банковскую карту. <br />О наличии возможности совершения
+                              интернет-платежей с использованием банковской карты, вы можете узнать,
+                              обратившись в банк. Услуга оплаты осуществляется в соответствии с
+                              Правилами международных платежных систем на принципах соблюдения
+                              конфиденциальности и безопасности совершения платежа, для чего
+                              используются самые современные методы проверки, шифрования и передачи
+                              данных по закрытым каналам связи. Ввод данных банковской карты
+                              осуществляется на защищенной платежной странице банка — партнера,
+                              предоставляющего услугу. Банком-партнером Автовокзал-онлайн.РФ
+                              является ОАО «Альфа-Банк» и ПАО «СберБанк».
+                            </p>
+                          </div>
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/eye.svg"
+                              width="36"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Конфиденциальность</h3>
+                            <p>
+                              Услуга оплаты через интернет предоставляется в соответствии с
+                              Правилами международных платежных систем на принципах соблюдения
+                              конфиденциальности и безопасности совершения платежа, для чего
+                              используются самые современные методы проверки, шифрования и передачи
+                              данных по закрытым каналам связи. Ввод данных банковской карты
+                              осуществляется на защищенной платежной странице банка ОАО «Альфа-Банк»
+                              и ПАО «СберБанк».
+                            </p>
+                          </div>
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/shield.svg"
+                              width="27"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Безопасность</h3>
+                            <p>
+                              Если ваша банковская карта поддерживает технологию 3D Secure, для
+                              осуществления платежа, вам необходимо будет пройти дополнительную
+                              проверку в банке, выпустившем Вашу карту. Вид проверки зависит от
+                              банка, как правило (но не всегда) это дополнительный пароль, который
+                              отправляется в СМС на номер телефона, привязанный к карте.
+                            </p>
+                          </div>
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/cross.svg"
+                              width="35"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Случаи отказа в совершении платежа:</h3>
+                            <ul class="payment__content-list">
+                              <li>
+                                Банковская карта не предназначена для совершения платежей через
+                                интернет, о чем можно узнать, осведомившись в Вашем банке
+                              </li>
+                              <li>Данные банковской карты введены неверно</li>
+                              <li>
+                                Истек срок действия банковской карты. Срок действия карты, как
+                                правило, указан на лицевой стороне карты (это месяц и год, до
+                                которого действительна карта). Подробнее о сроке действия карты вы
+                                можете узнать, обратившись в банк, выпустивший банковскую карту
+                              </li>
+                              <li>
+                                Недостаточно средств для оплаты на банковской карте. Подробнее о
+                                наличии средств на банковской карте вы можете узнать, обратившись в
+                                банк, выпустивший банковскую карту
+                              </li>
+                              <li>
+                                Превышен установленный лимит операций за день. Сумма ежедневного
+                                лимита для всех операций определяется банком-партнером
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </details>
+                  </article>
+                  <article class="payment">
+                    <div class="payment__content">
+                      <div class="payment__head">
+                        <div class="payment__caption">
+                          <h2 class="payment__title">
+                            Оплатить в ближайшем терминале самообслуживания ПАО «СберБанк»
+                          </h2>
+                          <p class="payment__text">
+                            Подробная инструкция по оплате в терминалах ПАО «СберБанк» (с
+                            использованием карт, наличными)
+                          </p>
+                        </div>
+                        <img
+                          src="assets/img/sberbank-terminal.png"
+                          width="332"
+                          height="140"
+                          class="payment__img"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <details class="payment__detials group">
+                      <summary class="payment__pointer">
+                        <svg viewBox="0 0 13 8" class="payment__pointer-icon">
+                          <path
+                            d="m1.42.06-1.1 1.1L6.5 7.35l6.19-6.19-1.1-1.1L6.5 5.14 1.42.06Z"
+                          ></path>
+                        </svg>
+                      </summary>
+                      <div>
+                        <hr class="payment__hr" />
+                        <div class="payment__expl">
+                          <div class="">
+                            <h3 class="payment__expl-title">
+                              Порядок ввода данных банковской карты
+                            </h3>
+                            <p class="payment__expl-text">
+                              Для корректного ввода необходимо внимательно и точно, соблюдая
+                              последовательность цифр и букв, ввести данные так, как они указаны на
+                              вашей карте:
+                            </p>
+                            <img
+                              src="assets/img/card.jpg"
+                              width="724"
+                              height="296"
+                              class=""
+                              alt=""
+                              loading="lazy"
+                            />
+                          </div>
+                          <ul class="payment__expl-list">
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">1</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">Номер карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на лицевой стороне банковской карты и состоит
+                                  из 16-и цифр. Например: 0123 4567 8901 2345
+                                </p>
+                              </div>
+                            </li>
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">2</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">Срок действия карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на лицевой стороне банковской карты — месяц и
+                                  год, до которого действительна карта. Срок действия карты вводится
+                                  цифрами. Например, 11 (вводится в поле месяца) и 17 (вводится в
+                                  поле года), что означает, что карта действительна до ноября 2017
+                                  года
+                                </p>
+                              </div>
+                            </li>
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">3</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">Владелец карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на лицевой стороне банковской карты на
+                                  английском языке заглавными буквами. Например, IVAN IVANOV
+                                </p>
+                              </div>
+                            </li>
+                            <li class="payment__expl-item">
+                              <div class="payment__expl-num">4</div>
+                              <div class="payment__expl-def">
+                                <h3 class="payment__expl-subtitle">CVV2 или CVC2 код карты</h3>
+                                <p class="payment__expl-info">
+                                  Как правило, указан на обратной стороне банковской карты и состоит
+                                  из 3-х цифр. Например, 123
+                                </p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <hr class="payment__hr" />
+                        <div class="payment__facts">
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/percent.svg"
+                              width="35"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Оплата предоставляется без комиссии</h3>
+                            <p>
+                              Платежи осуществляются перечислением денежных средств с банковских
+                              карт Visa и Mastercard при наличии возможности совершения
+                              интернет-платежей, предоставленных Вашим банком, выпустившим
+                              банковскую карту. <br />О наличии возможности совершения
+                              интернет-платежей с использованием банковской карты, вы можете узнать,
+                              обратившись в банк. Услуга оплаты осуществляется в соответствии с
+                              Правилами международных платежных систем на принципах соблюдения
+                              конфиденциальности и безопасности совершения платежа, для чего
+                              используются самые современные методы проверки, шифрования и передачи
+                              данных по закрытым каналам связи. Ввод данных банковской карты
+                              осуществляется на защищенной платежной странице банка — партнера,
+                              предоставляющего услугу. Банком-партнером Автовокзал-онлайн.РФ
+                              является ОАО «Альфа-Банк» и ПАО «СберБанк».
+                            </p>
+                          </div>
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/eye.svg"
+                              width="36"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Конфиденциальность</h3>
+                            <p>
+                              Услуга оплаты через интернет предоставляется в соответствии с
+                              Правилами международных платежных систем на принципах соблюдения
+                              конфиденциальности и безопасности совершения платежа, для чего
+                              используются самые современные методы проверки, шифрования и передачи
+                              данных по закрытым каналам связи. Ввод данных банковской карты
+                              осуществляется на защищенной платежной странице банка ОАО «Альфа-Банк»
+                              и ПАО «СберБанк».
+                            </p>
+                          </div>
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/shield.svg"
+                              width="27"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Безопасность</h3>
+                            <p>
+                              Если ваша банковская карта поддерживает технологию 3D Secure, для
+                              осуществления платежа, вам необходимо будет пройти дополнительную
+                              проверку в банке, выпустившем Вашу карту. Вид проверки зависит от
+                              банка, как правило (но не всегда) это дополнительный пароль, который
+                              отправляется в СМС на номер телефона, привязанный к карте.
+                            </p>
+                          </div>
+                          <div class="payment__fact">
+                            <img
+                              src="assets/img/cross.svg"
+                              width="35"
+                              height="35"
+                              class="payment__fact-img"
+                              alt=""
+                            />
+                            <h3 class="payment__fact-title">Случаи отказа в совершении платежа:</h3>
+                            <ul class="payment__content-list">
+                              <li>
+                                Банковская карта не предназначена для совершения платежей через
+                                интернет, о чем можно узнать, осведомившись в Вашем банке
+                              </li>
+                              <li>Данные банковской карты введены неверно</li>
+                              <li>
+                                Истек срок действия банковской карты. Срок действия карты, как
+                                правило, указан на лицевой стороне карты (это месяц и год, до
+                                которого действительна карта). Подробнее о сроке действия карты вы
+                                можете узнать, обратившись в банк, выпустивший банковскую карту
+                              </li>
+                              <li>
+                                Недостаточно средств для оплаты на банковской карте. Подробнее о
+                                наличии средств на банковской карте вы можете узнать, обратившись в
+                                банк, выпустивший банковскую карту
+                              </li>
+                              <li>
+                                Превышен установленный лимит операций за день. Сумма ежедневного
+                                лимита для всех операций определяется банком-партнером
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </details>
+                  </article>
+                  <article class="payment">
+                    <div class="payment__content">
+                      <div class="payment__head">
+                        <div class="payment__caption">
+                          <h2 class="payment__title">
+                            Оплата в ближайших отделениях ПАО «СберБанк» через оператора банка
+                          </h2>
+                          <p class="payment__text">
+                            Для оплаты заказа в отделениях ПАО «СберБанк» через оператора — вам
+                            необходимо предварительно забронировать билет и запомнить номер заказа.
+                            Оплачивая заказ, сообщите оператору ИНН организации 3812119333 (ООО
+                            «онлайнСервис») и номер забронированного заказа
+                          </p>
+                        </div>
+                        <img
+                          src="assets/img/sberbank.png"
+                          width="300"
+                          height="140"
+                          class="payment__img"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </article>
+                  <article class="payment">
+                    <div class="payment__content">
+                      <div class="payment__head">
+                        <div class="payment__caption">
+                          <h2 class="payment__title">
+                            Оплата по средствам мобильного банка или водителю <br /><span
+                              class="opacity-50"
+                              >(при наличии возможности)</span
+                            >
+                          </h2>
+                          <p class="payment__text">
+                            Для оплаты заказа в отделениях ПАО «СберБанк» через оператора — вам
+                            необходимо предварительно забронировать билет и запомнить номер заказа.
+                            Оплачивая заказ, сообщите оператору ИНН организации 3812119333 (ООО
+                            «онлайнСервис») и номер забронированного заказа
+                          </p>
+                        </div>
+                        <div class="payment__placeholder"></div>
+                      </div>
+                    </div>
+                  </article>
+                  <div class="payments__locations">
+                    Нажмите <a href="#">сюда</a>, что бы ознакомиться с адресами касс
+                  </div>
+                </div>
+              </div>
+              <aside class="payments__side"></aside>
+            </div>
+          </div>
+        </div>
+      </main>
       <footer class="footer">
         <div class="container">
           <div class="footer__grid">
