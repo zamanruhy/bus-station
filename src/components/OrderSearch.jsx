@@ -1,9 +1,27 @@
+import { onMount } from 'solid-js'
 import Button from './Button'
 import Checkbox from './Checkbox'
 import Input from './Input'
 import './OrderSearch.css'
 
+function script() {
+  const el = document.querySelector('.order-search')
+  if (!el) return
+
+  const buttonEl = el.querySelector('[type="submit"]')
+  const confirmEl = el.querySelector('[name="confirm"]')
+
+  confirmEl.addEventListener('change', (e) => {
+    buttonEl.disabled = !e.target.checked
+  })
+}
+
+if (import.meta.env.PROD && !import.meta.env.SSR) {
+  script()
+}
+
 export default function OrderSearch() {
+  onMount(script)
   return (
     <form class="order-search">
       <div class="order-search__inner">
@@ -27,7 +45,7 @@ export default function OrderSearch() {
         />
         <Checkbox
           class="xl:whitespace-nowrap"
-          name="allow"
+          name="confirm"
           label="Я согласен на обработку своих персональных данных"
         />
         <Button
@@ -37,6 +55,7 @@ export default function OrderSearch() {
           size="md"
           variant="secondary"
           value="Найти"
+          disabled
         />
       </div>
     </form>

@@ -23,7 +23,7 @@
     @apply flex aspect-square w-[35px] items-center justify-center rounded first:mr-[5%];
   }
   &__free {
-    @apply border border-[#323232]/10;
+    @apply cursor-pointer border border-[#323232]/10 transition hover:border-primary hover:text-primary;
   }
   &__busy {
     @apply bg-[#323232]/10;

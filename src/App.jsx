@@ -23,7 +23,7 @@ export default function App() {
         <Route path={'/booking'} element={<Booking />} />
         <Route path={'/seats'} element={<Seats />} />
         <Route path={'/orders'} element={<Orders />} />
-        <Route path={'/payment'} element={<Payments />} />
+        <Route path={'/payments'} element={<Payments />} />
         <Route path={'/faq'} element={<Faq />} />
       </Routes>
     </Layout>

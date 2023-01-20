@@ -1,5 +1,5 @@
 .payment {
-  @apply relative rounded shadow;
+  @apply relative overflow-hidden rounded shadow;
 
   &__content {
     @apply p-[30px];
@@ -26,10 +26,11 @@
     @apply flex flex-col-reverse open:relative open:pb-[45px];
   }
   &__pointer {
-    @apply absolute right-0 bottom-[10px] mr-[15px] flex cursor-pointer items-start p-[15px] group-open:inset-x-0 group-open:bottom-0 group-open:m-0 group-open:h-[45px] group-open:justify-end group-open:p-0;
+    @apply absolute inset-0 flex cursor-pointer items-end justify-end pr-[30px] pb-[20px]
+    group-open:inset-x-0 group-open:bottom-0 group-open:top-auto group-open:h-[45px] group-open:items-start;
   }
   &__pointer-icon {
-    @apply h-[8px] fill-current group-open:mt-[8px] group-open:mr-[30px] group-open:rotate-180;
+    @apply h-[8px] fill-current group-open:mt-[10px] group-open:rotate-180;
   }
   &__hr {
     @apply opacity-50;

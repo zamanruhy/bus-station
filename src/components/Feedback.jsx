@@ -2,8 +2,26 @@ import Button from './Button'
 import Checkbox from './Checkbox'
 import Input from './Input'
 import './Feedback.css'
+import { onMount } from 'solid-js'
+
+function script() {
+  const el = document.querySelector('.feedback')
+  if (!el) return
+
+  const buttonEl = el.querySelector('[type="submit"]')
+  const confirmEl = el.querySelector('[name="confirm"]')
+
+  confirmEl.addEventListener('change', (e) => {
+    buttonEl.disabled = !e.target.checked
+  })
+}
+
+if (import.meta.env.PROD && !import.meta.env.SSR) {
+  script()
+}
 
 export default function Feedback() {
+  onMount(script)
   return (
     <form class="feedback">
       <div class="feedback__inner">
@@ -41,7 +59,7 @@ export default function Feedback() {
         />
         <Checkbox
           class="xl:whitespace-nowrap"
-          name="allow"
+          name="confirm"
           label="Я согласен на обработку своих персональных данных"
         />
         <Button
@@ -51,6 +69,7 @@ export default function Feedback() {
           size="md"
           variant="secondary"
           value="Отправить"
+          disabled
         />
       </div>
     </form>

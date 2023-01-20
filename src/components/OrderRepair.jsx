@@ -1,9 +1,27 @@
+import { onMount } from 'solid-js'
 import Button from './Button'
 import Checkbox from './Checkbox'
 import Input from './Input'
 import './OrderRepair.css'
 
+function script() {
+  const el = document.querySelector('.order-repair')
+  if (!el) return
+
+  const buttonEl = el.querySelector('[type="submit"]')
+  const confirmEl = el.querySelector('[name="confirm"]')
+
+  confirmEl.addEventListener('change', (e) => {
+    buttonEl.disabled = !e.target.checked
+  })
+}
+
+if (import.meta.env.PROD && !import.meta.env.SSR) {
+  script()
+}
+
 export default function OrderRepair() {
+  onMount(script)
   return (
     <form class="order-repair">
       <div class="order-repair__inner">
@@ -34,7 +52,7 @@ export default function OrderRepair() {
         />
         <Checkbox
           class="xl:whitespace-nowrap"
-          name="allow"
+          name="confirm"
           label="Я согласен на обработку своих персональных данных"
         />
         <Button
@@ -44,6 +62,7 @@ export default function OrderRepair() {
           size="md"
           variant="secondary"
           value="Восстановить"
+          disabled
         />
       </div>
     </form>

@@ -14,6 +14,8 @@ export function render(url) {
     </Router>
   ))
   // body = body.replace(/data-hk=".+?"/g, '')
-  const head = renderToString(Meta)
+  let head = renderToString(Meta)
+  head = head.replace(/\sdata-sm=".+?"/g, '')
+  body = body.replace(/\sdata-hk=".+?"/g, '')
   return { head, body }
 }

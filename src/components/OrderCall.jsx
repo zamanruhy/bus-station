@@ -11,7 +11,7 @@ function script() {
   const el = document.querySelector('.order-call')
   if (!el) return
 
-  const buttonEl = el.querySelector('.order-call__button')
+  const buttonEl = el.querySelector('[type="submit"]')
   const confirmEl = el.querySelector('[name="confirm"]')
 
   confirmEl.addEventListener('change', (e) => {
@@ -56,14 +56,14 @@ export default function OrderCall() {
             label="Я согласен на обработку своих персональных данных"
           />
           <Button
+            as="input"
             type="submit"
             variant="secondary"
             size="md"
             disabled
             class="order-call__button"
-          >
-            Отправить
-          </Button>
+            value="Отправить"
+          />
         </form>
       </div>
     </section>

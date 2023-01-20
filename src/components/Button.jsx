@@ -15,19 +15,33 @@ export default function Button(props) {
   ])
 
   return (
-    <Dynamic
-      component={props.as}
-      class="button"
-      classList={{
-        [`button_${props.variant}`]: Boolean(props.variant),
-        [`button_${props.size}`]: Boolean(props.size),
-        [props.class]: Boolean(props.class),
-        ...props.classList
-      }}
-      href={props.href}
-      {...rest}
-    >
-      {props.children}
-    </Dynamic>
+    <>
+      {props.as === 'input' ? (
+        <input
+          class="button"
+          classList={{
+            [`button_${props.variant}`]: Boolean(props.variant),
+            [`button_${props.size}`]: Boolean(props.size),
+            [props.class]: Boolean(props.class),
+            ...props.classList
+          }}
+          {...rest}
+        />
+      ) : (
+        <Dynamic
+          component={props.as}
+          class="button"
+          classList={{
+            [`button_${props.variant}`]: Boolean(props.variant),
+            [`button_${props.size}`]: Boolean(props.size),
+            [props.class]: Boolean(props.class),
+            ...props.classList
+          }}
+          href={props.href}
+          {...rest}
+          children={props.children}
+        />
+      )}
+    </>
   )
 }
