@@ -139,7 +139,6 @@
                     <input
                       class="input__input"
                       type="text"
-                      as="button"
                       name="from"
                       required
                       placeholder="Пункт отправки"
@@ -154,7 +153,6 @@
                     <input
                       class="input__input"
                       type="text"
-                      as="button"
                       name="to"
                       required
                       placeholder="Пункт прибытия"
@@ -169,7 +167,6 @@
                     <input
                       class="input__input"
                       type="text"
-                      as="button"
                       name="date"
                       required
                       placeholder="Дата"
@@ -181,7 +178,7 @@
                     ></span>
                   </div>
                   <button
-                    data-hk="0-0-0-0-2-5-0-0-1-3-0-0"
+                    data-hk="0-0-0-0-2-8-0-0-1-3-0-0"
                     class="button button_primary button_md"
                     type="submit"
                   >
@@ -340,7 +337,6 @@
                           <input
                             class="input__input"
                             type="text"
-                            as="button"
                             name="name"
                             required
                             placeholder="Имя"
@@ -350,7 +346,6 @@
                           <input
                             class="input__input"
                             type="text"
-                            as="button"
                             name="phone"
                             required
                             placeholder="Телефон"
@@ -399,7 +394,6 @@
                           <input
                             class="input__input"
                             type="text"
-                            as="button"
                             name="name"
                             required
                             placeholder="Имя"
@@ -409,7 +403,6 @@
                           <input
                             class="input__input"
                             type="text"
-                            as="button"
                             name="phone"
                             required
                             placeholder="Телефон"
@@ -463,7 +456,6 @@
                         <input
                           class="input__input"
                           type="number"
-                          as="button"
                           name="place"
                           min="1"
                           required
@@ -472,14 +464,56 @@
                       </div>
                     </div>
                     <div class="booking__seats">
-                      <img
-                        src="assets/img/seats.jpg"
-                        width="540"
-                        height="252"
-                        alt="#"
-                        loading="lazy"
-                        decoding="async"
-                      />
+                      <div class="arrangement">
+                        <div class="arrangement__head">
+                          <div class="arrangement__legend">
+                            <div class="arrangement__legend-cell arrangement__free"></div>
+                            <span class="arrangement__legend-text">Свободно</span>
+                          </div>
+                          <div class="arrangement__legend">
+                            <div class="arrangement__legend-cell arrangement__selected"></div>
+                            <span class="arrangement__legend-text">Выбрано вами</span>
+                          </div>
+                          <div class="arrangement__legend">
+                            <div class="arrangement__legend-cell arrangement__busy"></div>
+                            <span class="arrangement__legend-text">Занято</span>
+                          </div>
+                        </div>
+                        <div class="arrangement__grid">
+                          <div class="arrangement__row">
+                            <div class="arrangement__cell arrangement__free">16</div>
+                            <div class="arrangement__cell"></div>
+                            <div class="arrangement__cell arrangement__selected">3</div>
+                            <div class="arrangement__cell arrangement__busy">6</div>
+                            <div class="arrangement__cell arrangement__free">9</div>
+                            <div class="arrangement__cell arrangement__free">12</div>
+                          </div>
+                          <div class="arrangement__row">
+                            <div class="arrangement__cell arrangement__free">17</div>
+                            <div class="arrangement__cell"></div>
+                            <div class="arrangement__cell"></div>
+                            <div class="arrangement__cell"></div>
+                            <div class="arrangement__cell"></div>
+                            <div class="arrangement__cell arrangement__busy">13</div>
+                          </div>
+                          <div class="arrangement__row">
+                            <div class="arrangement__cell"></div>
+                            <div class="arrangement__cell arrangement__free">2</div>
+                            <div class="arrangement__cell arrangement__busy">5</div>
+                            <div class="arrangement__cell arrangement__busy">8</div>
+                            <div class="arrangement__cell arrangement__free">11</div>
+                            <div class="arrangement__cell arrangement__free">14</div>
+                          </div>
+                          <div class="arrangement__row">
+                            <div class="arrangement__cell arrangement__busy">В</div>
+                            <div class="arrangement__cell arrangement__free">1</div>
+                            <div class="arrangement__cell arrangement__free">4</div>
+                            <div class="arrangement__cell arrangement__busy">7</div>
+                            <div class="arrangement__cell arrangement__free">10</div>
+                            <div class="arrangement__cell arrangement__free">15</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="booking__gallery">
                       <div class="booking__gallery-inner">
@@ -528,7 +562,7 @@
                   </div>
                   <div class="booking__footer">
                     <button
-                      data-hk="0-0-0-0-2-5-0-0-16-0-0"
+                      data-hk="0-0-0-0-2-8-0-0-16-0-0"
                       class="button button_primary button_md booking__button"
                       type="submit"
                     >
@@ -548,7 +582,6 @@
                         <input
                           class="input__input"
                           type="text"
-                          as="button"
                           required
                           placeholder="Реквизиты"
                           name="req"
@@ -563,7 +596,6 @@
                           <input
                             class="input__input"
                             type="email"
-                            as="button"
                             required
                             placeholder="Почта"
                             name="email"
@@ -572,7 +604,7 @@
                       </div>
                     </div>
                     <button
-                      data-hk="0-0-0-0-2-5-0-0-17-2-0-0"
+                      data-hk="0-0-0-0-2-8-0-0-17-2-0-0"
                       class="button button_secondary button_md booking-done__button"
                       type="submit"
                     >
@@ -748,7 +780,6 @@
                     <input
                       class="input__input"
                       type="text"
-                      as="button"
                       required
                       placeholder="Имя"
                       name="name"
@@ -758,7 +789,6 @@
                     <input
                       class="input__input"
                       type="text"
-                      as="button"
                       required
                       placeholder="Телефон"
                       name="phone"
